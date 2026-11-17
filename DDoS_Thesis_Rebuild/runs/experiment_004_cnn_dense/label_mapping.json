@@ -1,0 +1,6 @@
+{
+  "Benign": 0,
+  "DDoS": 1,
+  "Recon": 2,
+  "Web": 3
+}

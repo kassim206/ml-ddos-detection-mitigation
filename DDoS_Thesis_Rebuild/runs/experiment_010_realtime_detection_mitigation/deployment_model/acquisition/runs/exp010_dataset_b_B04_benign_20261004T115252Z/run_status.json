@@ -1,0 +1,13 @@
+{
+  "status": "INITIALIZED",
+  "dataset": "Dataset B",
+  "logical_run_id": "B04",
+  "physical_run_id": "exp010_dataset_b_B04_benign_20261004T115252Z",
+  "class": "Benign",
+  "partition": "train",
+  "valid_dataset_run": false,
+  "include_in_dataset_b": false,
+  "traffic_workload_executed": false,
+  "feature_extraction_permitted": false,
+  "training_use_permitted": false
+}

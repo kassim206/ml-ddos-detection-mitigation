@@ -1,0 +1,76 @@
+name: exp010_testbed
+
+services:
+
+  victim_web_exp010:
+    build:
+      context: ./experiment_010/victim_app
+      dockerfile: Dockerfile
+    volumes:
+      - ./logs/experiment_010/victim:/app/logs
+    networks:
+      - exp010_net
+    restart: "no"
+
+  benign_client_exp010:
+    build:
+      context: ./benign_client
+      dockerfile: Dockerfile
+    environment:
+      TARGET_URL: http://victim_web_exp010/
+      REQUEST_COUNT: "1000"
+      DELAY_SECONDS: "0.1"
+      RUN_ID: ${EXP010_RUN_ID:?EXP010_RUN_ID must be set}
+    volumes:
+      - ./logs/experiment_010/client:/app/logs
+    networks:
+      - exp010_net
+    depends_on:
+      - victim_web_exp010
+    restart: "no"
+
+  capture_exp010:
+    build:
+      context: ./experiment_010/capture
+      dockerfile: Dockerfile
+    command:
+      - tcpdump
+      - -i
+      - any
+      - -U
+      - -s
+      - "0"
+      - -w
+      - /capture/traffic.pcap
+      - tcp
+      - port
+      - "80"
+    volumes:
+      - ./logs/experiment_010/capture:/capture
+    network_mode: "service:victim_web_exp010"
+    depends_on:
+      - victim_web_exp010
+    restart: "no"
+
+
+  attack_client_exp010:
+    build:
+      context: ./attack_client
+      dockerfile: Dockerfile
+    environment:
+      TARGET: http://victim_web_exp010/
+      RUN_ID: ${EXP010_RUN_ID:?EXP010_RUN_ID must be set}
+      REQUEST_COUNT: "1000"
+      CONCURRENCY: "10"
+      TIMEOUT_SECONDS: "5"
+    volumes:
+      - ./logs/experiment_010/client:/app/logs
+    networks:
+      - exp010_net
+    depends_on:
+      - victim_web_exp010
+    restart: "no"
+
+networks:
+  exp010_net:
+    driver: bridge

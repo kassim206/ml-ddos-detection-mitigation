@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "logical_run_id": "B08",
+  "physical_run_id": "exp010_dataset_b_B08_benign_20261004T150211Z",
+  "class": "Benign",
+  "partition": "test",
+  "client_rows": 1000,
+  "victim_rows": 1000,
+  "unique_client_request_ids": 1000,
+  "unique_victim_request_ids": 1000,
+  "request_id_set_equality": true,
+  "client_duplicate_request_ids": 0,
+  "victim_duplicate_request_ids": 0,
+  "client_only": 0,
+  "victim_only": 0,
+  "client_run_ids": [
+    "exp010_dataset_b_B08_benign_20261004T150211Z"
+  ],
+  "workload_types": [
+    "benign_controlled_http"
+  ],
+  "all_transport_success": true,
+  "all_http_200": true,
+  "client_exit_code": "0",
+  "packets_captured": 12000,
+  "packets_received_by_filter": 12000,
+  "packets_dropped_by_kernel": 0,
+  "valid_dataset_run": true
+}

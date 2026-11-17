@@ -1,0 +1,68 @@
+{
+  "status": "deployment_compatibility_not_yet_supported",
+  "rows_audited": 10713192,
+  "established_empirical_relationships": {
+    "flag_fraction_times_Number_equals_corresponding_count": true,
+    "protocol_application_fraction_times_Number_is_integer": true,
+    "Tot_sum_equals_AVG_times_Number": true,
+    "Tot_size_equals_AVG": true,
+    "Variance_equals_Std_squared_for_finite_rows": true,
+    "Header_Length_times_Number_is_integer": true,
+    "Protocol_Type_times_Number_is_integer": true,
+    "Time_To_Live_times_Number_is_integer": true
+  },
+  "window_regime": {
+    "Benign_Final": {
+      "dominant_Number": 10,
+      "fraction": 0.99941
+    },
+    "Recon-PortScan": {
+      "dominant_Number": 10,
+      "fraction": 0.99979
+    },
+    "SqlInjection": {
+      "dominant_Number": 10,
+      "fraction": 0.99981
+    },
+    "XSS": {
+      "dominant_Number": 10,
+      "fraction": 0.99948
+    },
+    "DDoS-HTTP_Flood": {
+      "dominant_Number": 100,
+      "fraction": 0.99788
+    },
+    "DDoS-SYN_Flood": {
+      "dominant_Number": 100,
+      "fraction": 0.99922
+    },
+    "DDoS-SlowLoris": {
+      "dominant_Number": 100,
+      "fraction": 0.99710
+    },
+    "DDoS-UDP_Flood": {
+      "dominant_Number": 100,
+      "fraction": 0.99924
+    }
+  },
+  "rate_iat": {
+    "all_rows_within_1pct_of_product_1_fraction": 0.87593264,
+    "Number_10_within_1pct_fraction": 0.37736776,
+    "Number_10_mean_product": 1.9664974999963045,
+    "Number_100_within_1pct_fraction": 0.93827592,
+    "Number_100_mean_product": 1.0202535651948923,
+    "conclusion": "Rate and IAT are strongly related but an exact reciprocal formula is not supported."
+  },
+  "deployment_gate": {
+    "exp009_offline_validity": "PASS",
+    "exp009_direct_live_feature_compatibility": "NOT_YET_SUPPORTED",
+    "reason": "A class-independent live rule reproducing the observed Number=10 versus Number=100 feature-generation regimes has not yet been established.",
+    "prohibited_shortcuts": [
+      "Do not select Number/window size using ground-truth traffic class.",
+      "Do not assume all live observations use Number=100.",
+      "Do not assume all live observations use Number=10.",
+      "Do not implement Rate as exactly 1/IAT.",
+      "Do not claim semantic equivalence solely from matching feature names."
+    ]
+  }
+}

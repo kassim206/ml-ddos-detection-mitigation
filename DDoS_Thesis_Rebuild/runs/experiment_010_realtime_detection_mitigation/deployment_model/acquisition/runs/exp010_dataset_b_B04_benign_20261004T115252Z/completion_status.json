@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B04",
+  "physical_run_id": "exp010_dataset_b_B04_benign_20261004T115252Z",
+  "class": "Benign",
+  "partition": "train",
+  "raw_evidence_frozen": true,
+  "feature_artifacts_frozen": true,
+  "eligible_packets": 12000,
+  "packets_dropped_by_kernel": 0,
+  "window_10_rows": 1200,
+  "window_100_rows": 120,
+  "reconciliation_status": "PASS",
+  "feature_contract_status": "PASS",
+  "provenance": {
+    "initial_status_sha256": "206cefeae6132fc1c591578fd26110126582bde60d214e31a734d4496e313cfb",
+    "raw_freeze_status_sha256": "2558204a45b08d1a4b46c0450c527b2684143e31d1156a766ebb5cc832d3c857",
+    "raw_manifest_sha256": "ad82844911700002c9326a054894d18599572c82c4db9f06fb9e0ae04ab7da3d",
+    "raw_master_file_sha256": "9419b90a070ffe31241426590cb85762c279765dbfa8104b214711c2c48611ab",
+    "feature_manifest_sha256": "8faeb324a3d8eef5c6a8e419e62a1b24635bd076e9d8b5c725aeef6029d612e0",
+    "feature_master_file_sha256": "e1ae44b144916ae2499a74610788b7070662a6a800c42dab5cae031849c00003"
+  }
+}

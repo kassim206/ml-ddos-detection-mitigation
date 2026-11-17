@@ -1,0 +1,4 @@
+Completed 1000 controlled high-rate HTTP attempts.
+Transport successes: 1000/1000
+Client wall-clock seconds: 3.519088
+Ground truth: /app/logs/client_ground_truth.csv

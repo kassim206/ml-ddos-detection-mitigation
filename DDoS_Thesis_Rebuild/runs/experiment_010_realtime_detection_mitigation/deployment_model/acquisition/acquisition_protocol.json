@@ -1,0 +1,139 @@
+{
+  "experiment": "Exp010",
+  "component": "deployment_dataset_acquisition",
+  "status": "design_v2_frozen_before_dataset_b_collection",
+  "purpose": "Create a genuine controlled-laboratory dataset for development of a deployment-compatible DDoS detector.",
+  "dataset_identity": {
+    "name": "Dataset B",
+    "source": "controlled laboratory network traffic",
+    "relationship_to_ciciot2023": "separate_dataset",
+    "merged_with_ciciot2023": false,
+    "claimed_distribution_equivalence_to_ciciot2023": false,
+    "exp009_model_reused_for_live_detection": false
+  },
+  "classes": [
+    "Benign",
+    "Attack"
+  ],
+  "ground_truth": {
+    "source": "controlled workload generator configuration and execution logs",
+    "derived_from_model_prediction": false,
+    "derived_from_packet_features": false,
+    "assigned_after_inspecting_model_output": false
+  },
+  "evidence_chain": [
+    "workload_generator_configuration",
+    "client_ground_truth_log",
+    "packet_capture",
+    "victim_access_log",
+    "reconciliation",
+    "feature_extraction",
+    "dataset_split",
+    "preprocessing",
+    "model_training",
+    "held_out_evaluation"
+  ],
+  "primary_run_evidence": [
+    "run_id.txt",
+    "client_ground_truth.csv",
+    "traffic.pcap",
+    "victim_access_log.csv",
+    "environment.txt",
+    "docker_images.txt",
+    "infrastructure_sha256.txt",
+    "primary_evidence_sha256.txt"
+  ],
+  "capture_policy": {
+    "capture_source": "actual_testbed_network_path",
+    "pcap_required": true,
+    "victim_log_required": true,
+    "client_ground_truth_required": true,
+    "zero_kernel_capture_drops_preferred": false,
+    "failed_or_incomplete_runs": "retain_and_mark_invalid_do_not_silently_delete",
+    "capture_filter": "tcp port 80",
+    "traffic_scope": "bidirectional victim HTTP/TCP port 80 traffic admitted by the frozen capture filter",
+    "zero_kernel_capture_drops_required_for_valid_run": true
+  },
+  "window_candidates": {
+    "fixed_10_packets": {
+      "packet_count": 10,
+      "class_independent": true
+    },
+    "fixed_100_packets": {
+      "packet_count": 100,
+      "class_independent": true
+    }
+  },
+  "window_selection": {
+    "selected_before_final_model_training": true,
+    "selection_basis": "measured_validation_performance_and_operational_latency",
+    "class_dependent_window_selection_forbidden": true,
+    "ground_truth_dependent_window_selection_forbidden": true
+  },
+  "candidate_features": [
+    "packet_count",
+    "duration_seconds",
+    "header_length_mean",
+    "ttl_mean",
+    "fin_fraction",
+    "syn_fraction",
+    "rst_fraction",
+    "psh_fraction",
+    "ack_fraction",
+    "packet_length_sum",
+    "packet_length_min",
+    "packet_length_max",
+    "packet_length_mean",
+    "packet_length_std",
+    "packet_length_variance",
+    "iat_mean",
+    "iat_min",
+    "iat_max",
+    "iat_std",
+    "packet_rate"
+  ],
+  "integrity_constraints": {
+    "synthetic_packet_rows": false,
+    "mock_packet_capture": false,
+    "fabricated_requests": false,
+    "fabricated_ground_truth": false,
+    "fabricated_features": false,
+    "hardcoded_observed_metrics": false,
+    "synthetic_training_history": false,
+    "post_hoc_ground_truth_relabeling_from_predictions": false,
+    "silent_failed_run_removal": false
+  },
+  "scope": {
+    "environment": "isolated controlled laboratory",
+    "public_targets": false,
+    "third_party_targets": false,
+    "production_traffic_claim": false,
+    "traffic": "controlled_laboratory_HTTP_over_TCP_port_80",
+    "generic_all_protocol_ddos_claim": false,
+    "ciciot2023_distribution_equivalence_claim": false
+  },
+  "version": 2,
+  "instrumentation_policy": {
+    "packet_visible_http_header": "X-Request-ID",
+    "request_identifier_format": "UUID",
+    "request_identifier_purpose": "reconcile genuine client requests with victim observations and captured HTTP without transmitting semantic class metadata",
+    "run_id_transmitted_in_http": false,
+    "workload_type_transmitted_in_http": false,
+    "class_label_transmitted_in_http": false,
+    "run_id_retained_in_client_ground_truth": true,
+    "workload_type_retained_in_client_ground_truth": true,
+    "instrumentation_fields_used_as_model_features": false
+  },
+  "dataset_partition_policy": {
+    "partition_unit": "independent_acquisition_run",
+    "train_runs_per_class": 4,
+    "validation_runs_per_class": 2,
+    "test_runs_per_class": 2,
+    "total_runs": 16,
+    "window_level_random_split_forbidden": true,
+    "cross_partition_run_reuse_forbidden": true,
+    "cross_partition_pcap_reuse_forbidden": true,
+    "test_used_for_selection": false,
+    "final_test_evaluation_once_after_selection": true
+  }
+}

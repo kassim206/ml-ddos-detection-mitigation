@@ -1,0 +1,8 @@
+metric,value
+Decision threshold,0.85
+Total observations,1773902
+Malicious block rate,0.9896367101281232
+Benign block rate,0.1429443466783986
+DDoS block rate,0.9988236651929189
+Recon block rate,0.03126605504587156
+Web block rate,0.03986710963455149

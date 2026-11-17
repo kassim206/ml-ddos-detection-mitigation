@@ -1,0 +1,100 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "status": "FROZEN_BEFORE_DATASET_B_COLLECTION",
+  "purpose": "Predefine independent acquisition runs and run-level train/validation/test assignment before collecting Dataset-B model-development traffic.",
+
+  "partition_unit": "acquisition_run",
+  "window_level_random_split_forbidden": true,
+  "cross_partition_run_reuse_forbidden": true,
+  "cross_partition_pcap_reuse_forbidden": true,
+
+  "classes": [
+    "Benign",
+    "Attack"
+  ],
+
+  "runs": [
+    {
+      "logical_run_id": "B01",
+      "class": "Benign",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "B02",
+      "class": "Benign",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "B03",
+      "class": "Benign",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "B04",
+      "class": "Benign",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "B05",
+      "class": "Benign",
+      "partition": "validation"
+    },
+    {
+      "logical_run_id": "B06",
+      "class": "Benign",
+      "partition": "test"
+    },
+
+    {
+      "logical_run_id": "A01",
+      "class": "Attack",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "A02",
+      "class": "Attack",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "A03",
+      "class": "Attack",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "A04",
+      "class": "Attack",
+      "partition": "train"
+    },
+    {
+      "logical_run_id": "A05",
+      "class": "Attack",
+      "partition": "validation"
+    },
+    {
+      "logical_run_id": "A06",
+      "class": "Attack",
+      "partition": "test"
+    }
+  ],
+
+  "selection_policy": {
+    "candidate_window_packet_counts": [10, 100],
+    "window_selection_partition": "validation",
+    "model_selection_partition": "validation",
+    "test_partition_used_for_selection": false,
+    "test_partition_access_before_final_selection": false,
+    "final_test_evaluation_once_after_selection": true
+  },
+
+  "integrity": {
+    "partition_assignment_changed_after_collection": false,
+    "partition_assignment_changed_after_feature_extraction": false,
+    "partition_assignment_changed_after_model_results": false,
+    "failed_runs_moved_to_another_partition": false,
+    "failed_runs_retain_original_logical_assignment": true,
+    "replacement_runs_require_explicit_documentation": true,
+    "synthetic_runs": false,
+    "fabricated_runs": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "evaluation_version": 1,
+  "input_type": "frozen_exp011_result_runs",
+  "result_runs": {
+    "A01": {
+      "manifest_sha256": "9c1ad7e8310c1046853f9916c839050e6e17fd8564b8e6e1e6b4a90fbb3b45f4"
+    },
+    "A02": {
+      "manifest_sha256": "750105d2580d8658d705adbbe167befc341c00691c4969639293b40e19a0b627"
+    },
+    "A03": {
+      "manifest_sha256": "ffdf1403d62b24570f5b2150e9d8d36fd66b82176dc209ed3ddc247fc62e62b5"
+    },
+    "B01": {
+      "manifest_sha256": "8565ab085ed104b000f9cbcee7006ce2c987c6d405c91ded6aabd91ab7bc5ee4"
+    },
+    "B02": {
+      "manifest_sha256": "0a7bb6f8ccf567a09d4e36cd9cc6aca6be4dda346ca12845728d85246570a0d7"
+    },
+    "B03": {
+      "manifest_sha256": "1901451e668ff1a1e6301b7bce0ab75facba5155f69342bc719effc5141d3842"
+    },
+    "M01": {
+      "manifest_sha256": "d0792174a8bb66673b75c236d7236203d0835c52398a3aa18b50c2d67d4c4c90"
+    },
+    "M02": {
+      "manifest_sha256": "02735c977252de528ff494b0b173300a4a9b081ad0115aa7dae954e4cb40c8a6"
+    },
+    "M03": {
+      "manifest_sha256": "a20e77213d7c6d8655d8bd7c340994789f1f61d2e1e7662ba37e2a25faa0aa09"
+    }
+  }
+}

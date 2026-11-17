@@ -1,0 +1,37 @@
+[
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood10.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood6.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood7.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood15.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood5.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "SqlInjection/SqlInjection.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Web"
+    },
+    {
+        "file": "DDoS-HTTP_Flood/DDoS-HTTP_Flood-.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    }
+]

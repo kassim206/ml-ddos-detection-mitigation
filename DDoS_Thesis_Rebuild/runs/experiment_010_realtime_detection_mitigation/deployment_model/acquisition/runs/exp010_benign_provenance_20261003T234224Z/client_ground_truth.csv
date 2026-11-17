@@ -1,0 +1,6 @@
+run_id,request_id,workload_type,timestamp_start_utc,timestamp_finish_utc,target_url,method,status_code,response_bytes,elapsed_ms,transport_success
+exp010_benign_provenance_20261003T234224Z,9a2f9cd3-8c40-470e-adf4-c52e8cef5d79,benign_controlled_http,2026-10-03T23:43:25.556767+00:00,2026-10-03T23:43:25.566273+00:00,http://victim_web_exp010/,GET,200,3,9.484078000241425,True
+exp010_benign_provenance_20261003T234224Z,14a5e124-1d69-4ed1-88c7-12fbd5ff258b,benign_controlled_http,2026-10-03T23:43:25.666651+00:00,2026-10-03T23:43:25.680754+00:00,http://victim_web_exp010/,GET,200,3,14.049074001377448,True
+exp010_benign_provenance_20261003T234224Z,70ad2973-55fe-4276-a557-ca9bd54f76b0,benign_controlled_http,2026-10-03T23:43:25.781247+00:00,2026-10-03T23:43:25.800067+00:00,http://victim_web_exp010/,GET,200,3,18.73605600121664,True
+exp010_benign_provenance_20261003T234224Z,58f68eb9-b3cc-4a7e-8e14-ace6b5681c32,benign_controlled_http,2026-10-03T23:43:25.900725+00:00,2026-10-03T23:43:25.918127+00:00,http://victim_web_exp010/,GET,200,3,17.30633699844475,True
+exp010_benign_provenance_20261003T234224Z,d85611b3-0680-4c03-961e-3bf227c3e775,benign_controlled_http,2026-10-03T23:43:26.018892+00:00,2026-10-03T23:43:26.023169+00:00,http://victim_web_exp010/,GET,200,3,4.258020999259315,True

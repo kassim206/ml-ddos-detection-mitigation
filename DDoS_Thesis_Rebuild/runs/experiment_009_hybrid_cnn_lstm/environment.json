@@ -1,0 +1,9 @@
+{
+  "gpu_devices": [],
+  "numpy_version": "1.26.4",
+  "pandas_version": "3.0.6",
+  "platform": "Linux-6.12.90+deb13-amd64-x86_64-with-glibc2.41",
+  "python_version": "3.11.9 (main, Oct  2 2026, 02:53:54) [GCC 14.2.0]",
+  "scikit_learn_version": "1.9.1",
+  "tensorflow_version": "2.15.0"
+}

@@ -1,0 +1,17 @@
+{
+  "accounting_identity_pass": true,
+  "completion_status": "failed",
+  "controller_sha256": "5c15e67c99d66a0c04a157fb8342a3bcc4a58a10c1008b2601f31a0f69174125",
+  "expected_exception_type": "RuntimeError",
+  "gate": "v6_failure_summary_gate",
+  "injected_failure": "Missing PCAP global header",
+  "maximum_timestamp_adjustment_seconds": null,
+  "processing_integrity_pass": false,
+  "result_bearing_run": false,
+  "scope": "pre_result_excluded_validation",
+  "status": "PASS",
+  "tail_range_pass": true,
+  "tcpdump_process": "mocked",
+  "tcpdump_returncode_not_scientific": true,
+  "timestamp_units_per_second": null
+}

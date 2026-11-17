@@ -1,0 +1,12 @@
+{
+  "experiment_id": "experiment_001_dataset_char",
+  "description": "Characterize and deterministically partition the selected CICIoT2023 CSV subset.",
+  "status": "completed",
+  "dataset_scope": "selected_ciciot2023_subset",
+  "source_file_count": 46,
+  "source_row_count": 10713192,
+  "split_method": "deterministic_file_aware_row_level_split",
+  "split_seed": 20261002,
+  "synthetic_data": false,
+  "hardware_metadata_retained": false
+}

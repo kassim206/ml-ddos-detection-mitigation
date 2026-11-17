@@ -1,0 +1,137 @@
+{
+    "experiment_id": "001",
+    "dataset": "CICIoT2023_Selected",
+    "dataset_scope": "Selected subset of CICIoT2023 comprising eight retained source traffic/attack folders.",
+    "split_strategy": "deterministic_file_aware_row_level_split",
+    "split_methodology": {
+        "random_split": false,
+        "deterministic": true,
+        "random_seed": 20261002,
+        "whole_file_allocation_preferred": true,
+        "row_level_partitioning_allowed": true,
+        "temporal_leakage_prevention_claimed": false
+    },
+    "discovered_features_count": 39,
+    "features_used": [
+        "ARP",
+        "AVG",
+        "DHCP",
+        "DNS",
+        "HTTP",
+        "HTTPS",
+        "Header_Length",
+        "IAT",
+        "ICMP",
+        "IGMP",
+        "IPv",
+        "IRC",
+        "LLC",
+        "Max",
+        "Min",
+        "Number",
+        "Protocol Type",
+        "Rate",
+        "SMTP",
+        "SSH",
+        "Std",
+        "TCP",
+        "Telnet",
+        "Time_To_Live",
+        "Tot size",
+        "Tot sum",
+        "UDP",
+        "Variance",
+        "ack_count",
+        "ack_flag_number",
+        "cwr_flag_number",
+        "ece_flag_number",
+        "fin_count",
+        "fin_flag_number",
+        "psh_flag_number",
+        "rst_count",
+        "rst_flag_number",
+        "syn_count",
+        "syn_flag_number"
+    ],
+    "label_reconstruction_method": "Folder-name inference for unlabeled selected CSV exports",
+    "cleaned_schema": {
+        "feature_columns": 39,
+        "provenance_columns": [
+            "Original_Attack"
+        ],
+        "target_columns": [
+            "Category"
+        ],
+        "total_columns": 41
+    },
+    "train_samples": 7702608,
+    "val_samples": 1236682,
+    "test_samples": 1773902,
+    "total_samples": 10713192,
+    "class_distribution_train": {
+        "Benign": 789581,
+        "DDoS": 6847330,
+        "Recon": 59161,
+        "Web": 6536
+    },
+    "class_distribution_val": {
+        "Benign": 126770,
+        "DDoS": 1099364,
+        "Recon": 9498,
+        "Web": 1050
+    },
+    "class_distribution_test": {
+        "Benign": 181840,
+        "DDoS": 1576932,
+        "Recon": 13625,
+        "Web": 1505
+    },
+    "class_distribution_total": {
+        "Benign": 1098191,
+        "DDoS": 9523626,
+        "Recon": 82284,
+        "Web": 9091
+    },
+    "non_finite_feature_values": {
+        "train": {
+            "nan_cells": 168,
+            "positive_infinity_cells": 147,
+            "negative_infinity_cells": 0,
+            "nan_by_feature": {
+                "Std": 84,
+                "Variance": 84
+            },
+            "positive_infinity_by_feature": {
+                "Rate": 147
+            }
+        },
+        "val": {
+            "nan_cells": 26,
+            "positive_infinity_cells": 25,
+            "negative_infinity_cells": 0,
+            "nan_by_feature": {
+                "Std": 13,
+                "Variance": 13
+            },
+            "positive_infinity_by_feature": {
+                "Rate": 25
+            }
+        },
+        "test": {
+            "nan_cells": 56,
+            "positive_infinity_cells": 40,
+            "negative_infinity_cells": 0,
+            "nan_by_feature": {
+                "Std": 28,
+                "Variance": 28
+            },
+            "positive_infinity_by_feature": {
+                "Rate": 40
+            }
+        },
+        "handling_stage": "Experiment 002 preprocessing"
+    },
+    "synthetic_data": false,
+    "mock_data": false,
+    "sampling": false
+}

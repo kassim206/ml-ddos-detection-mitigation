@@ -1,0 +1,12 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "protocol_version": "1.0",
+  "status": "FROZEN_PRE_VALIDATION",
+  "validation_data_inspected_for_model_selection": false,
+  "test_data_inspected_for_model_selection": false,
+  "training_runs_forensically_verified": true,
+  "training_run_count": 8,
+  "protocol_manifest_sha256": "03368d0d4ccdf8061fd00a180023d332cf3d9e0f1535a2665e181c8fd24b32d4",
+  "scientific_artifacts_modified": false
+}

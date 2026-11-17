@@ -1,0 +1,33 @@
+{
+  "experiment_id": "006",
+  "status": "completed",
+  "benchmark_scope": "complete_processed_test_split",
+  "benchmark_type": "chunked_batched_cpu_inference",
+  "test_data_source": "runs/experiment_002_preprocessing/test_processed.parquet",
+  "test_rows": 1773902,
+  "expected_test_rows": 1773902,
+  "feature_count": 39,
+  "sampling": false,
+  "all_test_rows_processed": true,
+  "chunked_processing": true,
+  "chunk_size": 32768,
+  "measured_repeats": 3,
+  "warmup_samples": 512,
+  "keras_batch_size": 512,
+  "rows_predicted_per_model_measured": 5321706,
+  "synthetic_latency": false,
+  "synthetic_resource_usage": false,
+  "hardcoded_runtime_results": false,
+  "latency_interpretation": "Amortized inference time per observation derived from the elapsed time required to process the complete test split. It is not independent single-request latency.",
+  "throughput_interpretation": "Number of complete test observations processed per second during chunked batched inference.",
+  "memory_interpretation": "Process RSS measurements observed during inference. Peak RSS increase is relative to process RSS at the start of each measured repeat and is not total model memory requirement.",
+  "platform": "Linux-6.12.90+deb13-amd64-x86_64-with-glibc2.41",
+  "python_process_pid": 5967,
+  "tensorflow_version": "2.15.0",
+  "models": {
+    "RandomForest": "runs/experiment_003_baselines/model_rf.pkl",
+    "XGBoost": "runs/experiment_003_baselines/model_xgb.pkl",
+    "CNN-Dense": "runs/experiment_004_cnn_dense/best_model.keras",
+    "Hybrid-CNN-LSTM": "runs/experiment_009_hybrid_cnn_lstm/best_model.keras"
+  }
+}

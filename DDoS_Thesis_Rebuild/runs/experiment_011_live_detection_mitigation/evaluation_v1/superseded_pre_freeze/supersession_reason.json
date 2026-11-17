@@ -1,0 +1,6 @@
+{
+  "experimental_artifacts_modified": false,
+  "reason": "Initial Section 6 evaluator averaged balanced accuracy and macro-F1 only over represented classes. Before Section 6 freeze, the evaluation convention was corrected so balanced accuracy is reported only when both true classes are represented and binary macro-F1 uses the fixed class set [0,1]. The underlying predictions, confusion matrices, timings, and frozen result runs are unchanged.",
+  "result_bearing_experiments_affected": false,
+  "status": "superseded_pre_freeze"
+}

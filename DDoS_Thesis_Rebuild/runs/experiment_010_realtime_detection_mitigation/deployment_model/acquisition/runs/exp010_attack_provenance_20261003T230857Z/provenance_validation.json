@@ -1,0 +1,47 @@
+{
+  "validation_type": "post_freeze_read_only_attack_path_provenance_validation",
+  "run_id": "exp010_attack_provenance_20261003T230857Z",
+  "workload_scope": "controlled_local_high_rate_http",
+  "client_ground_truth": {
+    "rows": 100,
+    "unique_request_ids": 100,
+    "method_get": 100,
+    "http_200": 100,
+    "transport_successes": 100,
+    "workload_type": "controlled_high_rate_http"
+  },
+  "victim_observation": {
+    "physical_lines": 102,
+    "csv_dictreader_rows": 101,
+    "genuine_request_rows": 100,
+    "get_root_rows": 100,
+    "observed_source_ip": "172.20.0.3",
+    "duplicate_embedded_header_rows": 1,
+    "logging_defect": "A duplicate CSV header occurs at physical line 3. The frozen artifact is preserved unchanged."
+  },
+  "packet_capture": {
+    "link_type": "LINUX_SLL2",
+    "captured_packets": 1200,
+    "packets_received_by_filter": 1200,
+    "packets_dropped_by_kernel": 0,
+    "client_ip_observed": "172.20.0.3",
+    "victim_ip_observed": "172.20.0.2",
+    "victim_tcp_port": 80,
+    "initial_client_to_victim_syn_count": 100,
+    "http_get_visible": true,
+    "http_200_visible": true,
+    "ascii_decode_note": "grep over tcpdump -A output returns 200 occurrences for GET and 200 for HTTP 200 because each payload string is represented in both tcpdump packet annotation and ASCII payload rendering; these counts are not interpreted as transaction counts."
+  },
+  "primary_evidence_integrity": {
+    "client_ground_truth_sha256": "8f0a3f09ff5ed2037aa83631a1f856986416ca6f79c21a142830ed09071bced3",
+    "victim_access_log_sha256": "f4fe989137395c0c1d24bd4201f3ccfa843add6be790d532dce2d0a11183169b",
+    "traffic_pcap_sha256": "ae4ddac885fb7974fa68c65de243cef6f5429d0053d22394ec1a28e43e936725",
+    "hash_verification": "PASS"
+  },
+  "limitations": [
+    "Victim log does not contain request_id, so exact per-request client-to-victim UUID matching is unavailable.",
+    "Victim CSV contains one duplicate embedded header caused by the current logging implementation.",
+    "This run validates controlled attack-path provenance only; it does not demonstrate DDoS scale, model detection, feature extraction, mitigation, or production-world behavior."
+  ],
+  "overall_validation": "PASS_WITH_DOCUMENTED_LOGGING_DEFECT"
+}

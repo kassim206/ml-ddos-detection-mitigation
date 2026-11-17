@@ -1,0 +1,3 @@
+Exp010 acquisition correlation validation.
+Purpose: validate exact run_id/request_id/workload_type propagation from controlled client to victim and verify duplicate-header repair.
+This run is not Dataset-B training data.

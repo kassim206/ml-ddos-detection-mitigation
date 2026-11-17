@@ -1,0 +1,9 @@
+{
+  "status": "ABORTED_BEFORE_WORKLOAD",
+  "valid_dataset_run": false,
+  "include_in_dataset_b": false,
+  "reason": "Shell/session state was lost before victim/capture startup completed. EXP010_RUN_ID and RUN_DIR were unavailable when the next command block executed.",
+  "traffic_workload_executed": false,
+  "feature_extraction_permitted": false,
+  "training_use_permitted": false
+}

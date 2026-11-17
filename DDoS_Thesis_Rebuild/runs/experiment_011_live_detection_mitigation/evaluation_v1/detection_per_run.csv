@@ -1,0 +1,10 @@
+run_id,condition,true_label,n_windows,tn,fp,fn,tp,accuracy,balanced_accuracy,precision,recall,f1,macro_f1
+B01,benign_with_detection_and_mitigation,0,120,120,0,0,0,1.0,,,,,0.5
+B02,benign_with_detection_and_mitigation,0,120,120,0,0,0,1.0,,,,,0.5
+B03,benign_with_detection_and_mitigation,0,120,120,0,0,0,1.0,,,,,0.5
+A01,attack_detection_without_mitigation,1,120,0,0,0,120,1.0,,1.0,1.0,1.0,0.5
+A02,attack_detection_without_mitigation,1,120,0,0,0,120,1.0,,1.0,1.0,1.0,0.5
+A03,attack_detection_without_mitigation,1,120,0,0,0,120,1.0,,1.0,1.0,1.0,0.5
+M01,attack_detection_with_mitigation,1,120,0,0,0,120,1.0,,1.0,1.0,1.0,0.5
+M02,attack_detection_with_mitigation,1,120,0,0,0,120,1.0,,1.0,1.0,1.0,0.5
+M03,attack_detection_with_mitigation,1,120,0,0,0,120,1.0,,1.0,1.0,1.0,0.5

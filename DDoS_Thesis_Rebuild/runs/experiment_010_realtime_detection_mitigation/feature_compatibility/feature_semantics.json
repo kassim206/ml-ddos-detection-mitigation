@@ -1,0 +1,50 @@
+{
+  "source": "CICIoT2023 original publication feature definitions",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346235/",
+  "status": "semantic_compatibility_under_review",
+  "features": [
+    {"position":1,"name":"Header_Length","definition":"Header length","group":"header","initial_live_status":"REVIEW"},
+    {"position":2,"name":"Protocol Type","definition":"IP, UDP, TCP, IGMP, ICMP, Unknown represented numerically","group":"protocol","initial_live_status":"REVIEW"},
+    {"position":3,"name":"Time_To_Live","definition":"Time-to-Live (TTL); original publication calls corresponding feature Duration","group":"header","initial_live_status":"REVIEW"},
+    {"position":4,"name":"Rate","definition":"Rate of packet transmission in a flow","group":"flow","initial_live_status":"REVIEW"},
+
+    {"position":5,"name":"fin_flag_number","definition":"FIN flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+    {"position":6,"name":"syn_flag_number","definition":"SYN flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+    {"position":7,"name":"rst_flag_number","definition":"RST flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+    {"position":8,"name":"psh_flag_number","definition":"PSH flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+    {"position":9,"name":"ack_flag_number","definition":"ACK flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+    {"position":10,"name":"ece_flag_number","definition":"ECE flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+    {"position":11,"name":"cwr_flag_number","definition":"CWR flag value","group":"tcp_flag_value","initial_live_status":"REVIEW"},
+
+    {"position":12,"name":"ack_count","definition":"Number of packets with ACK flag set in the same flow","group":"flow_tcp_count","initial_live_status":"REVIEW"},
+    {"position":13,"name":"syn_count","definition":"Number of packets with SYN flag set in the same flow","group":"flow_tcp_count","initial_live_status":"REVIEW"},
+    {"position":14,"name":"fin_count","definition":"Number of packets with FIN flag set in the same flow","group":"flow_tcp_count","initial_live_status":"REVIEW"},
+    {"position":15,"name":"rst_count","definition":"Number of packets with RST flag set in the same flow","group":"flow_tcp_count","initial_live_status":"REVIEW"},
+
+    {"position":16,"name":"HTTP","definition":"Indicates whether application-layer protocol is HTTP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":17,"name":"HTTPS","definition":"Indicates whether application-layer protocol is HTTPS","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":18,"name":"DNS","definition":"Indicates whether application-layer protocol is DNS","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":19,"name":"Telnet","definition":"Indicates whether application-layer protocol is Telnet","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":20,"name":"SMTP","definition":"Indicates whether application-layer protocol is SMTP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":21,"name":"SSH","definition":"Indicates whether application-layer protocol is SSH","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":22,"name":"IRC","definition":"Indicates whether application-layer protocol is IRC","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":23,"name":"TCP","definition":"Indicates whether transport-layer protocol is TCP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":24,"name":"UDP","definition":"Indicates whether transport-layer protocol is UDP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":25,"name":"DHCP","definition":"Indicates whether application-layer protocol is DHCP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":26,"name":"ARP","definition":"Indicates whether link-layer protocol is ARP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":27,"name":"ICMP","definition":"Indicates whether network-layer protocol is ICMP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":28,"name":"IGMP","definition":"Indicates whether network-layer protocol is IGMP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":29,"name":"IPv","definition":"Indicates whether network-layer protocol is IP","group":"protocol_indicator","initial_live_status":"REVIEW"},
+    {"position":30,"name":"LLC","definition":"Indicates whether link-layer protocol is LLC","group":"protocol_indicator","initial_live_status":"REVIEW"},
+
+    {"position":31,"name":"Tot sum","definition":"Sum of packet lengths in the flow","group":"packet_length_statistics","initial_live_status":"REVIEW"},
+    {"position":32,"name":"Min","definition":"Minimum packet length in the flow","group":"packet_length_statistics","initial_live_status":"REVIEW"},
+    {"position":33,"name":"Max","definition":"Maximum packet length in the flow","group":"packet_length_statistics","initial_live_status":"REVIEW"},
+    {"position":34,"name":"AVG","definition":"Average packet length in the flow","group":"packet_length_statistics","initial_live_status":"REVIEW"},
+    {"position":35,"name":"Std","definition":"Standard deviation of packet length in the flow","group":"packet_length_statistics","initial_live_status":"REVIEW"},
+    {"position":36,"name":"Tot size","definition":"Packet length; exact aggregation semantics require empirical validation","group":"packet_length_statistics","initial_live_status":"REVIEW"},
+    {"position":37,"name":"IAT","definition":"Time difference from the previous packet","group":"timing","initial_live_status":"REVIEW"},
+    {"position":38,"name":"Number","definition":"Number of packets in the flow","group":"flow","initial_live_status":"REVIEW"},
+    {"position":39,"name":"Variance","definition":"Published as a packet-length variance-derived flow feature; exact exporter semantics require validation","group":"packet_length_statistics","initial_live_status":"REVIEW"}
+  ]
+}

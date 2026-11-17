@@ -1,0 +1,104 @@
+{
+  "experiment": "Exp010",
+  "component": "dataset_b_feature_extractor",
+  "freeze_status": "FROZEN_BEFORE_DATASET_B_COLLECTION",
+  "extractor_validation_status": "PASS",
+  "feature_formula_validation_status": "PASS",
+  "determinism_validation_status": "PASS",
+  "real_pcap_parser_validation_status": "PASS",
+  "feature_count": 20,
+  "candidate_window_sizes_packets": [
+    10,
+    100
+  ],
+  "window_overlap": false,
+  "class_independent_windowing": true,
+  "ground_truth_independent_extraction": true,
+  "labels_supplied_to_extractor": false,
+  "capture_scope": "controlled-laboratory HTTP/TCP port 80",
+  "dpkt_version": "1.9.8",
+  "validation_evidence_policy": {
+    "status": "VALIDATION_ONLY_NOT_DATASET_B",
+    "include_in_dataset_b": false,
+    "training_use_permitted": false,
+    "validation_selection_use_permitted": false,
+    "final_test_use_permitted": false,
+    "model_evaluation_use_permitted": false,
+    "class_comparison_for_feature_selection_permitted": false
+  },
+  "validated_behavior": {
+    "linux_sll2_datalink": 276,
+    "neutral_header_benign_capture_packets": 60,
+    "neutral_header_attack_capture_packets": 60,
+    "window_10_complete_windows_per_validation_capture": 6,
+    "window_10_discarded_tail_packets": 0,
+    "window_100_complete_windows_per_validation_capture": 0,
+    "window_100_discarded_tail_packets": 60,
+    "population_statistics_verified": true,
+    "packet_rate_formula_verified": true,
+    "tcp_flag_fraction_formulas_verified": true,
+    "feature_order_matches_frozen_contract": true,
+    "deterministic_csv_replay": true
+  },
+  "scientific_integrity": {
+    "extractor_frozen_before_dataset_b": true,
+    "extractor_selected_using_model_results": false,
+    "features_selected_using_class_separation_results": false,
+    "synthetic_dataset_b_data_used": false,
+    "fabricated_observations_used": false
+  },
+  "artifacts": {
+    "extractor_script": {
+      "path": "scripts/10_extract_dataset_b_features.py",
+      "sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f"
+    },
+    "requirements": {
+      "path": "requirements.txt",
+      "sha256": "631223eb984fc8e94197e807725dbb13216099810645ebf726efecd42a06f391"
+    },
+    "feature_contract": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/feature_contract.json",
+      "sha256": "610b457f1bb1f8e020d594e5f9d998ef71f27387bd0f2a66be4a8279fef7730f"
+    },
+    "benign_validation_pcap": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_benign_provenance_20261003T234224Z/traffic.pcap",
+      "sha256": "2b8db17cc9b847f9a5b29e6bcf65faae9e84cd2c37a5ab20ef4b18a681bb8a88"
+    },
+    "attack_validation_pcap": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_attack_provenance_20261003T235514Z/traffic.pcap",
+      "sha256": "669cac5a7c5d311090421b30833ce636bafbf740663102418a3f1104253410b9"
+    },
+    "benign_w10_csv": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/benign_w10.csv",
+      "sha256": "83e0efd1f2cee76a13b032335c21cf5c2a00eb2e4fa87d17fc933b283f079af0"
+    },
+    "benign_w10_metadata_json": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/benign_w10.metadata.json",
+      "sha256": "72988310a38c6714198693700b270e760a1330ef66b0908bec092ae861037f16"
+    },
+    "benign_w100_csv": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/benign_w100.csv",
+      "sha256": "4d891cc925f48fec27c26d3b04c154da42cbcf71d8b11f01d9eba21a27298771"
+    },
+    "benign_w100_metadata_json": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/benign_w100.metadata.json",
+      "sha256": "840a249757c9287e0f07ad71947b969cfb49889f878f656fceba6091e631e5c2"
+    },
+    "attack_w10_csv": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/attack_w10.csv",
+      "sha256": "6797e98fb8c59235bb331a2869680bf794b31addc6e0827b3c0b88b9b8e19f3e"
+    },
+    "attack_w10_metadata_json": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/attack_w10.metadata.json",
+      "sha256": "aee0fc6929a2349645440f0f9851e5cd773c5090f37399d75933e57f198202ed"
+    },
+    "attack_w100_csv": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/attack_w100.csv",
+      "sha256": "4d891cc925f48fec27c26d3b04c154da42cbcf71d8b11f01d9eba21a27298771"
+    },
+    "attack_w100_metadata_json": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/extractor_validation/attack_w100.metadata.json",
+      "sha256": "593c6ddc444a6cc069f907267bcd840093225439542b3249cc225a8badd2cd3b"
+    }
+  }
+}

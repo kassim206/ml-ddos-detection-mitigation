@@ -1,0 +1,17 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "stage": "pre_validation_acquisition",
+  "status": "FROZEN",
+  "prospective": true,
+  "first_affected_logical_run": "B05",
+  "benign_request_count": 1000,
+  "benign_delay_seconds": 0.1,
+  "attack_request_count": 1000,
+  "attack_concurrency": 10,
+  "attack_timeout_seconds": 5,
+  "compose_sha256": "d5cf107090fca052b984367aa872fafa740d811b2c6807ee28e96810b52931eb",
+  "completed_training_runs_modified": false,
+  "scientific_design_modified": false,
+  "implementation_manifest_sha256": "a1bd5476d4765b22c7c96a8cef8d877aa9ebb58d40f95b4f7379371e7510163c"
+}

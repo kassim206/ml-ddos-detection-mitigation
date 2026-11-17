@@ -1,0 +1,44 @@
+{
+  "status": "VALID_DATASET_B_RAW_RUN_FROZEN",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B07",
+  "physical_run_id": "exp010_dataset_b_B07_benign_20261004T144330Z",
+  "class": "Benign",
+  "partition": "test",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "traffic_workload_executed": true,
+  "feature_extraction_permitted": true,
+  "training_use_permitted": false,
+  "workload": {
+    "request_count": 1000,
+    "method": "GET",
+    "concurrency": 1,
+    "delay_seconds": 0.1,
+    "workload_type": "benign_controlled_http"
+  },
+  "validation": {
+    "client_rows": 1000,
+    "victim_rows": 1000,
+    "unique_client_request_ids": 1000,
+    "unique_victim_request_ids": 1000,
+    "request_id_set_equality": true,
+    "all_transport_success": true,
+    "all_http_200": true,
+    "victim_csv_header_count": 1,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0,
+    "reconciliation_status": "PASS"
+  },
+  "integrity": {
+    "initial_run_status_preserved": true,
+    "initial_run_status_sha256": "ca41ac1914c7516e9e088be50541f1a73865bfc9e265cbbc26caa4367eb764dc",
+    "raw_evidence_frozen_before_feature_extraction": true,
+    "workload_executed_once": true,
+    "raw_manifest_sha256": "a42996612d3e4742c7cc85466ee784904b16dc66c0e87050e45c9b16c0233efc",
+    "raw_master_manifest_sha256": "a5febc6037c2499509d3d88e7a989b90a9e93bb7df4a51d5a6df179ef6184897",
+    "reconciliation_sha256": "52ce6482a69ca1e6dcdbfb75ae98978299183696d81739c85724964eb9ca5003"
+  }
+}

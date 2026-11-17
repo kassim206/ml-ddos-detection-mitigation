@@ -1,0 +1,124 @@
+{
+  "applied_class_weights": {
+    "Benign": 0.25025078101830467,
+    "DDoS": 0.0849793014534728,
+    "Recon": 0.9142311886892172,
+    "Web": 2.7505387288390053
+  },
+  "batch_size": 1024,
+  "checkpoint_mode": "min",
+  "checkpoint_monitor": "val_loss",
+  "class_count": 4,
+  "class_distributions": {
+    "test": {
+      "Benign": 181840,
+      "DDoS": 1576932,
+      "Recon": 13625,
+      "Web": 1505
+    },
+    "train": {
+      "Benign": 789581,
+      "DDoS": 6847330,
+      "Recon": 59161,
+      "Web": 6536
+    },
+    "validation": {
+      "Benign": 126770,
+      "DDoS": 1099364,
+      "Recon": 9498,
+      "Web": 1050
+    }
+  },
+  "class_weight_cap": 5.0,
+  "class_weight_method": "sqrt_inverse_frequency_normalized_then_capped",
+  "classes": [
+    "Benign",
+    "DDoS",
+    "Recon",
+    "Web"
+  ],
+  "clipnorm": 1.0,
+  "dataset": "CICIoT2023_Selected",
+  "dataset_representation": "official_CICIoT2023_CSV_feature_observations",
+  "deterministic_ops_requested": true,
+  "early_stopping_patience": 7,
+  "experiment_id": "009",
+  "experiment_name": "hybrid_cnn_lstm",
+  "explicit_limitation": "The released CSV representation does not retain an explicit timestamp. The LSTM therefore does not represent verified chronological sequences of consecutive CSV rows.",
+  "feature_count": 39,
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "generated_training_rows": false,
+  "input_semantics": "ordered_39_feature_axis",
+  "input_shape": [
+    39,
+    1
+  ],
+  "learning_rate": 0.0001,
+  "loss": "SparseCategoricalCrossentropy",
+  "lstm_semantics": "dependencies_across_convolutionally_transformed_feature_positions",
+  "max_epochs": 30,
+  "mock_data": false,
+  "normalized_sqrt_weights": {
+    "Benign": 0.25025078101830467,
+    "DDoS": 0.0849793014534728,
+    "Recon": 0.9142311886892172,
+    "Web": 2.7505387288390053
+  },
+  "optimizer": "Adam",
+  "parquet_batch_rows": 32768,
+  "raw_inverse_frequency_weights": {
+    "Benign": 2.438827682023757,
+    "DDoS": 0.2812266971213597,
+    "Recon": 32.549348388296345,
+    "Web": 294.62239902080785
+  },
+  "restore_best_weights": true,
+  "row_counts": {
+    "test": 1773902,
+    "train": 7702608,
+    "validation": 1236682
+  },
+  "seed": 42,
+  "synthetic_data": false,
+  "temporal_sequence_claim": false
+}

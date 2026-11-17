@@ -1,0 +1,8 @@
+{
+  "joblib": "1.6.0",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "platform": "Linux-6.12.90+deb13-amd64-x86_64-with-glibc2.41",
+  "python": "3.11.9 (main, Oct  2 2026, 02:53:54) [GCC 14.2.0]",
+  "scikit_learn": "1.9.1"
+}

@@ -1,0 +1,30 @@
+{
+    "model": "XGBClassifier",
+    "test_rows": 1773902,
+    "accuracy": 0.9950059247917867,
+    "precision_macro": 0.9634883940997846,
+    "recall_macro": 0.6248751779194295,
+    "f1_macro": 0.6692133178016996,
+    "prediction_seconds": 18.88712924900028,
+    "classes": [
+        "Benign",
+        "DDoS",
+        "Recon",
+        "Web"
+    ],
+    "random_seed": 42,
+    "prediction_batch_size": 25000,
+    "synthetic_data": false,
+    "mock_data": false,
+    "sampling": false,
+    "rows_sampled": 0,
+    "rows_evaluated": 1773902,
+    "training_seconds": 340.13656385099966,
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "max_depth": 6,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "max_bin": 256,
+    "data_source": "CICIoT2023_Selected Experiment 002 processed data"
+}

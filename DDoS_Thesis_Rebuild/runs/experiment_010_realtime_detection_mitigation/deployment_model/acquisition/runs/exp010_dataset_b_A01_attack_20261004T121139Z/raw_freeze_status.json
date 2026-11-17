@@ -1,0 +1,83 @@
+{
+  "status": "VALID_DATASET_B_RAW_RUN_FROZEN",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "A01",
+  "physical_run_id": "exp010_dataset_b_A01_attack_20261004T121139Z",
+  "class": "Attack",
+  "partition": "train",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "traffic_workload_executed": true,
+  "feature_extraction_permitted": true,
+  "training_use_permitted": true,
+  "workload": {
+    "request_count": 1000,
+    "method": "GET",
+    "concurrency": 10,
+    "timeout_seconds": 5,
+    "workload_type": "controlled_high_rate_http"
+  },
+  "validation": {
+    "client_rows": 1000,
+    "victim_rows": 1000,
+    "unique_client_request_ids": 1000,
+    "unique_victim_request_ids": 1000,
+    "request_id_set_equality": true,
+    "all_transport_success": true,
+    "all_http_200": true,
+    "victim_csv_header_count": 1,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0,
+    "reconciliation_status": "PASS"
+  },
+  "integrity": {
+    "initial_run_status_preserved": true,
+    "initial_run_status_sha256": "d3a5a703f1a656a7e7271248a873119feb67415971e28ccbac7b527c31c72672",
+    "raw_evidence_frozen_before_feature_extraction": true,
+    "workload_executed_once": true
+  },
+  "artifacts": {
+    "initial_run_status": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/run_status.json",
+      "sha256": "d3a5a703f1a656a7e7271248a873119feb67415971e28ccbac7b527c31c72672",
+      "bytes": 374
+    },
+    "client_ground_truth": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/raw/client_ground_truth.csv",
+      "sha256": "b92f37c2f3f75134ef7b5316e1e76cd8e8f59f9dc135ecea4c71aac570e5c90f",
+      "bytes": 239486
+    },
+    "victim_access_log": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/raw/victim_access_log.csv",
+      "sha256": "1af76723deea01ce8130a27fad24df8d99b57bc26c269eaa0fc8bb5fa402284a",
+      "bytes": 88048
+    },
+    "traffic_pcap": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/raw/traffic.pcap",
+      "sha256": "46c5306aec8a42eefb595793dff626262cf788305b8d239c0083e04bc82a6d9c",
+      "bytes": 1447024
+    },
+    "client_execution_stdout": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/client_execution_stdout.txt",
+      "sha256": "ac69e74d8d46eedb6ec9f77c62cfb2ba90d584f9b23dea1be1936dd7d1ff233f",
+      "bytes": 368
+    },
+    "client_exit_code": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/client_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "capture_final_stdout": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/capture_final_stdout.txt",
+      "sha256": "7810eff9338ccfb598c9922475972e0d13665182def6087909bad70a04cba957",
+      "bytes": 421
+    },
+    "reconciliation": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A01_attack_20261004T121139Z/reconciliation.json",
+      "sha256": "85393bad7e53c67a7f4e678005ca41ca9e49d67753dfd7cf3b6b5d44e4ef988f",
+      "bytes": 1219
+    }
+  }
+}

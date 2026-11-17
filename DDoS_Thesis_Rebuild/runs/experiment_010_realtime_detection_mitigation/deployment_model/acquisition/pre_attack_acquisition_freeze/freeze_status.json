@@ -1,0 +1,46 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "purpose": "pre_attack_acquisition_implementation_freeze",
+  "created_utc": "2026-10-04T12:11:05.733609+00:00",
+  "scope": {
+    "next_logical_run": "A01",
+    "class": "Attack",
+    "partition": "train"
+  },
+  "frozen_attack_workload": {
+    "request_count": 1000,
+    "method": "GET",
+    "concurrency": 10,
+    "timeout_seconds": 5,
+    "workload_type": "controlled_high_rate_http",
+    "target": "http://victim_web_exp010/",
+    "packet_visible_instrumentation": [
+      "X-Request-ID"
+    ]
+  },
+  "prospective_correction": {
+    "artifact": "testbed/docker-compose-exp010.yml",
+    "field": "attack_client_exp010.environment.REQUEST_COUNT",
+    "previous_value": 100,
+    "corrected_value": 1000,
+    "reason": "Frozen Dataset B V2 design requires 1000 requests per acquisition run. Pre-A01 inspection found the Compose attack service still retained the earlier 100-request validation setting.",
+    "timing": "Corrected prospectively before A01 initialization and before any Dataset B attack acquisition.",
+    "scientific_evidence_modified": false,
+    "existing_benign_runs_modified": false
+  },
+  "artifacts": {
+    "docker_compose": {
+      "sha256": "c1efa5b7845939ed0b9ddb052c2d8dea30ee26f0f5b51c57a395e5f053f9d039"
+    },
+    "attack_client": {
+      "sha256": "cdb2e9bc49c817fe24186069fdb7c73587b65484b8b5c4ba1d6ff5097565a3c0"
+    },
+    "attack_client_dockerfile": {
+      "sha256": "1f6dde9ffb4e15e877bf0a362d7faa9ebd1ef7b4d744fab1e5d4c425bcfcc3ff"
+    },
+    "attack_client_requirements": {
+      "sha256": "0d0d2938e5443f318fc97363f42cffe3309df1b718cc2bf713263a68cb7bbee5"
+    }
+  }
+}

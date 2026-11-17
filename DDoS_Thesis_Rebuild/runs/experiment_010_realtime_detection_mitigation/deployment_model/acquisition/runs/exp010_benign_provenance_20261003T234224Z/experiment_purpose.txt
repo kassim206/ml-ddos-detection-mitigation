@@ -1,0 +1,3 @@
+Exp010 final neutral-header benign runtime validation.
+This run validates acquisition plumbing only.
+It is excluded from Dataset B, feature extraction, and training.

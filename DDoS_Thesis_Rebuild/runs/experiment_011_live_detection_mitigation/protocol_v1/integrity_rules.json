@@ -1,0 +1,43 @@
+{
+  "experiment": "Exp011",
+  "feature_equivalence_requirement": {
+    "candidate": "Exp011 live extractor",
+    "feature_count": 20,
+    "fixture_data_is_result_bearing": false,
+    "numerical_tolerance": {
+      "absolute_tolerance": 1e-12,
+      "comparison_rule": "abs(a-b) <= absolute_tolerance + relative_tolerance * abs(reference)",
+      "relative_tolerance": 1e-09
+    },
+    "performed_before_result_bearing_runs": true,
+    "reference": "frozen Exp010 offline extractor",
+    "required": true,
+    "window_size_packets": 100
+  },
+  "protocol_version": 1,
+  "rules": [
+    "Exp010 selected model must not change",
+    "Exp010 scaler must not change",
+    "Exp010 20-feature contract must not change",
+    "window size must remain 100 eligible packets",
+    "window stride must remain 100 eligible packets",
+    "threshold must remain 0.50",
+    "Exp011 data must not be used for training",
+    "Exp011 data must not be used to refit the scaler",
+    "Exp011 data must not be used for threshold optimization",
+    "Exp011 data must not be used for model selection",
+    "ground-truth labels must not enter feature extraction",
+    "ground-truth labels must not enter model inference",
+    "ground-truth labels must not trigger mitigation",
+    "mitigation must be triggered by the frozen model decision",
+    "failed or poor valid runs must not be silently deleted",
+    "valid-run criteria must be frozen before result-bearing execution",
+    "result-bearing runs must not be silently rerun",
+    "latency must be measured from recorded timestamps",
+    "Exp006 batch timing must not be represented as Exp011 live latency",
+    "a model BLOCK decision alone must not be represented as successful mitigation",
+    "actual enforcement must be independently evidenced",
+    "packet windows within a run must not be treated as independent experimental replicates",
+    "controlled-laboratory results must not be represented as production or arbitrary-DDoS performance"
+  ]
+}

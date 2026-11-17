@@ -1,0 +1,12 @@
+{
+  "experiment": "Exp010",
+  "component": "feature_extractor_implementation_validation",
+  "status": "VALIDATION_ONLY_NOT_DATASET_B",
+  "purpose": "Verify frozen v2 packet parsing, windowing, feature formulas, determinism, and metadata behavior using pre-Dataset-B excluded captures.",
+  "include_in_dataset_b": false,
+  "training_use_permitted": false,
+  "validation_selection_use_permitted": false,
+  "final_test_use_permitted": false,
+  "model_evaluation_use_permitted": false,
+  "class_comparison_for_feature_selection_permitted": false
+}

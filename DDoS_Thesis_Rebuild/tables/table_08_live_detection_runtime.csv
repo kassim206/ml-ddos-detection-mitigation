@@ -1,0 +1,5 @@
+scope,condition,experimental_unit,observed_windows,accuracy,balanced_accuracy,precision,recall,f1,macro_f1,window_observation_mean_seconds,feature_to_inference_mean_seconds,inference_mean_seconds,decision_to_enforcement_mean_seconds
+pooled_overall,all_conditions,run,1080,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+condition_timing,attack_detection_with_mitigation,run,360,,,,,,,0.036670855555555555,0.001966508333333333,0.001921725,0.002484
+condition_timing,attack_detection_without_mitigation,run,360,,,,,,,0.03793612777777778,0.001955461111111111,0.0019070166666666666,
+condition_timing,benign_with_detection_and_mitigation,run,360,,,,,,,0.8976080138888889,0.0026294194444444444,0.0025606444444444443,

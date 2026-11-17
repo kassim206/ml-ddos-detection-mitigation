@@ -1,0 +1,39 @@
+{
+  "audit_history_note": "The initial Section 8 manifest verification invoked the repository-root-relative Section 2 and Section 3 manifests from incorrect working directories. The audit procedure was corrected without modifying scientific artifacts, and both artifact manifests and manifest-self hashes subsequently verified successfully.",
+  "claim_classification_counts": {
+    "NOT SUPPORTED": 8,
+    "PASS": 13,
+    "PASS WITH DOCUMENTED LIMITATION": 1
+  },
+  "claim_classification_sha256": "9d44a18aca9cd39bab54bd0dd6bb5aeb0e6c1b2cdd1315c58b8ca1eba5c6a93b",
+  "documented_limitations": [
+    "Exact client-process wall-clock duration is not independently reconstructible from archived repository artifacts; archived timestamps support reproducible request-span duration instead.",
+    "Per-run and within-condition groups contain only one true class, so two-class balanced accuracy is undefined for those groupings.",
+    "Fixed-label binary macro-F1 of 0.5 for single-class groupings reflects the absent second class and is not 50 percent classification accuracy.",
+    "Packet windows and requests are nested observations; the experimental unit is the run.",
+    "Mitigation is application-level HTTP 429 enforcement, not firewall, iptables, network-layer packet dropping, or source-IP blocking.",
+    "Exp011 supports claims only for the frozen controlled-laboratory topology and predefined benign and high-rate HTTP workloads; it does not establish production-scale or general DDoS mitigation effectiveness."
+  ],
+  "experiment": "Exp011",
+  "experimental_unit": "run",
+  "forensic_manifest_gate_pass": true,
+  "forensic_reconciliation_script_sha256": "9f7bf3e165767667b631c2868a6dad69a35b09f2b0b02fb5b42b09a7fd6ccf84",
+  "interpretation": "Exp011 provides reproducible controlled-laboratory evidence of online packet-derived detection using the frozen Exp010 deployment-compatible classifier and actual model-triggered application-level mitigation. Claims beyond the audited controlled-laboratory scope remain unsupported.",
+  "result_bearing_runs": 9,
+  "result_run_set": [
+    "B01",
+    "B02",
+    "B03",
+    "A01",
+    "A02",
+    "A03",
+    "M01",
+    "M02",
+    "M03"
+  ],
+  "scientific_reconciliation_pass": true,
+  "scientific_reconciliation_sha256": "06678ff2a3a5e48720ca1573038dd7d656f3800c1c1ae9d5711c8812d50d9b2e",
+  "section": 8,
+  "section_name": "Forensic Closure and Independent Audit",
+  "status": "PASS WITH DOCUMENTED LIMITATIONS"
+}

@@ -1,0 +1,98 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "status": "V2_FROZEN_BEFORE_DATASET_B_COLLECTION",
+  "scope": "controlled_laboratory_http_workloads",
+  "request_volume": {
+    "requests_per_run": 1000,
+    "basis": "pre-training pilot capture sizing",
+    "pilot_observation": {
+      "benign_requests": 25,
+      "benign_captured_tcp_packets": 300,
+      "attack_requests": 100,
+      "attack_captured_tcp_packets": 1200,
+      "correlation_requests": 20,
+      "correlation_captured_tcp_packets": 240,
+      "observed_packets_per_successful_request": 12.0
+    },
+    "pilot_observation_used_as_feature_assumption": false,
+    "actual_pcap_is_authoritative": true
+  },
+  "benign_workload": {
+    "client": "benign_client_exp010",
+    "method": "GET",
+    "target": "http://victim_web_exp010/",
+    "request_count": 1000,
+    "concurrency": 1,
+    "delay_seconds_between_requests": 0.1,
+    "workload_type": "benign_controlled_http"
+  },
+  "attack_workload": {
+    "client": "attack_client_exp010",
+    "method": "GET",
+    "target": "http://victim_web_exp010/",
+    "request_count": 1000,
+    "concurrency": 10,
+    "timeout_seconds": 5,
+    "workload_type": "controlled_high_rate_http"
+  },
+  "capture": {
+    "capture_filter": "tcp port 80",
+    "full_snaplen": true,
+    "packet_capture_required": true,
+    "client_ground_truth_required": true,
+    "victim_access_log_required": true,
+    "exact_request_id_reconciliation_required": true,
+    "kernel_packet_drop_count_recorded": true
+  },
+  "valid_run_requirements": {
+    "expected_client_rows": 1000,
+    "expected_victim_rows": 1000,
+    "unique_client_request_ids": 1000,
+    "unique_victim_request_ids": 1000,
+    "request_id_set_equality": true,
+    "run_id_exact_match": "required_in_client_ground_truth_and_acquisition_metadata",
+    "workload_type_exact_match": "required_in_client_ground_truth_only",
+    "all_client_transport_successes_required": true,
+    "all_client_http_200_required": true,
+    "exactly_one_victim_csv_header": true,
+    "pcap_required": true,
+    "zero_kernel_capture_drops_required": true
+  },
+  "window_planning": {
+    "candidate_packet_counts": [
+      10,
+      100
+    ],
+    "estimated_packets_per_run_from_pilots": 12000,
+    "estimated_10_packet_windows_per_run": 1200,
+    "estimated_100_packet_windows_per_run": 120,
+    "values_are_planning_estimates_only": true,
+    "actual_window_counts_must_be_derived_from_pcap": true
+  },
+  "scientific_limitations": {
+    "benign_and_attack_workloads_differ_in_request_intensity": true,
+    "packet_rate_may_be_discriminative": true,
+    "general_arbitrary_ddos_distribution_claim": false,
+    "production_traffic_claim": false,
+    "ciciot2023_distribution_equivalence_claim": false
+  },
+  "integrity": {
+    "parameters_selected_after_model_results": false,
+    "pilot_runs_in_dataset_b": false,
+    "pilot_runs_used_for_training": false,
+    "synthetic_requests": false,
+    "fabricated_requests": false,
+    "fabricated_packets": false
+  },
+  "version": 2,
+  "instrumentation": {
+    "http_header_transmitted": "X-Request-ID",
+    "request_id_format": "UUID",
+    "run_id_location": "client_ground_truth_and_acquisition_metadata_only",
+    "workload_type_location": "client_ground_truth_and_acquisition_metadata_only",
+    "run_id_transmitted_in_http": false,
+    "workload_type_transmitted_in_http": false,
+    "class_label_transmitted_in_http": false
+  }
+}

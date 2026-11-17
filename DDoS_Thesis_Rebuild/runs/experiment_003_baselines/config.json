@@ -1,0 +1,18 @@
+{
+  "experiment_id": "experiment_003_baselines",
+  "description": "Train and evaluate Random Forest and XGBoost baselines using the processed selected CICIoT2023 subset.",
+  "status": "completed",
+  "dataset_scope": "selected_ciciot2023_subset",
+  "models": [
+    "Random Forest",
+    "XGBoost"
+  ],
+  "training_rows": 7702608,
+  "test_rows": 1773902,
+  "training_input_artifacts": [
+    "runs/experiment_003_baselines/training_memmap/X_train.dat",
+    "runs/experiment_003_baselines/training_memmap/y_train.dat"
+  ],
+  "synthetic_metrics": false,
+  "hardware_metadata_retained": false
+}

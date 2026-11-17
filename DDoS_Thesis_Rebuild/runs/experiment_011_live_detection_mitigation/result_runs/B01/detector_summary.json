@@ -1,0 +1,20 @@
+{
+  "accounting_identity_pass": true,
+  "complete_windows": 120,
+  "completed_at_utc": "2026-10-04T19:18:46.978961+00:00",
+  "completion_status": "stopped",
+  "eligible_packets": 12000,
+  "eligible_tail_packets": 0,
+  "error_message": null,
+  "error_type": null,
+  "maximum_timestamp_adjustment_seconds": 0.0,
+  "maximum_timestamp_adjustment_units": 0,
+  "processing_integrity_pass": true,
+  "raw_pcap_records_consumed": 12000,
+  "stop_requested": true,
+  "tail_range_pass": true,
+  "tcpdump_returncode": 0,
+  "timestamp_normalization_count": 0,
+  "timestamp_units_per_second": 1000000,
+  "window_size_packets": 100
+}

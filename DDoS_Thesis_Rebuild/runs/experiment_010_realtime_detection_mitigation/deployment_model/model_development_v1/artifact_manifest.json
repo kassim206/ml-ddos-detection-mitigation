@@ -1,0 +1,187 @@
+[
+  {
+    "bytes": 41883,
+    "path": "10_train_select_deployment_model.py",
+    "sha256": "93695c1bd1c49e65144f902e56bee4fa495e91dfbbf96ad0685100882253f4a9"
+  },
+  {
+    "bytes": 1778,
+    "path": "candidates/hybrid_cnn_lstm_w10/candidate_best.json",
+    "sha256": "9fbac5269e27266daaee40a65483b0da955b8d93b76309d982121ee48600121c"
+  },
+  {
+    "bytes": 143821,
+    "path": "candidates/hybrid_cnn_lstm_w10/model.keras",
+    "sha256": "350710115c3ce7882b28695aa6605d4b3cdef2bb4890d73b7336bb3f4ddfd963"
+  },
+  {
+    "bytes": 1063,
+    "path": "candidates/hybrid_cnn_lstm_w10/scaler.joblib",
+    "sha256": "84b75d429b5bbaf392d6628e453d4f574bc8e879251fd8ded223a825b221e767"
+  },
+  {
+    "bytes": 31724,
+    "path": "candidates/hybrid_cnn_lstm_w10/threshold_results.json",
+    "sha256": "1a28bd1f677a6ffa5ed4bb6d33af130045d5ff2510431fb7eb4c15c6eb75d1e1"
+  },
+  {
+    "bytes": 1561,
+    "path": "candidates/hybrid_cnn_lstm_w10/training_history.json",
+    "sha256": "1fd7820c41c6e18bc36af7e9063c00e85611a21375e5c92f11af21b402f0eb05"
+  },
+  {
+    "bytes": 216426,
+    "path": "candidates/hybrid_cnn_lstm_w10/validation_predictions.csv",
+    "sha256": "73ffbbe15456b02a94b2ee565e1893f5cc62c4d80a52b45ea0b662105e433437"
+  },
+  {
+    "bytes": 1461,
+    "path": "candidates/hybrid_cnn_lstm_w100/candidate_best.json",
+    "sha256": "35e501edc8880aca939a259f75a02da38a5290906e03414d79a7f2942c3d7f38"
+  },
+  {
+    "bytes": 143821,
+    "path": "candidates/hybrid_cnn_lstm_w100/model.keras",
+    "sha256": "446a339024b015570909abd34fe03b11f89ab6a152fea4c5836e9ecbf9678e7c"
+  },
+  {
+    "bytes": 1063,
+    "path": "candidates/hybrid_cnn_lstm_w100/scaler.joblib",
+    "sha256": "3ae7e8c2e8c669bc5535eec7a9e902ff0ee821fb3debab6189a847e0e7da8fa0"
+  },
+  {
+    "bytes": 27310,
+    "path": "candidates/hybrid_cnn_lstm_w100/threshold_results.json",
+    "sha256": "fcfc90d255f295694af29d3d9f1a74116bc8b92e83b940b0ce55f410822bdebd"
+  },
+  {
+    "bytes": 1621,
+    "path": "candidates/hybrid_cnn_lstm_w100/training_history.json",
+    "sha256": "1713e10a22ff6f9dfc8b10ddccff4a3a29cc817e5f532c03bf4f35b7327b4d79"
+  },
+  {
+    "bytes": 23821,
+    "path": "candidates/hybrid_cnn_lstm_w100/validation_predictions.csv",
+    "sha256": "dc0d2e9d2ab791b51c199b348aa3e9b7f7b69a77134647c6c6f6d58d2c2d3849"
+  },
+  {
+    "bytes": 1810,
+    "path": "candidates/logistic_regression_w10/candidate_best.json",
+    "sha256": "521f2ade9467fa23605632748aa5d169c392cd8af7ef8bc7eed819077aa4b512"
+  },
+  {
+    "bytes": 1023,
+    "path": "candidates/logistic_regression_w10/model.joblib",
+    "sha256": "072bf2367ec2f0c3f9611df3ea635eb63bba2fada21b2dbd3090f882b5d4a207"
+  },
+  {
+    "bytes": 1063,
+    "path": "candidates/logistic_regression_w10/scaler.joblib",
+    "sha256": "84b75d429b5bbaf392d6628e453d4f574bc8e879251fd8ded223a825b221e767"
+  },
+  {
+    "bytes": 32658,
+    "path": "candidates/logistic_regression_w10/threshold_results.json",
+    "sha256": "868be9ea55c9b9396764adc5f6c0f3f2d38e5688c2607ffb068504b529faf00b"
+  },
+  {
+    "bytes": 239190,
+    "path": "candidates/logistic_regression_w10/validation_predictions.csv",
+    "sha256": "c6558265d70d38692f7aeece134ed46b64233229900fc193b166f64434613ece"
+  },
+  {
+    "bytes": 1465,
+    "path": "candidates/logistic_regression_w100/candidate_best.json",
+    "sha256": "b6553b08e15295400e0847599620716bda194625ed04629aa361c79197eb1809"
+  },
+  {
+    "bytes": 1023,
+    "path": "candidates/logistic_regression_w100/model.joblib",
+    "sha256": "5d07101d649141869c6da038b5f5c6d0f64a9dcf16b19c0d85ddc32eecb56fc9"
+  },
+  {
+    "bytes": 1063,
+    "path": "candidates/logistic_regression_w100/scaler.joblib",
+    "sha256": "3ae7e8c2e8c669bc5535eec7a9e902ff0ee821fb3debab6189a847e0e7da8fa0"
+  },
+  {
+    "bytes": 27378,
+    "path": "candidates/logistic_regression_w100/threshold_results.json",
+    "sha256": "c2ef48494470957ce480467d0f4352e0e3fb0830da4f10f99e3df8b208b308b1"
+  },
+  {
+    "bytes": 23673,
+    "path": "candidates/logistic_regression_w100/validation_predictions.csv",
+    "sha256": "d3a2e722e209576f5cbdd961e9e585bdb601e9176dc62fe2f22ce0e9826164b9"
+  },
+  {
+    "bytes": 1817,
+    "path": "candidates/random_forest_w10/candidate_best.json",
+    "sha256": "b4021a9ea5980e8d13c1507ef78622d27d42a47676940da6f470454a3a3f4748"
+  },
+  {
+    "bytes": 4473881,
+    "path": "candidates/random_forest_w10/model.joblib",
+    "sha256": "a0c46b92cdd51a678aa1ce47014390fda22efa2de480494e0e13b86bdcab465c"
+  },
+  {
+    "bytes": 32452,
+    "path": "candidates/random_forest_w10/threshold_results.json",
+    "sha256": "10b1e7e37b0a5a3c88bc3bed4114bf86d32eaa0c33ba4c80b823c0f95c9a5e12"
+  },
+  {
+    "bytes": 160578,
+    "path": "candidates/random_forest_w10/validation_predictions.csv",
+    "sha256": "1bc041e7fc3cc498b25e1a8d3c9e013a7920cc237730ef657234dfca4000e6e6"
+  },
+  {
+    "bytes": 1459,
+    "path": "candidates/random_forest_w100/candidate_best.json",
+    "sha256": "38dd2ba5cf05f319d21c716e9e8257f003777ccb8b97991f9b17a162e1821e14"
+  },
+  {
+    "bytes": 225881,
+    "path": "candidates/random_forest_w100/model.joblib",
+    "sha256": "9d0e5f8c1878f8455fcea2b1075602fc0c413ccfe0e8fc1dc781e7fc0c050aa2"
+  },
+  {
+    "bytes": 27276,
+    "path": "candidates/random_forest_w100/threshold_results.json",
+    "sha256": "0a8ffd97bb8714e918b5e5c255f318f06c0b9c0a27e6cd0f61113b543a1e9a72"
+  },
+  {
+    "bytes": 14565,
+    "path": "candidates/random_forest_w100/validation_predictions.csv",
+    "sha256": "3d26d749807ada6a27ba3d80b285c1674ff2c841b738f687be7d3a94c803d139"
+  },
+  {
+    "bytes": 380,
+    "path": "environment.json",
+    "sha256": "8798e0be91adab0a20c7a01ecf885e776b2c94d328dd25aab3982a29b5d341eb"
+  },
+  {
+    "bytes": 398,
+    "path": "implementation_provenance.json",
+    "sha256": "a49098cfcfd8bb99aa0a8bf6bab426e0aeb7fcdae00e823e61c85f75417043d6"
+  },
+  {
+    "bytes": 15966,
+    "path": "input_provenance.json",
+    "sha256": "ff4cea2934980dc41f9e93c57931d82a7692b56d40ed67457578aa415447d823"
+  },
+  {
+    "bytes": 9018,
+    "path": "modeling_protocol.json",
+    "sha256": "8d1508d284de5bd100bb01048970796ebe1c807d77b3fff2984927f9259b4736"
+  },
+  {
+    "bytes": 15307,
+    "path": "preflight_report.json",
+    "sha256": "d79ab37b29844b7935e86e9b13007617444c8dd3cdd93a76869c59e3fbb35007"
+  },
+  {
+    "bytes": 12058,
+    "path": "selected_system.json",
+    "sha256": "907f2288a579ed849b9186bb9258b692868621ff1bb62c17a3c45ab367020eee"
+  }
+]

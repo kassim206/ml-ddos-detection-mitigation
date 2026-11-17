@@ -1,0 +1,174 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "status": "design_frozen_before_feature_extraction",
+  "version": 1,
+
+  "purpose": "Define deterministic packet-window construction and feature calculations used identically for Dataset-B offline extraction and Exp011 live inference.",
+
+  "traffic_scope": {
+    "network": "isolated controlled laboratory",
+    "victim_service": "HTTP victim service",
+    "victim_port": 80,
+    "included_transport": [
+      "TCP",
+      "UDP",
+      "ICMP"
+    ],
+    "directionality": "bidirectional_relative_to_victim",
+    "ordering": "packet_capture_timestamp_ascending",
+    "ground_truth_used_for_packet_selection": false
+  },
+
+  "windowing": {
+    "type": "fixed_packet_count",
+    "candidate_packet_counts": [
+      10,
+      100
+    ],
+    "overlap": false,
+    "stride": "equal_to_window_packet_count",
+    "class_independent": true,
+    "ground_truth_independent": true,
+    "incomplete_trailing_window_policy": "discard",
+    "cross_run_windows_allowed": false,
+    "cross_capture_windows_allowed": false,
+    "window_selection_rule": "A single packet count will be selected using validation-set evidence before final model training and then frozen for deployment."
+  },
+
+  "packet_interpretation": {
+    "packet_length": "captured network-layer IPv4 total length in bytes",
+    "header_length": "IPv4 header length plus TCP header length for TCP packets; IPv4 header length plus UDP header length for UDP packets; IPv4 header length plus ICMP header length when parseable for ICMP packets",
+    "ttl": "IPv4 TTL field",
+    "protocol": "IPv4 protocol field",
+    "tcp_flags": "TCP FIN SYN RST PSH ACK bits from observed TCP header",
+    "iat": "difference in capture timestamps between consecutive packets within the same window after timestamp ordering",
+    "retransmissions": "retained_as_observed",
+    "duplicate_capture_records": "retained_unless_proven_to_be_capture_artifacts",
+    "payload_inspection_required": false
+  },
+
+  "statistical_conventions": {
+    "mean": "arithmetic_mean",
+    "standard_deviation": "population_standard_deviation_ddof_0",
+    "variance": "population_variance_ddof_0",
+    "duration_seconds": "timestamp_last_minus_timestamp_first",
+    "packet_rate": "packet_count_divided_by_duration_seconds_when_duration_positive",
+    "zero_duration_packet_rate": "null"
+  },
+
+  "features": [
+    {
+      "name": "packet_count",
+      "definition": "Number of packets in the window."
+    },
+    {
+      "name": "duration_seconds",
+      "definition": "Last packet capture timestamp minus first packet capture timestamp."
+    },
+    {
+      "name": "header_length_mean",
+      "definition": "Arithmetic mean of defined per-packet protocol header lengths."
+    },
+    {
+      "name": "ttl_mean",
+      "definition": "Arithmetic mean of IPv4 TTL values."
+    },
+    {
+      "name": "tcp_fraction",
+      "definition": "TCP packet count divided by packet_count."
+    },
+    {
+      "name": "udp_fraction",
+      "definition": "UDP packet count divided by packet_count."
+    },
+    {
+      "name": "icmp_fraction",
+      "definition": "ICMP packet count divided by packet_count."
+    },
+    {
+      "name": "fin_fraction",
+      "definition": "Packets with TCP FIN set divided by packet_count."
+    },
+    {
+      "name": "syn_fraction",
+      "definition": "Packets with TCP SYN set divided by packet_count."
+    },
+    {
+      "name": "rst_fraction",
+      "definition": "Packets with TCP RST set divided by packet_count."
+    },
+    {
+      "name": "psh_fraction",
+      "definition": "Packets with TCP PSH set divided by packet_count."
+    },
+    {
+      "name": "ack_fraction",
+      "definition": "Packets with TCP ACK set divided by packet_count."
+    },
+    {
+      "name": "packet_length_sum",
+      "definition": "Sum of IPv4 total lengths."
+    },
+    {
+      "name": "packet_length_min",
+      "definition": "Minimum IPv4 total length."
+    },
+    {
+      "name": "packet_length_max",
+      "definition": "Maximum IPv4 total length."
+    },
+    {
+      "name": "packet_length_mean",
+      "definition": "Arithmetic mean of IPv4 total lengths."
+    },
+    {
+      "name": "packet_length_std",
+      "definition": "Population standard deviation of IPv4 total lengths."
+    },
+    {
+      "name": "packet_length_variance",
+      "definition": "Population variance of IPv4 total lengths."
+    },
+    {
+      "name": "iat_mean",
+      "definition": "Arithmetic mean of consecutive-packet inter-arrival times inside the window."
+    },
+    {
+      "name": "iat_min",
+      "definition": "Minimum consecutive-packet inter-arrival time."
+    },
+    {
+      "name": "iat_max",
+      "definition": "Maximum consecutive-packet inter-arrival time."
+    },
+    {
+      "name": "iat_std",
+      "definition": "Population standard deviation of consecutive-packet inter-arrival times."
+    },
+    {
+      "name": "packet_rate",
+      "definition": "packet_count divided by duration_seconds when duration_seconds is positive."
+    }
+  ],
+
+  "label_policy": {
+    "labels": [
+      "Benign",
+      "Attack"
+    ],
+    "source": "run-level controlled workload ground truth",
+    "feature_extractor_receives_label": false,
+    "label_attached_after_feature_extraction": true,
+    "mixed_ground_truth_window_policy": "not_permitted_in_training_acquisition_runs"
+  },
+
+  "integrity": {
+    "same_feature_code_offline_and_live": true,
+    "class_specific_feature_formulae": false,
+    "class_specific_window_size": false,
+    "prediction_dependent_features": false,
+    "synthetic_features": false,
+    "hardcoded_observed_features": false
+  }
+}

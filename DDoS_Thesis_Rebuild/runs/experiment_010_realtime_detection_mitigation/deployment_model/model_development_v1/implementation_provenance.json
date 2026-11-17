@@ -1,0 +1,6 @@
+{
+  "executed_script": "scripts/10_train_select_deployment_model.py",
+  "executed_script_sha256": "93695c1bd1c49e65144f902e56bee4fa495e91dfbbf96ad0685100882253f4a9",
+  "frozen_protocol": "runs/experiment_010_realtime_detection_mitigation/deployment_model/modeling_protocol_v1/modeling_protocol.json",
+  "frozen_protocol_sha256": "8d1508d284de5bd100bb01048970796ebe1c807d77b3fff2984927f9259b4736"
+}

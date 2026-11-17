@@ -1,0 +1,7 @@
+metric,value
+Requests attempted,1000
+Transport successful requests,1000
+Total elapsed seconds,3.4616091349998896
+Throughput requests per second,288.88299082907054
+Mean response time ms,34.31578464999984
+P95 response time ms,57.91303499972855

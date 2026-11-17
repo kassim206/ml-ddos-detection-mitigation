@@ -1,0 +1,20 @@
+{
+  "accounting_identity_pass": true,
+  "complete_windows": 0,
+  "completed_at_utc": "2026-10-04T18:48:42.644581+00:00",
+  "completion_status": "failed",
+  "eligible_packets": 0,
+  "eligible_tail_packets": 0,
+  "error_message": "Missing PCAP global header",
+  "error_type": "RuntimeError",
+  "maximum_timestamp_adjustment_seconds": null,
+  "maximum_timestamp_adjustment_units": 0,
+  "processing_integrity_pass": false,
+  "raw_pcap_records_consumed": 0,
+  "stop_requested": false,
+  "tail_range_pass": true,
+  "tcpdump_returncode": -9,
+  "timestamp_normalization_count": 0,
+  "timestamp_units_per_second": null,
+  "window_size_packets": 100
+}

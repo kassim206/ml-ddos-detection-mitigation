@@ -1,0 +1,83 @@
+{
+  "experiment_id": "005",
+  "model_source": "experiment_009_hybrid_cnn_lstm",
+  "evaluation_type": "original_attack_family_stratified_category_recall",
+  "test_rows": 1773902,
+  "prediction_rows_verified": 1773902,
+  "provenance_rows_verified": 1773902,
+  "row_alignment_verified": true,
+  "observed_test_attack_families": [
+    "Benign_Final",
+    "DDoS-SYN_Flood",
+    "DDoS-UDP_Flood",
+    "Recon-PortScan",
+    "XSS"
+  ],
+  "attack_family_metrics": [
+    {
+      "attack_family": "Benign_Final",
+      "category": "Benign",
+      "support": 181840,
+      "correct_category_predictions": 0,
+      "category_recall": 0.0,
+      "mean_confidence": 0.698446582248078
+    },
+    {
+      "attack_family": "DDoS-HTTP_Flood",
+      "category": "DDoS",
+      "support": 0,
+      "correct_category_predictions": 0,
+      "category_recall": null,
+      "mean_confidence": null
+    },
+    {
+      "attack_family": "DDoS-SlowLoris",
+      "category": "DDoS",
+      "support": 0,
+      "correct_category_predictions": 0,
+      "category_recall": null,
+      "mean_confidence": null
+    },
+    {
+      "attack_family": "DDoS-SYN_Flood",
+      "category": "DDoS",
+      "support": 987587,
+      "correct_category_predictions": 986749,
+      "category_recall": 0.9991514671618804,
+      "mean_confidence": 0.9975166067526593
+    },
+    {
+      "attack_family": "DDoS-UDP_Flood",
+      "category": "DDoS",
+      "support": 589345,
+      "correct_category_predictions": 588949,
+      "category_recall": 0.9993280676004717,
+      "mean_confidence": 0.9908747700183911
+    },
+    {
+      "attack_family": "Recon-PortScan",
+      "category": "Recon",
+      "support": 13625,
+      "correct_category_predictions": 11672,
+      "category_recall": 0.8566605504587156,
+      "mean_confidence": 0.632945401758229
+    },
+    {
+      "attack_family": "SqlInjection",
+      "category": "Web",
+      "support": 0,
+      "correct_category_predictions": 0,
+      "category_recall": null,
+      "mean_confidence": null
+    },
+    {
+      "attack_family": "XSS",
+      "category": "Web",
+      "support": 1505,
+      "correct_category_predictions": 423,
+      "category_recall": 0.28106312292358804,
+      "mean_confidence": 0.5979278292964859
+    }
+  ],
+  "important_interpretation": "The classifier predicts four broad categories: Benign, DDoS, Recon, and Web. Per-attack results measure broad-category recall stratified by the original CICIoT2023 attack family. They are not eight-class attack-family predictions. Attack families with zero test support are reported with null recall and confidence rather than zero recall."
+}

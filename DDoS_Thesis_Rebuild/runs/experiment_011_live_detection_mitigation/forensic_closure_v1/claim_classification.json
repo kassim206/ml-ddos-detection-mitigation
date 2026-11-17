@@ -1,0 +1,143 @@
+{
+  "claims": [
+    {
+      "claim": "The frozen Exp010 deployment-compatible classifier was executed online in Exp011 using live packet-derived non-overlapping 100-eligible-packet windows.",
+      "claim_id": "EXP011-C01",
+      "classification": "PASS",
+      "qualification": "Applies to the frozen Exp011 controlled-laboratory implementation and feature contract."
+    },
+    {
+      "claim": "Across the nine Exp011 result-bearing runs, the detector correctly classified all 1080 observed windows.",
+      "claim_id": "EXP011-C02",
+      "classification": "PASS",
+      "qualification": "The 1080 windows are observations nested within nine runs and must not be represented as 1080 independent experimental replicates."
+    },
+    {
+      "claim": "The pooled Exp011 detection confusion matrix was [[360,0],[0,720]], with pooled accuracy, balanced accuracy, precision, recall, F1, and macro-F1 equal to 1.0.",
+      "claim_id": "EXP011-C03",
+      "classification": "PASS",
+      "qualification": "Valid only for the predefined controlled benign HTTP and controlled high-rate HTTP conditions represented by Exp011."
+    },
+    {
+      "claim": "Per-run and within-condition balanced accuracy provides a meaningful two-class performance measure.",
+      "claim_id": "EXP011-C04",
+      "classification": "NOT SUPPORTED",
+      "qualification": "Each individual run and each pooled condition contains only one true class, so two-class balanced accuracy is undefined there."
+    },
+    {
+      "claim": "Fixed-label binary macro-F1 for the single-class per-run and within-condition groupings is 0.5.",
+      "claim_id": "EXP011-C05",
+      "classification": "PASS WITH DOCUMENTED LIMITATION",
+      "qualification": "The value reflects the absent second class and must not be interpreted as 50 percent classification accuracy."
+    },
+    {
+      "claim": "The benign condition preserved service without inappropriate mitigation activation.",
+      "claim_id": "EXP011-C06",
+      "classification": "PASS",
+      "qualification": "Across B01-B03, 3000 of 3000 requests were transport-successful HTTP 200 responses and no mitigation activation occurred."
+    },
+    {
+      "claim": "The attack-without-mitigation condition provided a successful enforcement-free attack baseline.",
+      "claim_id": "EXP011-C07",
+      "classification": "PASS",
+      "qualification": "Across A01-A03, all 360 windows were classified as attack, enforcement remained off, and all 3000 requests received HTTP 200."
+    },
+    {
+      "claim": "Model attack decisions triggered actual mitigation in all three mitigation-enabled attack runs.",
+      "claim_id": "EXP011-C08",
+      "classification": "PASS",
+      "qualification": "Each of M01-M03 contains a model attack decision, action request, one successful activation event, enforcement timestamp, and subsequent observable enforcement effect."
+    },
+    {
+      "claim": "After enforcement completion, all subsequent targeted requests in M01-M03 were application-level rejected.",
+      "claim_id": "EXP011-C09",
+      "classification": "PASS",
+      "qualification": "2619 of 2619 requests at or after enforcement completion were mitigation-active HTTP 429 responses, with zero post-enforcement failures."
+    },
+    {
+      "claim": "The 381 HTTP 200 responses observed across M01-M03 demonstrate mitigation failures.",
+      "claim_id": "EXP011-C10",
+      "classification": "NOT SUPPORTED",
+      "qualification": "Those responses occurred before enforcement completion and therefore must not be classified as post-enforcement failures."
+    },
+    {
+      "claim": "Exp011 implemented application-level HTTP mitigation.",
+      "claim_id": "EXP011-C11",
+      "classification": "PASS",
+      "qualification": "The enforcement mechanism changed victim behavior to HTTP 429 after model-triggered activation."
+    },
+    {
+      "claim": "Exp011 implemented firewall, iptables, network-layer packet-drop, or source-IP blocking mitigation.",
+      "claim_id": "EXP011-C12",
+      "classification": "NOT SUPPORTED",
+      "qualification": "The implemented mechanism was application-level HTTP 429 enforcement."
+    },
+    {
+      "claim": "Mean decision-to-enforcement time across the three successful activation events was 0.002484 seconds.",
+      "claim_id": "EXP011-C13",
+      "classification": "PASS",
+      "qualification": "Measured from attack_decision_timestamp to enforcement_completion_timestamp; range 0.001708 to 0.003529 seconds and median 0.002215 seconds."
+    },
+    {
+      "claim": "Exp011 timing measurements represent end-to-end HTTP request latency.",
+      "claim_id": "EXP011-C14",
+      "classification": "NOT SUPPORTED",
+      "qualification": "Feature, inference, window-observation, and decision-to-enforcement timings have narrower explicitly defined scopes."
+    },
+    {
+      "claim": "Exact client-process wall-clock duration is independently reconstructible from the archived Exp011 repository artifacts.",
+      "claim_id": "EXP011-C15",
+      "classification": "NOT SUPPORTED",
+      "qualification": "The archived client timestamps support request-span duration, not the independently preserved client-process wall-clock timer."
+    },
+    {
+      "claim": "Archived request-span duration and request latency are reproducibly derivable for all nine runs.",
+      "claim_id": "EXP011-C16",
+      "classification": "PASS",
+      "qualification": "Request span is explicitly reported as first archived request start to last archived request finish and is not relabeled as client-process wall-clock duration."
+    },
+    {
+      "claim": "All 9000 Exp011 requests were transport-successful.",
+      "claim_id": "EXP011-C17",
+      "classification": "PASS",
+      "qualification": "HTTP 429 responses in mitigation runs are successful transport exchanges with application-level rejection and are not transport failures."
+    },
+    {
+      "claim": "The mitigation experiment proves that mitigation improves application throughput.",
+      "claim_id": "EXP011-C18",
+      "classification": "NOT SUPPORTED",
+      "qualification": "The experiment was not designed to establish a throughput-improvement claim, only three runs exist per condition, and HTTP 429 processing differs from normal HTTP 200 processing."
+    },
+    {
+      "claim": "Exp011 demonstrates end-to-end online detection and actual model-triggered mitigation under its predefined controlled laboratory conditions.",
+      "claim_id": "EXP011-C19",
+      "classification": "PASS",
+      "qualification": "The claim is restricted to the frozen controlled-lab topology, workload, model, feature pipeline, and application-level enforcement mechanism."
+    },
+    {
+      "claim": "Exp011 demonstrates production-scale or general DDoS mitigation effectiveness.",
+      "claim_id": "EXP011-C20",
+      "classification": "NOT SUPPORTED",
+      "qualification": "The experiment used a controlled local HTTP workload and does not establish production deployment, Internet-scale DDoS resistance, or generalization to arbitrary attacks."
+    },
+    {
+      "claim": "The Exp011 core results are independently derivable from frozen primary artifacts rather than requiring manually entered result values.",
+      "claim_id": "EXP011-C21",
+      "classification": "PASS",
+      "qualification": "The Section 8 reconciliation independently reread request logs, victim logs, detector events, summaries, and mitigation states and reproduced the core Section 6 and Section 7 results."
+    },
+    {
+      "claim": "Packet windows and individual requests constitute independent experimental replicates.",
+      "claim_id": "EXP011-C22",
+      "classification": "NOT SUPPORTED",
+      "qualification": "The experimental unit is the run; windows and requests are nested observations."
+    }
+  ],
+  "classification_scale": [
+    "PASS",
+    "PASS WITH DOCUMENTED LIMITATION",
+    "NEEDS CORRECTION",
+    "NOT SUPPORTED"
+  ],
+  "experiment": "Exp011"
+}

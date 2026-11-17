@@ -1,0 +1,78 @@
+{
+  "claim_scope": {
+    "enforcement_effect": "HTTP 429 responses while mitigation state is active",
+    "environment": "controlled_lab",
+    "mitigation_layer": "application_level_http",
+    "not_claimed": [
+      "firewall mitigation",
+      "iptables mitigation",
+      "network-layer packet dropping",
+      "production deployment"
+    ]
+  },
+  "experiment": "experiment_011_live_detection_mitigation",
+  "freeze_rule": "No frozen implementation, model, preprocessing, feature semantics, mitigation policy, protocol, or run-plan changes are permitted after this boundary for result-bearing Exp011 runs. Any required change invalidates this freeze and must be documented before further result-bearing execution.",
+  "freeze_version": 1,
+  "implementation_sha256": {
+    "scripts/11_frozen_model_inference.py": "7e3735280016be7b8b68deb7c89f70387056ab08781cf5a5fdf7c4ecbebf2481",
+    "scripts/11_initialize_mitigation_state.py": "dce5e8a7119e558faf98f90b465a3a4bbff4748620f58dbe7ac74cd547805486",
+    "scripts/11_live_detector_controller.py": "5c15e67c99d66a0c04a157fb8342a3bcc4a58a10c1008b2601f31a0f69174125",
+    "scripts/11_live_feature_pipeline.py": "8ee96bfcfc2fe19fd4ddf26e2acaf13cc9ebd3518227b36a72ad428eefc50ad4",
+    "testbed/docker-compose-exp011.yml": "e4486c2cdd90ed4903db4bb8cef1776cafb8834e436fea9f747f788a2ff240c3",
+    "testbed/experiment_011/detector/Dockerfile": "305b6f33c10dac3699a34d41409c30624082bb31f57bd25aa3e1da899333916d",
+    "testbed/experiment_011/detector/requirements.txt": "1fa29ba6dc7be137f1661e86c3e95dd08d652b91068f3f617c9e39dcb745c72a",
+    "testbed/experiment_011/victim_app/Dockerfile": "62ecba0352e30255ffec096d06cc056911152a9470cccfbd3b19bf0a81fd27e1",
+    "testbed/experiment_011/victim_app/app.py": "0e2ae67dc8fc1b89b04dabf634f3d045cb262e32ca6ff77f88493637e473e9d5",
+    "testbed/experiment_011/victim_app/requirements.txt": "2fb5f25b9caf361a02d485d4d43ed2a6bdba9c1ba828d4e9632c5a3d8767e52d"
+  },
+  "integration_validation": {
+    "activation_probability": 0.9983390719986857,
+    "activation_window": 0,
+    "client_requests": 1000,
+    "complete_windows": 120,
+    "eligible_packets": 12000,
+    "eligible_tail_packets": 0,
+    "http_200": 136,
+    "http_429": 864,
+    "maximum_timestamp_adjustment_units": 1,
+    "monotonic_duration_failures": 0,
+    "positive_model_windows": 120,
+    "raw_pcap_records_consumed": 12000,
+    "request_id_sets_equal": true,
+    "result_bearing": false,
+    "tcpdump_kernel_drops": 0,
+    "timestamp_normalization_count": 1,
+    "timing_order_failures": 0,
+    "transport_successes": 1000,
+    "victim_requests": 1000
+  },
+  "result_bearing_runs_completed_at_freeze": 0,
+  "section": 4,
+  "section_name": "real_mitigation",
+  "status": "FROZEN",
+  "system": {
+    "decision_threshold": 0.5,
+    "mitigation_policy": "activate on positive frozen-model decision when enforcement is enabled; remain active for remainder of run",
+    "model_source": "frozen Exp010 selected deployment-compatible model",
+    "window_size_packets": 100
+  },
+  "timestamp_normalization_rule": {
+    "packet_order": "preserved",
+    "raw_pcap": "immutable",
+    "rule": "normalized timestamp is max(raw timestamp units, previous normalized timestamp units)",
+    "validated_fixture_adjustment_units": 1,
+    "validated_fixture_units_per_second": 1000000
+  },
+  "validation_results": {
+    "failure_summary_gate": "PASS",
+    "graceful_shutdown_gate": "PASS",
+    "live_integration_validation": "PASS_WITH_DOCUMENTED_LIMITATION",
+    "timestamp_normalization": "PASS"
+  },
+  "validation_sha256": {
+    "timestamp_normalization_validation_v1.json": "4432d08b6e80346dece57796bcae1e33ba6f341bdf57ee5ecd1dcea13168823e",
+    "v6_failure_summary_gate/SHA256SUMS": "97156ceafec11b1f16922c595470336f505fab5dd32ac6b8fede89448cb2dc7c",
+    "v6_integration_validation/SHA256SUMS": "f4251c3f6e3a7caa74c0213ceb51b226c488853ae2d32ffd6c8d768cddefe7a4",
+    "v6_shutdown_gate/SHA256SUMS": "012cb7e615b14ee8889c21a3fe0e46deeef0c1a35f5b048227ffd7c090d38499"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "detection_observation_unit": "complete non-overlapping 100-eligible-packet window",
+  "detection_per_run_sha256": "794b900b8efb891b916c900a56a8ad4a4f4fe9a9500749e0f587c5f43448e6f2",
+  "detection_runtime_results_sha256": "e9e9c7264a9061ebd855d56afb6528f3cb79e4863f317ee756321dda51f5118b",
+  "evaluation_version": 1,
+  "evaluator_sha256": "53ad9b9f20b87ed09f05e5c9c5104aff5c6e7bf71bcc672fb77b97cd99a74dd6",
+  "experiment": "Exp011",
+  "experimental_unit": "run",
+  "input_manifest_sha256": "790ebd1e1334bbb988f5680fb6decee1b16f8d45605e4153d7815ce753e61049",
+  "overall_accuracy": 1.0,
+  "overall_balanced_accuracy": 1.0,
+  "overall_confusion_matrix": [
+    [
+      360,
+      0
+    ],
+    [
+      0,
+      720
+    ]
+  ],
+  "overall_f1": 1.0,
+  "overall_macro_f1": 1.0,
+  "overall_precision": 1.0,
+  "overall_recall": 1.0,
+  "replication_qualification": "Packet windows are nested observations within runs and are not independent experimental replicates.",
+  "result_runs": 9,
+  "scope_qualification": "Perfect pooled detection applies only to the predefined controlled-lab benign HTTP and controlled high-rate HTTP conditions represented by the nine Exp011 runs.",
+  "section": 6,
+  "section_name": "Detection and Runtime Evaluation",
+  "single_class_qualification": "Per-run and within-condition balanced accuracy is undefined because each such grouping contains one true class. Fixed-label binary macro-F1 is 0.5 for those single-class groupings and must not be interpreted as 50 percent classification accuracy.",
+  "status": "PASS",
+  "timing_qualification": "Timing quantities follow the frozen timestamp formulas and are not end-to-end request latency or total attack-detection latency.",
+  "total_windows": 1080
+}

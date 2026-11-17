@@ -1,0 +1,18 @@
+{
+  "accounting_identity_pass": true,
+  "complete_windows": 0,
+  "controller_sha256": "899b7e9b90eae753b74909e62292427e9ccc733b08352081df84ad90c5dca01a",
+  "eligible_packets": 0,
+  "eligible_tail_packets": 0,
+  "graceful_detector_shutdown": true,
+  "included_in_result_bearing_runs": false,
+  "mitigation_activated": false,
+  "pcap_datalink": 1,
+  "pcap_header_only": true,
+  "raw_captured_packets": 0,
+  "result_bearing_runs_executed_at_gate": 0,
+  "scope": "PRE_RESULT_V3_SHUTDOWN_GATE",
+  "status": "PASS",
+  "tcpdump_returncode": 0,
+  "workload_generated": false
+}

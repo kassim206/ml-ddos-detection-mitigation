@@ -1,0 +1,13 @@
+{
+  "status": "INITIALIZED",
+  "dataset": "Dataset B",
+  "logical_run_id": "A06",
+  "physical_run_id": "exp010_dataset_b_A06_attack_20261004T140108Z",
+  "class": "Attack",
+  "partition": "validation",
+  "valid_dataset_run": false,
+  "include_in_dataset_b": false,
+  "traffic_workload_executed": false,
+  "feature_extraction_permitted": false,
+  "training_use_permitted": false
+}

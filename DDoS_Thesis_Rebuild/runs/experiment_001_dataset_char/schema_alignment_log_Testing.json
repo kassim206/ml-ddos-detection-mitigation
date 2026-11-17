@@ -1,0 +1,37 @@
+[
+    {
+        "file": "Benign_Final/BenignTraffic.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Benign"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood6.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood18.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood1.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood17.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood1.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood20.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    }
+]

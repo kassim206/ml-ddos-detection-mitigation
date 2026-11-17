@@ -1,0 +1,162 @@
+[
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood10.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood2.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "Recon-PortScan/Recon-PortScan.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Recon"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood7.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood11.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood13.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood11.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood8.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "Benign_Final/BenignTraffic2.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Benign"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood2.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood8.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood3.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood9.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "Benign_Final/BenignTraffic3.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Benign"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood16.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SlowLoris/DDoS-SlowLoris.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "Benign_Final/BenignTraffic1.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Benign"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood5.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood4.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood14.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood14.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood19.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood12.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "XSS/XSS.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "Web"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood4.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood9.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood15.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-SYN_Flood/DDoS-SYN_Flood13.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood12.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    },
+    {
+        "file": "DDoS-UDP_Flood/DDoS-UDP_Flood3.pcap.csv",
+        "label_source": "folder_inference",
+        "inferred_category": "DDoS"
+    }
+]

@@ -1,0 +1,60 @@
+{
+  "status": "design_only_not_yet_executed",
+  "experiment": "Exp010",
+  "purpose": "Develop a deployment-compatible detector from genuinely generated controlled-laboratory traffic.",
+  "relationship_to_ciciot2023": {
+    "ciciot2023_role": "Offline model-development and benchmark dataset used by Exp001-Exp009.",
+    "deployment_dataset_role": "Separate controlled-laboratory dataset generated for deployment-compatible model development.",
+    "datasets_are_not_claimed_equivalent": true,
+    "exp009_model_reused_for_live_inference": false
+  },
+  "integrity_rules": {
+    "synthetic_feature_rows": false,
+    "mock_packets": false,
+    "fabricated_measurements": false,
+    "hardcoded_observed_metrics": false,
+    "ground_truth_used_for_feature_generation": false,
+    "ground_truth_used_for_window_selection": false,
+    "precomputed_fake_predictions": false
+  },
+  "candidate_window_policies": [
+    {
+      "id": "fixed_10",
+      "packet_count": 10,
+      "class_independent": true
+    },
+    {
+      "id": "fixed_100",
+      "packet_count": 100,
+      "class_independent": true
+    }
+  ],
+  "candidate_features": [
+    "packet_count",
+    "duration_seconds",
+    "header_length_mean",
+    "ttl_mean",
+    "tcp_fraction",
+    "udp_fraction",
+    "icmp_fraction",
+    "fin_fraction",
+    "syn_fraction",
+    "rst_fraction",
+    "psh_fraction",
+    "ack_fraction",
+    "packet_length_sum",
+    "packet_length_min",
+    "packet_length_max",
+    "packet_length_mean",
+    "packet_length_std",
+    "packet_length_variance",
+    "iat_mean",
+    "iat_min",
+    "iat_max",
+    "iat_std",
+    "packet_rate"
+  ],
+  "feature_generation_rule": "All features must be derived from observed packets in the corresponding fixed packet window without consulting class labels.",
+  "selection_rule": "The final window policy and model will be selected from measured validation evidence, not predetermined performance targets.",
+  "current_state": "No deployment dataset, trained deployment model, predictions, or deployment metrics exist yet."
+}

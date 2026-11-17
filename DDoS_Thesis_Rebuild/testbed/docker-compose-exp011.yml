@@ -1,0 +1,83 @@
+name: exp011_testbed
+
+services:
+  victim_web_exp011:
+    build:
+      context: ./experiment_011/victim_app
+      dockerfile: Dockerfile
+    volumes:
+      - ./logs/experiment_011/victim:/app/logs
+      - ./logs/experiment_011/state:/app/state
+    networks:
+      exp011_net:
+        aliases:
+          - victim_web_exp010
+    restart: "no"
+
+  detector_exp011:
+    build:
+      context: ..
+      dockerfile: testbed/experiment_011/detector/Dockerfile
+    working_dir: /repo
+    command:
+      - python
+      - scripts/11_live_detector_controller.py
+      - --state
+      - /evidence/state/mitigation_state.json
+      - --events
+      - /evidence/detector/detector_events.csv
+      - --capture-pcap
+      - /evidence/detector/detector_input.pcap
+      - --summary
+      - /evidence/detector/detector_summary.json
+      - --capture-stats
+      - /evidence/detector/tcpdump_stats.txt
+      - --enforcement
+      - ${EXP011_ENFORCEMENT:?EXP011_ENFORCEMENT must be set}
+    volumes:
+      - ../scripts:/repo/scripts:ro
+      - ../runs:/repo/runs:ro
+      - ./logs/experiment_011:/evidence
+    network_mode: "service:victim_web_exp011"
+    depends_on:
+      - victim_web_exp011
+    restart: "no"
+
+  benign_client_exp011:
+    build:
+      context: ./benign_client
+      dockerfile: Dockerfile
+    environment:
+      TARGET_URL: http://victim_web_exp010/
+      REQUEST_COUNT: "1000"
+      DELAY_SECONDS: "0.1"
+      RUN_ID: ${EXP011_RUN_ID:?EXP011_RUN_ID must be set}
+    volumes:
+      - ./logs/experiment_011/client:/app/logs
+    networks:
+      - exp011_net
+    depends_on:
+      - victim_web_exp011
+    restart: "no"
+
+  attack_client_exp011:
+    build:
+      context: ./attack_client
+      dockerfile: Dockerfile
+    environment:
+      TARGET: http://victim_web_exp010/
+      RUN_ID: ${EXP011_RUN_ID:?EXP011_RUN_ID must be set}
+      REQUEST_COUNT: "1000"
+      CONCURRENCY: "10"
+      TIMEOUT_SECONDS: "5"
+    volumes:
+      - ./logs/experiment_011/client:/app/logs
+    networks:
+      - exp011_net
+    depends_on:
+      - victim_web_exp011
+    restart: "no"
+
+networks:
+  exp011_net:
+    driver: bridge

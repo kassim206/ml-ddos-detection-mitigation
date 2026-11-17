@@ -1,0 +1,34 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset_B",
+  "status": "design_only_not_yet_collected",
+  "purpose": "Controlled laboratory traffic dataset for deployment-compatible detector development.",
+  "data_origin": "Traffic genuinely executed inside the isolated project testbed.",
+  "separation_from_ciciot2023": {
+    "dataset_a": "Selected CICIoT2023 CSV feature representation used by Exp001-Exp009.",
+    "dataset_b": "Separately generated controlled laboratory traffic used by Exp010.",
+    "merged": false,
+    "distributional_equivalence_claimed": false
+  },
+  "required_evidence": [
+    "client-side ground-truth event log",
+    "network observation or packet capture",
+    "victim-side observation log",
+    "run manifest",
+    "artifact hashes",
+    "reconciliation report"
+  ],
+  "ground_truth_rule": "Ground truth originates from the controlled workload generator configuration and run identity, not from model predictions.",
+  "feature_generation_rule": "Feature extraction must not consult ground-truth labels.",
+  "window_selection_rule": "Packet windows must be selected independently of ground-truth class.",
+  "integrity_requirements": {
+    "mock_packets": false,
+    "synthetic_feature_rows": false,
+    "fabricated_requests": false,
+    "fabricated_predictions": false,
+    "fabricated_metrics": false,
+    "hardcoded_observed_results": false,
+    "silent_fallback_data": false,
+    "ground_truth_used_as_model_input": false
+  }
+}

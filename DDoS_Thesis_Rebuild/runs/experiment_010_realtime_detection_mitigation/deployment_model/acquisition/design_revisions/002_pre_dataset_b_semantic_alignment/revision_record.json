@@ -1,0 +1,46 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "revision": 2,
+  "status": "PROSPECTIVE_PRE_DATASET_B_DESIGN_REVISION",
+  "supersedes": "Dataset-B pre-acquisition design freeze v1",
+  "historical_v1_preserved": true,
+  "revision_timing": {
+    "dataset_b_collection_started": false,
+    "dataset_b_training_started": false,
+    "dataset_b_model_results_observed": false,
+    "dataset_b_test_results_observed": false
+  },
+  "reasons": [
+    {
+      "issue": "capture_feature_scope_mismatch",
+      "observation": "The acquisition infrastructure captures only TCP port 80 traffic, while v1 defined TCP, UDP, and ICMP protocol-fraction features.",
+      "correction": "Scope Dataset B explicitly to controlled-laboratory HTTP/TCP port 80 traffic and remove tcp_fraction, udp_fraction, and icmp_fraction.",
+      "feature_count_before": 23,
+      "feature_count_after": 20
+    },
+    {
+      "issue": "semantic_http_metadata_leakage_risk",
+      "observation": "Earlier provenance instrumentation transmitted semantic run/workload metadata in HTTP headers.",
+      "correction": "Dataset-B acquisition transmits only class-neutral X-Request-ID UUID instrumentation. Run ID and workload type remain acquisition/client ground-truth metadata and are not transmitted in HTTP."
+    },
+    {
+      "issue": "single_run_validation_and_test_per_class",
+      "observation": "v1 assigned one independent validation run and one independent test run per class.",
+      "correction": "Increase to two independent validation runs and two independent test runs per class while retaining four training runs per class."
+    }
+  ],
+  "scientific_scope": {
+    "traffic": "controlled_laboratory_http_tcp_port_80",
+    "production_traffic_claim": false,
+    "generic_all_protocol_ddos_claim": false,
+    "ciciot2023_distribution_equivalence_claim": false,
+    "dataset_b_remains_separate_from_ciciot2023": true
+  },
+  "integrity": {
+    "revision_selected_after_dataset_b_results": false,
+    "historical_artifacts_overwritten": false,
+    "synthetic_data_permitted": false,
+    "fabricated_data_permitted": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+    "experiment": "001",
+    "dataset": "CICIoT2023_Selected",
+    "status": "SUCCESS",
+    "methodology": {
+        "split_method": "deterministic_file_aware_row_level_split",
+        "random_split": false,
+        "deterministic": true,
+        "random_seed": 20261002,
+        "whole_file_allocation_preferred": true,
+        "row_level_partitioning_allowed": true,
+        "row_level_partitioning_reason": "Exact split totals and category representation require deterministic row partitioning for selected files."
+    },
+    "source": {
+        "raw_files": 46,
+        "raw_rows": 10713192,
+        "synthetic_data": false,
+        "mock_data": false,
+        "sampling": false,
+        "data_loss": 0,
+        "duplicate_rows_added": 0
+    },
+    "actual_categories": [
+        "Benign",
+        "DDoS",
+        "Recon",
+        "Web"
+    ],
+    "target_rows": {
+        "train": 7702608,
+        "val": 1236682,
+        "test": 1773902
+    },
+    "actual_rows": {
+        "train": 7702608,
+        "val": 1236682,
+        "test": 1773902
+    },
+    "partition_counts": {
+        "train": 34,
+        "val": 10,
+        "test": 10
+    },
+    "whole_file_count": 40,
+    "row_level_partitioned_files": [
+        "Benign_Final/BenignTraffic1.pcap.csv",
+        "Benign_Final/BenignTraffic3.pcap.csv",
+        "DDoS-SlowLoris/DDoS-SlowLoris.pcap.csv",
+        "DDoS-UDP_Flood/DDoS-UDP_Flood20.pcap.csv",
+        "Recon-PortScan/Recon-PortScan.pcap.csv",
+        "XSS/XSS.pcap.csv"
+    ],
+    "cleaned_files": {
+        "train": {
+            "file": "runs/experiment_001_dataset_char/cleaned_data/train/train_combined.csv",
+            "rows": 7702608,
+            "sha256": "e265281a87fcfd57e120f4c94aaf0623c843b8f044b69c63258889e16428e290"
+        },
+        "val": {
+            "file": "runs/experiment_001_dataset_char/cleaned_data/val/val_combined.csv",
+            "rows": 1236682,
+            "sha256": "968eeb479c708cc8367c30531324e9d1ecfc89d459dfd505e28cbc581ee374d4"
+        },
+        "test": {
+            "file": "runs/experiment_001_dataset_char/cleaned_data/test/test_combined.csv",
+            "rows": 1773902,
+            "sha256": "6a3e1f68f6750957b85830afb04be7df4434c28f4e46dda991e105985eca2c83"
+        }
+    }
+}

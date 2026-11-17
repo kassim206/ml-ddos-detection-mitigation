@@ -1,0 +1,37 @@
+Exp010 Dataset B pre-validation acquisition implementation freeze.
+
+Purpose:
+Freeze the acquisition implementation prospectively before the first
+Dataset B validation acquisition run.
+
+Scientific design:
+The previously frozen Dataset B V2 design is unchanged.
+
+Prospective implementation correction:
+The benign Compose REQUEST_COUNT was changed from the validation-era value
+25 to 1000 before B05 acquisition so that future benign validation and test
+runs conform to the frozen Dataset B V2 workload policy.
+
+No completed Dataset B training acquisition was modified.
+
+Future benign workload:
+- REQUEST_COUNT=1000
+- DELAY_SECONDS=0.1
+- HTTP GET
+- concurrency=1 by benign client implementation
+
+Future attack workload:
+- REQUEST_COUNT=1000
+- CONCURRENCY=10
+- TIMEOUT_SECONDS=5
+- controlled high-rate HTTP GET
+
+Only X-Request-ID is transmitted as packet-visible experiment
+instrumentation.
+
+This freeze does not modify:
+- B01-B04
+- A01-A04
+- frozen feature extractor
+- frozen Dataset B design
+- frozen modeling protocol

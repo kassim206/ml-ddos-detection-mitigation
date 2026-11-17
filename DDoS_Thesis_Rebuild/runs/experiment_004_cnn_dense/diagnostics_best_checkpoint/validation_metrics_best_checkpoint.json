@@ -1,0 +1,58 @@
+{
+  "experiment": "004",
+  "diagnostic": "best_checkpoint_validation",
+  "model_file": "runs/experiment_004_cnn_dense/best_model.keras",
+  "validation_file": "runs/experiment_002_preprocessing/val_processed.parquet",
+  "model_name": "CNN_Dense",
+  "model_input_shape": "(None, 39, 1)",
+  "model_output_shape": "(None, 4)",
+  "validation_rows": 1236682,
+  "batch_size": 8192,
+  "accuracy": 0.5291497733451284,
+  "precision_macro": 0.2504457927301504,
+  "recall_macro": 0.39857226541891494,
+  "f1_macro": 0.1872778035736437,
+  "precision_weighted": 0.8889491241952774,
+  "recall_weighted": 0.5291497733451284,
+  "f1_weighted": 0.6627403480601666,
+  "true_distribution": {
+    "Benign": 126770,
+    "DDoS": 1099364,
+    "Recon": 9498,
+    "Web": 1050
+  },
+  "predicted_distribution": {
+    "Benign": 0,
+    "DDoS": 653351,
+    "Recon": 0,
+    "Web": 583331
+  },
+  "per_class": {
+    "Benign": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 126770
+    },
+    "DDoS": {
+      "precision": 0.9999831637205728,
+      "recall": 0.5942890616756598,
+      "f1": 0.7455176683031753,
+      "support": 1099364
+    },
+    "Recon": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 9498
+    },
+    "Web": {
+      "precision": 0.0018000072000288001,
+      "recall": 1.0,
+      "f1": 0.0035935459913994466,
+      "support": 1050
+    }
+  },
+  "synthetic_data": false,
+  "model_retrained": false
+}

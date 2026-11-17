@@ -1,0 +1,29 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B01",
+  "physical_run_id": "exp010_dataset_b_B01_benign_20261004T002450Z",
+  "class": "Benign",
+  "partition": "train",
+  "status": "COMPLETE",
+  "raw_evidence_status": "FROZEN_AND_VERIFIED",
+  "feature_extraction_status": "FROZEN_AND_VERIFIED",
+  "raw_manifest_sha256": "4fbe4cdd16a1b3d754391e3cea11e82aa9aff695ee5f9f9431373bf6b82e217c",
+  "feature_manifest_sha256": "640a9a942cec14ff3002599b1c9d7f1f48b126ce179c0a5295ad25db5ffb8cad",
+  "feature_outputs": {
+    "window_10": {
+      "rows": 1200,
+      "eligible_packets": 12000,
+      "discarded_trailing_packets": 0,
+      "csv_sha256": "860807a42e6bea292eeeac94356aca8959a4a11fe1055fdc735d38485569d95d"
+    },
+    "window_100": {
+      "rows": 120,
+      "eligible_packets": 12000,
+      "discarded_trailing_packets": 0,
+      "csv_sha256": "41d539bba22e28ae7f033450ec5c04cdf45fe45921675ec60d45a7f14cf66202"
+    }
+  },
+  "completed_utc": "2026-10-04T00:34:41.676556+00:00",
+  "note": "Completion record is separate from frozen run_status.json. Raw evidence and derived feature manifests remain immutable."
+}

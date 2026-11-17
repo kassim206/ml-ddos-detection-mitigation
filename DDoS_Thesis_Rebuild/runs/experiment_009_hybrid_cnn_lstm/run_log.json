@@ -1,0 +1,14 @@
+{
+  "completed_utc": null,
+  "error": null,
+  "experiment_id": "009",
+  "started_utc": "2026-10-02T20:16:49.156519+00:00",
+  "status": "interrupted",
+  "interruption_outcome": {
+    "complete_epochs_retained": 7,
+    "partial_epoch_excluded": 8,
+    "best_checkpoint_retained": true,
+    "best_checkpoint_epoch": 4,
+    "subsequent_evaluation_completed": true
+  }
+}

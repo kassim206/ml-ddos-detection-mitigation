@@ -1,0 +1,68 @@
+{
+  "mean_per_run_balanced_accuracy": 0.9947916666666667,
+  "mean_per_run_macro_f1": 0.4986943693193211,
+  "model": "random_forest",
+  "per_run_metrics": {
+    "A05": {
+      "accuracy": 0.9958333333333333,
+      "balanced_accuracy": 0.9958333333333333,
+      "macro_f1": 0.4989561586638831,
+      "predicted_attack_count": 1195,
+      "predicted_benign_count": 5,
+      "support": 1200,
+      "true_class": 1
+    },
+    "A06": {
+      "accuracy": 0.9941666666666666,
+      "balanced_accuracy": 0.9941666666666666,
+      "macro_f1": 0.4985374007521939,
+      "predicted_attack_count": 1193,
+      "predicted_benign_count": 7,
+      "support": 1200,
+      "true_class": 1
+    },
+    "B05": {
+      "accuracy": 0.9933333333333333,
+      "balanced_accuracy": 0.9933333333333333,
+      "macro_f1": 0.4983277591973244,
+      "predicted_attack_count": 8,
+      "predicted_benign_count": 1192,
+      "support": 1200,
+      "true_class": 0
+    },
+    "B06": {
+      "accuracy": 0.9958333333333333,
+      "balanced_accuracy": 0.9958333333333333,
+      "macro_f1": 0.4989561586638831,
+      "predicted_attack_count": 5,
+      "predicted_benign_count": 1195,
+      "support": 1200,
+      "true_class": 0
+    }
+  },
+  "pooled_metrics": {
+    "accuracy": 0.9947916666666666,
+    "balanced_accuracy": 0.9947916666666667,
+    "confusion_matrix": [
+      [
+        2387,
+        13
+      ],
+      [
+        12,
+        2388
+      ]
+    ],
+    "f1_attack": 0.994792751510102,
+    "f1_benign": 0.994790581371119,
+    "macro_f1": 0.9947916664406105,
+    "precision_attack": 0.994585589337776,
+    "precision_benign": 0.9949979157982493,
+    "recall_attack": 0.995,
+    "recall_benign": 0.9945833333333334,
+    "support": 4800
+  },
+  "threshold": 0.35,
+  "threshold_distance_from_0_5": 0.15000000000000002,
+  "window_size_packets": 10
+}

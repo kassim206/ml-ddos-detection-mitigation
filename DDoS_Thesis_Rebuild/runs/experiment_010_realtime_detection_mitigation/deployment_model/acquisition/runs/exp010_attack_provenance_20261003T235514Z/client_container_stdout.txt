@@ -1,0 +1,7 @@
+ Container exp010_testbed-victim_web_exp010-1 Running 
+ Container exp010_testbed-attack_client_exp010-run-10a1594d9005 Creating 
+ Container exp010_testbed-attack_client_exp010-run-10a1594d9005 Created 
+Completed 5 controlled high-rate HTTP attempts.
+Transport successes: 5/5
+Client wall-clock seconds: 0.029467
+Ground truth: /app/logs/client_ground_truth.csv

@@ -1,0 +1,163 @@
+{
+  "source": "runs/experiment_002_preprocessing/train_processed.parquet",
+  "feature_count": 39,
+  "feature_order": [
+    {
+      "position": 1,
+      "name": "Header_Length"
+    },
+    {
+      "position": 2,
+      "name": "Protocol Type"
+    },
+    {
+      "position": 3,
+      "name": "Time_To_Live"
+    },
+    {
+      "position": 4,
+      "name": "Rate"
+    },
+    {
+      "position": 5,
+      "name": "fin_flag_number"
+    },
+    {
+      "position": 6,
+      "name": "syn_flag_number"
+    },
+    {
+      "position": 7,
+      "name": "rst_flag_number"
+    },
+    {
+      "position": 8,
+      "name": "psh_flag_number"
+    },
+    {
+      "position": 9,
+      "name": "ack_flag_number"
+    },
+    {
+      "position": 10,
+      "name": "ece_flag_number"
+    },
+    {
+      "position": 11,
+      "name": "cwr_flag_number"
+    },
+    {
+      "position": 12,
+      "name": "ack_count"
+    },
+    {
+      "position": 13,
+      "name": "syn_count"
+    },
+    {
+      "position": 14,
+      "name": "fin_count"
+    },
+    {
+      "position": 15,
+      "name": "rst_count"
+    },
+    {
+      "position": 16,
+      "name": "HTTP"
+    },
+    {
+      "position": 17,
+      "name": "HTTPS"
+    },
+    {
+      "position": 18,
+      "name": "DNS"
+    },
+    {
+      "position": 19,
+      "name": "Telnet"
+    },
+    {
+      "position": 20,
+      "name": "SMTP"
+    },
+    {
+      "position": 21,
+      "name": "SSH"
+    },
+    {
+      "position": 22,
+      "name": "IRC"
+    },
+    {
+      "position": 23,
+      "name": "TCP"
+    },
+    {
+      "position": 24,
+      "name": "UDP"
+    },
+    {
+      "position": 25,
+      "name": "DHCP"
+    },
+    {
+      "position": 26,
+      "name": "ARP"
+    },
+    {
+      "position": 27,
+      "name": "ICMP"
+    },
+    {
+      "position": 28,
+      "name": "IGMP"
+    },
+    {
+      "position": 29,
+      "name": "IPv"
+    },
+    {
+      "position": 30,
+      "name": "LLC"
+    },
+    {
+      "position": 31,
+      "name": "Tot sum"
+    },
+    {
+      "position": 32,
+      "name": "Min"
+    },
+    {
+      "position": 33,
+      "name": "Max"
+    },
+    {
+      "position": 34,
+      "name": "AVG"
+    },
+    {
+      "position": 35,
+      "name": "Std"
+    },
+    {
+      "position": 36,
+      "name": "Tot size"
+    },
+    {
+      "position": 37,
+      "name": "IAT"
+    },
+    {
+      "position": 38,
+      "name": "Number"
+    },
+    {
+      "position": 39,
+      "name": "Variance"
+    }
+  ],
+  "status": "extracted_from_existing_exp002_artifact"
+}

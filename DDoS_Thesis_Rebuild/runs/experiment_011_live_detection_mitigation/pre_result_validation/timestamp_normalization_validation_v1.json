@@ -1,0 +1,33 @@
+{
+  "b07_fixture": {
+    "complete_windows_w100": 120,
+    "eligible_packets": 12000,
+    "eligible_tail_packets": 0,
+    "feature_differences": 0,
+    "feature_reference_rows": 120,
+    "maximum_absolute_feature_difference": 0.0,
+    "maximum_relative_feature_difference": 0.0,
+    "maximum_timestamp_adjustment_units": 0,
+    "pcap_records": 12000,
+    "timestamp_normalization_count": 0,
+    "timestamp_units_per_second": 1000000
+  },
+  "included_in_result_bearing_runs": false,
+  "normalization_rule": "Preserve packet order and replace a backward raw packet timestamp with the immediately preceding normalized timestamp",
+  "purpose": "Validate prospective monotonic timestamp normalization before Exp011 result-bearing execution",
+  "scientific_interpretation": "Normalization is a prospective Exp011 live-acquisition rule. Raw PCAP evidence remains immutable. Packet order is not changed. Frozen Section 2 feature formulas are not modified.",
+  "scope": "PRE_RESULT_VALIDATION",
+  "status": "PASS",
+  "v4_failed_fixture": {
+    "complete_windows_w100_after_normalization": 24,
+    "eligible_packets": 2400,
+    "eligible_tail_packets_after_normalization": 0,
+    "maximum_timestamp_adjustment_seconds": 1e-06,
+    "maximum_timestamp_adjustment_units": 1,
+    "observed_inversion_current_units": 1791137983416105,
+    "observed_inversion_previous_units": 1791137983416106,
+    "pcap_records": 2400,
+    "timestamp_normalization_count": 1,
+    "timestamp_units_per_second": 1000000
+  }
+}

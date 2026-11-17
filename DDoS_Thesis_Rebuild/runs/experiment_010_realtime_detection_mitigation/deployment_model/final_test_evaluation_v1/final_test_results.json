@@ -1,0 +1,80 @@
+{
+  "dataset": "Dataset B",
+  "experiment": "Exp010",
+  "interpretation_scope": "controlled laboratory HTTP request-intensity/flood discrimination",
+  "per_run_metrics": {
+    "A07": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 120,
+      "predicted_benign_count": 0,
+      "support": 120,
+      "true_class": 1
+    },
+    "A08": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 120,
+      "predicted_benign_count": 0,
+      "support": 120,
+      "true_class": 1
+    },
+    "B07": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 0,
+      "predicted_benign_count": 120,
+      "support": 120,
+      "true_class": 0
+    },
+    "B08": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 0,
+      "predicted_benign_count": 120,
+      "support": 120,
+      "true_class": 0
+    }
+  },
+  "pooled_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        240,
+        0
+      ],
+      [
+        0,
+        240
+      ]
+    ],
+    "f1_attack": 1.0,
+    "f1_benign": 1.0,
+    "macro_f1": 1.0,
+    "precision_attack": 1.0,
+    "precision_benign": 1.0,
+    "recall_attack": 1.0,
+    "recall_benign": 1.0,
+    "support": 480
+  },
+  "protocol_summary": {
+    "mean_per_run_balanced_accuracy": 1.0,
+    "mean_per_run_macro_f1": 0.5
+  },
+  "selected_model": "logistic_regression",
+  "status": "FINAL_TEST_EVALUATED_ONCE",
+  "test_runs": [
+    "B07",
+    "B08",
+    "A07",
+    "A08"
+  ],
+  "threshold": 0.5,
+  "total_test_windows": 480,
+  "window_size_packets": 100
+}

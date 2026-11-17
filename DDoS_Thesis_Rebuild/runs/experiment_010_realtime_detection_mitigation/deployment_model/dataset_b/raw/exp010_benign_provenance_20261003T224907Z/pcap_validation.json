@@ -1,0 +1,17 @@
+{
+  "validation_type": "post_freeze_read_only_pcap_validation",
+  "source_artifact": "traffic.pcap",
+  "source_sha256": "49d83fe4c702ede08e3cec537d6b1b6992a0bf1fd8fcb8c0179e17a6fdf9ba6c",
+  "capture_link_type": "LINUX_SLL2",
+  "captured_packets": 300,
+  "packets_received_by_filter": 300,
+  "packets_dropped_by_kernel": 0,
+  "tcp_port_80_packet_records": 300,
+  "initial_client_to_victim_syn_count": 25,
+  "http_get_requests_visible_in_decoded_pcap": true,
+  "http_200_responses_visible_in_decoded_pcap": true,
+  "client_ground_truth_rows": 25,
+  "victim_access_rows": 25,
+  "interpretation": "The frozen PCAP independently demonstrates the network traffic corresponding to the controlled benign workload. The earlier zero count from grep anchored to '^GET / HTTP/' was a validation-command parsing mismatch and not absence of HTTP requests.",
+  "overall_pcap_validation": "PASS"
+}

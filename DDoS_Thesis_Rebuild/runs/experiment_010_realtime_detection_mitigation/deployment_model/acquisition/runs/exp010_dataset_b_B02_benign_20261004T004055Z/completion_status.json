@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B02",
+  "physical_run_id": "exp010_dataset_b_B02_benign_20261004T004055Z",
+  "class": "Benign",
+  "partition": "train",
+  "raw_evidence_frozen": true,
+  "feature_artifacts_frozen": true,
+  "raw_master_sha256": "03ffe2ef3693c799b674de1bc9855a3f813b824305671dc6eb31e76d9d784117",
+  "feature_master_sha256": "976c313068076abcab7c6fc8d6c363073ac3ac4f6c27211518a8b26c5995798c",
+  "window_10_rows": 1200,
+  "window_100_rows": 120,
+  "eligible_packets": 12000,
+  "packets_dropped_by_kernel": 0,
+  "reconciliation_status": "PASS",
+  "feature_contract_status": "PASS"
+}

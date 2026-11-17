@@ -1,0 +1,27 @@
+{
+  "artifact": "final_thesis_tables_closure",
+  "authoritative_use": "These nine CSV files are the frozen thesis-facing table layer derived from the frozen Exp001-Exp011 evidence matrix.",
+  "closure_rule": "Do not manually edit, regenerate, rename, delete, or replace the frozen thesis tables. A genuine correction requires invalidating this closure, documenting the correction, regenerating the affected table layer, independently reauditing it, and creating a new version.",
+  "evidence_matrix_sha256": "fb37520b0b96da5d5d21f46bb617c97a604965e88c0a428af82e94d213b826ac",
+  "final_table_audit_sha256": "99988138a1a70e692270a4ad5ab49eecad91ec8ecb0868c2ef46d5e81164d25e",
+  "independent_audit_check_count": 184,
+  "independent_audit_failure_count": 0,
+  "independent_audit_pass": true,
+  "scientific_authority": "Scientific authority remains with the frozen evidence matrix and its listed primary experiment artifacts.",
+  "status": "PASS",
+  "table_auditor_script_sha256": "0d4797185845dc05440b1af1a3f16cb295983f45bcf76baaf43896a62f557153",
+  "table_builder_script_sha256": "e37a83628edde0d6e502626a74b4c4ba7e915f2bd24f2c422f5d40e2643738eb",
+  "table_count": 9,
+  "table_sha256": {
+    "table_01_dataset_a_composition_split.csv": "283d28cc382cc3ffc0143a2bc4419656aa03abde5007faf432b40efadc58a953",
+    "table_02_dataset_a_model_performance.csv": "c781e4a96a9c8e99a6d5f5dd0f44fbd0225234d6b806a82cae8e8e974f041c60",
+    "table_03_attack_family_performance.csv": "413a4284d74858fd9bacdd251f26f583ce637a78000b2b45840697c3a094d481",
+    "table_04_cpu_batch_inference_runtime.csv": "ddd8ea2415c3573cf23917461f70d02b4981d7f18e8871c476c13e98ffa5d92c",
+    "table_05_controlled_http_service_baseline.csv": "b5f1430208bc3acd18cbac207334679226140533b2f6e38c2ba0d21744149971",
+    "table_06_offline_mitigation_policy.csv": "e9b246f0dd1736016027ca9b796a9975d121a92ca2822c8400057d38b713c8be",
+    "table_07_dataset_b_heldout_detection.csv": "2d21faa3ca7531d0fedacbd6dbf8f921579f2c4caba2ad20fa3b89a2873472bb",
+    "table_08_live_detection_runtime.csv": "7380c094222f36ee6a2c6f4057a4efe891f32ba586ef995fade8c245f3882836",
+    "table_09_live_mitigation_service_impact.csv": "a26865229f508f2cb0674fa6ea2f6ffe27cfefde1dec9eb11b157cf07f71fac1"
+  },
+  "version": 1
+}

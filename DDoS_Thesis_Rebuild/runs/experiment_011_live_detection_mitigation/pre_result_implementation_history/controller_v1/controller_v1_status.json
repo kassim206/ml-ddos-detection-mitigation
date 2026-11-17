@@ -1,0 +1,7 @@
+{
+  "controller_sha256": "50eddd008951eab87654a871daffa758915d03d3e9fa5c3443a59ce88a509f5a",
+  "reason": "Pre-result protocol-to-instrumentation audit found that frozen timing metrics require explicit window, feature, inference, decision, and enforcement timestamps not recorded by controller v1.",
+  "result_bearing_runs_executed": 0,
+  "scientific_use": "Excluded startup and integration validation only",
+  "status": "SUPERSEDED_BEFORE_RESULT_BEARING_EXECUTION"
+}

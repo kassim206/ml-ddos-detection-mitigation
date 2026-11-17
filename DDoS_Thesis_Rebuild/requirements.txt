@@ -1,0 +1,16 @@
+# Research pipeline dependencies
+# Reconstructed from direct project imports and the retained working environment.
+# Python version: 3.11.9
+
+numpy==1.26.4
+pandas==3.0.6
+scikit-learn==1.9.1
+tensorflow==2.15.0
+xgboost==3.2.0
+pyarrow==25.0.1
+matplotlib==3.11.2
+joblib==1.6.0
+psutil==7.2.2
+requests==2.34.2
+
+dpkt==1.9.8

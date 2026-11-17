@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-02T20:16:49.156163+00:00",
+  "experiment_id": "009",
+  "input_artifacts": {
+    "schema_report": "runs/experiment_001_dataset_char/schema_discovery_report.json",
+    "test_processed": "runs/experiment_002_preprocessing/test_processed.parquet",
+    "train_processed": "runs/experiment_002_preprocessing/train_processed.parquet",
+    "validation_processed": "runs/experiment_002_preprocessing/val_processed.parquet"
+  },
+  "input_sha256": {
+    "schema_report": "f0b491a34d6db52b1a3344703df022e9dd3dbe1372674058807d781cbde02cba"
+  },
+  "model_interpretation": "non-temporal feature-axis hybrid neural classifier",
+  "model_type": "Hybrid CNN-LSTM",
+  "output_directory": "runs/experiment_009_hybrid_cnn_lstm",
+  "status": "training_interrupted_best_checkpoint_retained",
+  "training_outcome": {
+    "training_completed": false,
+    "complete_epochs_retained": 7,
+    "partial_epoch_excluded": 8,
+    "best_checkpoint_epoch": 4,
+    "best_checkpoint_monitor": "val_loss",
+    "evaluation_completed": true
+  }
+}

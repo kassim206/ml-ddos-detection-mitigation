@@ -1,0 +1,56 @@
+{
+  "detection": {
+    "metrics": [
+      "confusion_matrix",
+      "accuracy",
+      "balanced_accuracy",
+      "precision",
+      "recall",
+      "f1",
+      "macro_f1"
+    ],
+    "reporting": [
+      "per_run",
+      "pooled_within_condition",
+      "pooled_overall_where_semantically_valid"
+    ],
+    "unit": "complete non-overlapping 100-eligible-packet window"
+  },
+  "experiment": "Exp011",
+  "mitigation": {
+    "decision_only_is_success": false,
+    "required_evidence": [
+      "model attack decision",
+      "mitigation action request",
+      "successful enforcement action",
+      "enforcement timestamp",
+      "observable effect on subsequent targeted traffic"
+    ]
+  },
+  "protocol_version": 1,
+  "replication_rule": "packet windows and individual requests nested within a run are observations and must not be represented as independent experimental replicates",
+  "service": {
+    "comparison_unit": "run",
+    "metrics": [
+      "request_attempts",
+      "successful_transport_requests",
+      "failed_or_timed_out_requests",
+      "http_status_counts",
+      "wall_clock_seconds",
+      "request_throughput",
+      "request_latency"
+    ],
+    "primary_comparisons": [
+      "benign_with_detection_and_mitigation",
+      "attack_detection_without_mitigation",
+      "attack_detection_with_mitigation"
+    ]
+  },
+  "timing": {
+    "decision_to_enforcement_seconds": "enforcement_completion_timestamp minus attack_decision_timestamp",
+    "feature_to_inference_seconds": "inference_completion_timestamp minus feature_completion_timestamp",
+    "inference_seconds": "inference_completion_timestamp minus inference_start_timestamp",
+    "restriction": "timing quantities must be reported according to their actual measured scope and must not be relabeled as end-to-end request latency",
+    "window_observation_seconds": "window_end_timestamp minus window_start_timestamp"
+  }
+}

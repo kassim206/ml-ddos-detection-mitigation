@@ -1,0 +1,263 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "protocol_version": "1.0",
+  "status": "PROSPECTIVE_PRE_VALIDATION_FREEZE",
+
+  "scientific_scope": {
+    "task": "Binary classification of controlled benign HTTP traffic versus controlled high-rate HTTP flooding in the isolated laboratory testbed",
+    "positive_class": "Attack",
+    "negative_class": "Benign",
+    "dataset_a_equivalence_claimed": false,
+    "production_generalization_claimed": false,
+    "generic_ddos_generalization_claimed": false
+  },
+
+  "partition_contract": {
+    "train_runs": [
+      "B01", "B02", "B03", "B04",
+      "A01", "A02", "A03", "A04"
+    ],
+    "validation_runs": [
+      "B05", "B06", "A05", "A06"
+    ],
+    "test_runs": [
+      "B07", "B08", "A07", "A08"
+    ],
+    "partition_unit": "acquisition_run",
+    "random_window_split_permitted": false,
+    "cross_partition_run_permitted": false,
+    "pcap_reuse_across_partitions_permitted": false,
+    "validation_used_for_model_selection": true,
+    "test_used_for_model_selection": false,
+    "test_access_before_final_model_freeze": false
+  },
+
+  "assembly_contract": {
+    "source_feature_artifacts": "Frozen label-blind per-run feature CSV artifacts produced by scripts/10_extract_dataset_b_features.py",
+    "candidate_window_sizes_packets": [10, 100],
+    "window_candidates_fixed_before_validation": true,
+    "labels_attached_after_feature_extraction": true,
+    "label_source": "Frozen Dataset B logical run plan",
+    "partition_source": "Frozen Dataset B logical run plan",
+    "metadata_added_after_extraction": [
+      "logical_run_id",
+      "class",
+      "partition"
+    ],
+    "metadata_used_as_model_features": false,
+    "window_index_used_as_model_feature": false,
+    "source_ip_used_as_model_feature": false,
+    "request_id_used_as_model_feature": false,
+    "run_id_used_as_model_feature": false
+  },
+
+  "feature_contract": {
+    "feature_count": 20,
+    "feature_order": [
+      "packet_count",
+      "duration_seconds",
+      "header_length_mean",
+      "ttl_mean",
+      "fin_fraction",
+      "syn_fraction",
+      "rst_fraction",
+      "psh_fraction",
+      "ack_fraction",
+      "packet_length_sum",
+      "packet_length_min",
+      "packet_length_max",
+      "packet_length_mean",
+      "packet_length_std",
+      "packet_length_variance",
+      "iat_mean",
+      "iat_min",
+      "iat_max",
+      "iat_std",
+      "packet_rate"
+    ],
+    "frozen_extractor_sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f",
+    "dpkt_version": "1.9.8",
+    "feature_extraction_label_blind": true
+  },
+
+  "nonfinite_and_null_policy": {
+    "positive_or_negative_infinity": "invalid_feature_artifact_hard_fail",
+    "nan": "invalid_feature_artifact_hard_fail",
+    "packet_rate_null_from_zero_duration": "replace_with_0.0",
+    "other_null": "invalid_feature_artifact_hard_fail",
+    "rationale": "packet_rate is undefined when duration is zero; zero is the prospectively fixed finite representation. No other feature nulls are expected."
+  },
+
+  "preprocessing": {
+    "fit_scope": "training_partition_only",
+    "validation_refit_permitted": false,
+    "test_refit_permitted": false,
+    "scaler": "StandardScaler",
+    "scaler_applied_to": [
+      "logistic_regression",
+      "hybrid_cnn_lstm"
+    ],
+    "random_forest_scaling": "not_required",
+    "preprocessing_parameters_must_be_saved": true
+  },
+
+  "candidate_models": {
+    "logistic_regression": {
+      "implementation": "sklearn.linear_model.LogisticRegression",
+      "C": 1.0,
+      "penalty": "l2",
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "max_iter": 2000,
+      "random_state": 20261004
+    },
+
+    "random_forest": {
+      "implementation": "sklearn.ensemble.RandomForestClassifier",
+      "n_estimators": 300,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "class_weight": "balanced",
+      "bootstrap": true,
+      "n_jobs": -1,
+      "random_state": 20261004
+    },
+
+    "hybrid_cnn_lstm": {
+      "implementation": "tensorflow.keras",
+      "input_semantics": "feature_axis_not_temporal_packet_sequence",
+      "input_shape": [20, 1],
+      "architecture": [
+        {
+          "layer": "Conv1D",
+          "filters": 32,
+          "kernel_size": 3,
+          "activation": "relu",
+          "padding": "same"
+        },
+        {
+          "layer": "MaxPooling1D",
+          "pool_size": 2
+        },
+        {
+          "layer": "LSTM",
+          "units": 32,
+          "return_sequences": false
+        },
+        {
+          "layer": "Dense",
+          "units": 16,
+          "activation": "relu"
+        },
+        {
+          "layer": "Dropout",
+          "rate": 0.2
+        },
+        {
+          "layer": "Dense",
+          "units": 1,
+          "activation": "sigmoid"
+        }
+      ],
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "loss": "binary_crossentropy",
+      "batch_size": 64,
+      "maximum_epochs": 30,
+      "early_stopping_monitor": "val_loss",
+      "early_stopping_patience": 5,
+      "restore_best_weights": true,
+      "random_seed": 20261004
+    }
+  },
+
+  "training_contract": {
+    "one_model_per_candidate_per_window_size": true,
+    "training_windows": "all eligible windows from frozen training acquisition runs for the candidate window size",
+    "validation_windows_used_for_gradient_training": false,
+    "validation_windows_used_for_early_stopping": true,
+    "test_windows_used_during_training": false,
+    "class_labels": {
+      "Benign": 0,
+      "Attack": 1
+    },
+    "model_artifacts_must_be_saved": true,
+    "training_history_must_be_saved_when_applicable": true,
+    "predictions_must_be_saved": true,
+    "artifact_sha256_required": true
+  },
+
+  "threshold_policy": {
+    "probabilistic_models": {
+      "candidate_thresholds": [
+        0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45,
+        0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9
+      ],
+      "selection_partition": "validation_only",
+      "selection_metric": "mean_per_run_balanced_accuracy",
+      "tie_break_1": "mean_per_run_macro_f1",
+      "tie_break_2": "threshold_closest_to_0.5",
+      "test_threshold_retuning_permitted": false
+    },
+    "random_forest": "use predicted attack probability and the same frozen threshold grid"
+  },
+
+  "validation_selection": {
+    "independent_unit_for_primary_selection": "acquisition_run",
+    "primary_metric": "mean_per_run_balanced_accuracy",
+    "primary_metric_definition": "Compute balanced accuracy separately for each of B05, B06, A05 and A06, then take the unweighted arithmetic mean across the four acquisition runs.",
+    "important_single_class_run_note": "Each acquisition run contains one ground-truth class. Per-run balanced accuracy shall therefore be computed as recall of the run's present class, not by invoking a library balanced_accuracy_score on a single-class vector.",
+    "secondary_metric": "mean_per_run_macro_f1",
+    "secondary_metric_definition": "Compute binary classification metrics against the known class for each acquisition run and average runs without weighting by window count.",
+    "descriptive_metrics": [
+      "pooled_balanced_accuracy",
+      "pooled_macro_f1",
+      "pooled_accuracy",
+      "pooled_precision_attack",
+      "pooled_recall_attack",
+      "pooled_f1_attack",
+      "pooled_precision_benign",
+      "pooled_recall_benign",
+      "pooled_f1_benign",
+      "confusion_matrix",
+      "per_run_metrics"
+    ],
+    "candidate_selection_order": [
+      "maximize mean_per_run_balanced_accuracy",
+      "if exactly tied, maximize mean_per_run_macro_f1",
+      "if still exactly tied, prefer the model with lower deployment complexity in the order logistic_regression, random_forest, hybrid_cnn_lstm",
+      "if the same model remains tied across window sizes, prefer window_size_packets=100"
+    ],
+    "validation_results_may_not_create_new_candidates": true,
+    "validation_results_may_not_change_feature_definitions": true,
+    "validation_results_may_not_change_partitions": true,
+    "validation_results_may_not_change_primary_metric": true
+  },
+
+  "test_evaluation": {
+    "performed_only_after_selected_system_freeze": true,
+    "model_reselection_after_test_permitted": false,
+    "threshold_reselection_after_test_permitted": false,
+    "window_reselection_after_test_permitted": false,
+    "required_reporting": [
+      "per_run_metrics",
+      "unweighted_mean_per_run_metrics",
+      "pooled_window_metrics",
+      "confusion_matrix",
+      "support_counts"
+    ]
+  },
+
+  "interpretation_constraints": {
+    "windows_within_same_run_are_independent_replicates": false,
+    "pooled_window_metrics_are_primary_independent_replication_evidence": false,
+    "run_level_results_required": true,
+    "hybrid_model_must_win": false,
+    "poor_results_must_be_preserved": true,
+    "post_hoc_candidate_addition_after_validation": false,
+    "claim_scope": "controlled laboratory HTTP request-intensity/flood discrimination"
+  }
+}

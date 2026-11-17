@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "logical_run_id": "A07",
+  "physical_run_id": "exp010_dataset_b_A07_attack_20261004T151312Z",
+  "class": "Attack",
+  "partition": "test",
+  "client_rows": 1000,
+  "victim_rows": 1000,
+  "unique_client_request_ids": 1000,
+  "unique_victim_request_ids": 1000,
+  "request_id_set_equality": true,
+  "client_duplicate_request_ids": 0,
+  "victim_duplicate_request_ids": 0,
+  "client_only": 0,
+  "victim_only": 0,
+  "client_run_ids": [
+    "exp010_dataset_b_A07_attack_20261004T151312Z"
+  ],
+  "workload_types": [
+    "controlled_high_rate_http"
+  ],
+  "all_transport_success": true,
+  "all_http_200": true,
+  "client_exit_code": "0",
+  "packets_captured": 12001,
+  "packets_received_by_filter": 12001,
+  "packets_dropped_by_kernel": 0,
+  "valid_dataset_run": true
+}

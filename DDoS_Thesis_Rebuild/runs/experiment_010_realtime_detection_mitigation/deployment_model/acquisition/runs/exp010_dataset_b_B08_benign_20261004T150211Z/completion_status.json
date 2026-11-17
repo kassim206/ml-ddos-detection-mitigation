@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B08",
+  "physical_run_id": "exp010_dataset_b_B08_benign_20261004T150211Z",
+  "class": "Benign",
+  "partition": "test",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "training_use_permitted": false,
+  "validation_use_permitted": false,
+  "test_use_permitted": true,
+  "raw_evidence_frozen": true,
+  "feature_artifacts_frozen": true,
+  "reconciliation_status": "PASS",
+  "capture": {
+    "eligible_packets": 12000,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0
+  },
+  "features": {
+    "w10_windows": 1200,
+    "w100_windows": 120,
+    "feature_count": 20,
+    "labels_supplied_to_extractor": false,
+    "extractor_sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f"
+  },
+  "execution_notes": [
+    "Genuine controlled benign workload executed once.",
+    "W10 and W100 feature extraction each executed once after raw freeze.",
+    "No raw acquisition traffic was rerun.",
+    "No selected-model inference or final-test performance evaluation was performed before run closure."
+  ],
+  "integrity": {
+    "raw_manifest_sha256": "ddd81181cbb5b7beda3049a90f72718722757a27c96b9eba5e62eefaacf79e29",
+    "raw_master_manifest_sha256": "2febb3cbf984520198d86d09e4567ded7d049e156c61e781c471d122be4ea97f",
+    "raw_freeze_status_sha256": "81e95fc3c8f6d8863c81c0c1cdb2497834629664d3b8e3469d71d7029fc039a8",
+    "feature_manifest_sha256": "e31e7c579742b93738506ad8af5e4728771d5e0385e9954351a40c7b6eb2bc77",
+    "feature_master_manifest_sha256": "207d649304ce5600969d5988ab9df965e2251bdbdbf2380d65f8630788fb56fd",
+    "reconciliation_sha256": "2c2ba81de9d86b58c658c01dd6b8474c7696a0369993169db8c740674b5ff396"
+  }
+}

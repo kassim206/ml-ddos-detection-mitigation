@@ -1,0 +1,27 @@
+{
+  "run_id": "exp010_benign_provenance_20261003T224907Z",
+  "purpose": "benign provenance validation",
+  "client_rows": 25,
+  "victim_rows": 25,
+  "client_status_counts": {
+    "200": 25
+  },
+  "victim_source_ip_counts": {
+    "172.19.0.3": 25
+  },
+  "checks": {
+    "client_exactly_25": true,
+    "victim_exactly_25": true,
+    "single_expected_run_id": true,
+    "request_ids_unique": true,
+    "all_workload_benign": true,
+    "all_client_get": true,
+    "all_victim_get": true,
+    "all_victim_root_path": true,
+    "all_transport_success": true,
+    "all_http_200": true,
+    "timestamps_parse": true
+  },
+  "overall_csv_reconciliation": "PASS",
+  "pcap_validation": "PENDING"
+}

@@ -1,0 +1,1064 @@
+reading from file /capture/traffic.pcap, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144
+Warning: interface names might be incorrect
+23:28:38.964334 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [S], seq 2869514813, win 64240, options [mss 1460,sackOK,TS val 3401655678 ecr 0,nop,wscale 7], length 0
+E..<..@.@.Y............P.	R=........X\.........
+..%~........
+23:28:38.964351 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50654: Flags [S.], seq 1245609757, ack 2869514814, win 65160, options [mss 1460,sackOK,TS val 3331296813 ecr 3401655678,nop,wscale 7], length 0
+E..<..@.@............P..J>...	R>....X\.........
+...-..%~....
+23:28:38.964369 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655678 ecr 3331296813], length 0
+E..4..@.@.Y............P.	R>J>......XT.....
+..%~...-
+23:28:38.965625 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [S], seq 1735324565, win 64240, options [mss 1460,sackOK,TS val 3401655679 ecr 0,nop,wscale 7], length 0
+E..<.:@.@.<T...........Pgn..........X\.........
+..%.........
+23:28:38.965646 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50668: Flags [S.], seq 4193716300, ack 1735324566, win 65160, options [mss 1460,sackOK,TS val 3331296814 ecr 3401655679,nop,wscale 7], length 0
+E..<..@.@............P.....Lgn......X\.........
+......%.....
+23:28:38.965667 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655679 ecr 3331296814], length 0
+E..4.;@.@.<[...........Pgn.....M....XT.....
+..%.....
+23:28:38.966858 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [S], seq 2922901662, win 64240, options [mss 1460,sackOK,TS val 3401655681 ecr 0,nop,wscale 7], length 0
+E..<s.@.@.n............P.7..........X\.........
+..%.........
+23:28:38.966877 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50674: Flags [S.], seq 1974463006, ack 2922901663, win 65160, options [mss 1460,sackOK,TS val 3331296816 ecr 3401655681,nop,wscale 7], length 0
+E..<..@.@............P..u....7......X\.........
+...0..%.....
+23:28:38.966897 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655681 ecr 3331296816], length 0
+E..4s.@.@.n............P.7..u.......XT.....
+..%....0
+23:28:38.966927 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [S], seq 4186116931, win 64240, options [mss 1460,sackOK,TS val 3401655681 ecr 0,nop,wscale 7], length 0
+E..<..@.@.L............P...C........X\.........
+..%.........
+23:28:38.966940 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50680: Flags [S.], seq 95950517, ack 4186116932, win 65160, options [mss 1460,sackOK,TS val 3331296816 ecr 3401655681,nop,wscale 7], length 0
+E..<..@.@............P.........D....X\.........
+...0..%.....
+23:28:38.966955 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655681 ecr 3331296816], length 0
+E..4..@.@.L............P...D........XT.....
+..%....0
+23:28:38.968948 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [S], seq 236890862, win 64240, options [mss 1460,sackOK,TS val 3401655683 ecr 0,nop,wscale 7], length 0
+E..<> @.@..n...........P............X\.........
+..%.........
+23:28:38.968967 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50692: Flags [S.], seq 370300261, ack 236890863, win 65160, options [mss 1460,sackOK,TS val 3331296818 ecr 3401655683,nop,wscale 7], length 0
+E..<..@.@............P....Ue........X\.........
+...2..%.....
+23:28:38.968986 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296818], length 0
+E..4>!@.@..u...........P......Uf....XT.....
+..%....2
+23:28:38.968987 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [S], seq 2276009705, win 64240, options [mss 1460,sackOK,TS val 3401655683 ecr 0,nop,wscale 7], length 0
+E..<D.@.@..............P..&.........X\.........
+..%.........
+23:28:38.968996 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50700: Flags [S.], seq 259156259, ack 2276009706, win 65160, options [mss 1460,sackOK,TS val 3331296818 ecr 3401655683,nop,wscale 7], length 0
+E..<..@.@............P...ri#..&.....X\.........
+...2..%.....
+23:28:38.969006 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296818], length 0
+E..4D.@.@..
+...........P..&..ri$....XT.....
+..%....2
+23:28:38.969092 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [S], seq 2561581180, win 64240, options [mss 1460,sackOK,TS val 3401655683 ecr 0,nop,wscale 7], length 0
+E..<;.@.@..............P...|........X\.........
+..%.........
+23:28:38.969102 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50706: Flags [S.], seq 3045405637, ack 2561581181, win 65160, options [mss 1460,sackOK,TS val 3331296818 ecr 3401655683,nop,wscale 7], length 0
+E..<..@.@............P....3....}....X\.........
+...2..%.....
+23:28:38.969114 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296818], length 0
+E..4;.@.@..............P...}..3.....XT.....
+..%....2
+23:28:38.969130 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296816], length 308: HTTP: GET / HTTP/1.1
+E..hs.@.@.m............P.7..u.......Y......
+..%....0GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 14bb342e-b5ab-4dc2-a1af-50ef2692994a
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.969143 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50674: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296818 ecr 3401655683], length 0
+E..4.S@.@.FC.........P..u....7......XT.....
+...2..%.
+23:28:38.969148 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296818], length 308: HTTP: GET / HTTP/1.1
+E..h;.@.@..r...........P...}..3.....Y......
+..%....2GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: ea9be1ab-cbf0-4f7c-b604-ef715b8a4590
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.969154 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50706: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296818 ecr 3401655683], length 0
+E..4. @.@..u.........P....3.........XT.....
+...2..%.
+23:28:38.969459 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296813], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@.X............P.	R>J>......Y......
+..%....-GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 7fe4376c-c59d-4afc-8ab7-efc024ad120f
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.969478 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50654: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296818 ecr 3401655683], length 0
+E..4A.@.@............P..J>...	Sr....XT.....
+...2..%.
+23:28:38.969590 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655683 ecr 3331296814], length 308: HTTP: GET / HTTP/1.1
+E..h.<@.@.;&...........Pgn.....M....Y......
+..%.....GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: a491d862-d593-4caa-8228-ee04ec366533
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.969602 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50668: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296818 ecr 3401655683], length 0
+E..4..@.@............P.....Mgn......XT.....
+...2..%.
+23:28:38.969739 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655684 ecr 3331296818], length 308: HTTP: GET / HTTP/1.1
+E..h>"@.@..@...........P......Uf....Y......
+..%....2GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 77bf9087-0cad-4c2d-9dbe-b00cc7ef5cdf
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.969746 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50692: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296819 ecr 3401655684], length 0
+E..4$P@.@..F.........P....Uf...#....XT.....
+...3..%.
+23:28:38.970191 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655684 ecr 3331296818], length 308: HTTP: GET / HTTP/1.1
+E..hD.@.@..............P..&..ri$....Y......
+..%....2GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: fc7da8c8-435f-43e0-af62-ab0927bbdd1a
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.970200 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50700: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296819 ecr 3401655684], length 0
+E..4.5@.@..a.........P...ri$..(.....XT.....
+...3..%.
+23:28:38.971736 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655685 ecr 3331296816], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@.K............P...D........Y......
+..%....0GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 8717614b-aa5c-4dda-a58f-952498f45c14
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.971755 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50680: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296821 ecr 3401655685], length 0
+E..4&]@.@..9.........P.........x....XT.....
+...5..%.
+23:28:38.971879 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [S], seq 691234398, win 64240, options [mss 1460,sackOK,TS val 3401655686 ecr 0,nop,wscale 7], length 0
+E..<.^@.@.`0...........P)3f^........X\.........
+..%.........
+23:28:38.971897 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50716: Flags [S.], seq 161877839, ack 691234399, win 65160, options [mss 1460,sackOK,TS val 3331296821 ecr 3401655686,nop,wscale 7], length 0
+E..<..@.@............P..	..O)3f_....X\.........
+...5..%.....
+23:28:38.971913 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655686 ecr 3331296821], length 0
+E..4._@.@.`7...........P)3f_	..P....XT.....
+..%....5
+23:28:38.973278 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [S], seq 405974686, win 64240, options [mss 1460,sackOK,TS val 3401655687 ecr 0,nop,wscale 7], length 0
+E..<.$@.@..j.........,.P.2..........X\.........
+..%.........
+23:28:38.973295 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50732: Flags [S.], seq 1206986961, ack 405974687, win 65160, options [mss 1460,sackOK,TS val 3331296822 ecr 3401655687,nop,wscale 7], length 0
+E..<..@.@............P.,G.(..2......X\.........
+...6..%.....
+23:28:38.973308 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655687 ecr 3331296822], length 0
+E..4.%@.@..q.........,.P.2..G.(.....XT.....
+..%....6
+23:28:38.974719 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655688 ecr 3331296821], length 308: HTTP: GET / HTTP/1.1
+E..h.`@.@._............P)3f_	..P....Y......
+..%....5GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: e4b43549-218d-427b-bfd8-9e118d4adbd1
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.974734 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50716: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296823 ecr 3401655688], length 0
+E..4..@.@.V..........P..	..P)3g.....XT.....
+...7..%.
+23:28:38.974898 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655689 ecr 3331296822], length 308: HTTP: GET / HTTP/1.1
+E..h.&@.@..<.........,.P.2..G.(.....Y......
+..%....6GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 12520c2c-9db3-48c6-bd31-d32dd94b4f3f
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.974906 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50732: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296824 ecr 3401655689], length 0
+E..4`b@.@..4.........P.,G.(..2......XT.....
+...8..%.
+23:28:38.975099 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [S], seq 3555685035, win 64240, options [mss 1460,sackOK,TS val 3401655689 ecr 0,nop,wscale 7], length 0
+E..<..@.@.8..........8.P..r.........X\.........
+..%.........
+23:28:38.975118 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50744: Flags [S.], seq 2629933161, ack 3555685036, win 65160, options [mss 1460,sackOK,TS val 3331296824 ecr 3401655689,nop,wscale 7], length 0
+E..<..@.@............P.8...i..r.....X\.........
+...8..%.....
+23:28:38.975140 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655689 ecr 3331296824], length 0
+E..4..@.@.8	.........8.P..r....j....XT.....
+..%....8
+23:28:38.975210 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655689 ecr 3331296824], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@.6..........8.P..r....j....Y......
+..%....8GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: e072676a-28d7-4b2f-bad7-bddc79fac777
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.975215 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50744: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296824 ecr 3401655689], length 0
+E..4..@.@............P.8...j..s.....XT.....
+...8..%.
+23:28:38.977089 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50692: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296826 ecr 3401655684], length 173: HTTP: HTTP/1.1 200 OK
+E...$Q@.@............P....Uf...#....Y......
+...:..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.977112 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655691 ecr 3331296826], length 0
+E..4>#@.@..s...........P...#..V.....XT.....
+..%....:
+23:28:38.977134 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50692: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296826 ecr 3401655691], length 45: HTTP
+E..a$R@.@............P....V....#....X......
+...:..%.Web Application Running - DDoS Testbed Target
+23:28:38.977141 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655691 ecr 3331296826], length 0
+E..4>$@.@..r...........P...#..V@....XT.....
+..%....:
+23:28:38.977864 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655692 ecr 3331296826], length 0
+E..4>%@.@..q...........P...#..V@....XT.....
+..%....:
+23:28:38.978455 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50692: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296827 ecr 3401655692], length 0
+E..4$S@.@..C.........P....V@...$....XT.....
+...;..%.
+23:28:38.978484 eth0  In  IP 172.20.0.3.50692 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655692 ecr 3331296827], length 0
+E..4>&@.@..p...........P...$..VA....XT.....
+..%....;
+23:28:38.978979 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50674: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296828 ecr 3401655683], length 173: HTTP: HTTP/1.1 200 OK
+E....T@.@.E..........P..u....7......Y......
+...<..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.979004 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655693 ecr 3331296828], length 0
+E..4s.@.@.n............P.7..u.......XT.....
+..%....<
+23:28:38.979516 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50674: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296828 ecr 3401655693], length 45: HTTP
+E..a.U@.@.F..........P..u....7......X......
+...<..%.Web Application Running - DDoS Testbed Target
+23:28:38.979534 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655693 ecr 3331296828], length 0
+E..4s.@.@.n............P.7..u.......XT.....
+..%....<
+23:28:38.980162 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [S], seq 2468380850, win 64240, options [mss 1460,sackOK,TS val 3401655694 ecr 0,nop,wscale 7], length 0
+E..<..@.@............D.P. ..........X\.........
+..%.........
+23:28:38.980178 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50756: Flags [S.], seq 4132867933, ack 2468380851, win 65160, options [mss 1460,sackOK,TS val 3331296829 ecr 3401655694,nop,wscale 7], length 0
+E..<..@.@............P.D.V.]. ......X\.........
+...=..%.....
+23:28:38.980191 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655694 ecr 3331296829], length 0
+E..4..@.@............D.P. ...V.^....XT.....
+..%....=
+23:28:38.980271 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655694 ecr 3331296829], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@............D.P. ...V.^....Y......
+..%....=GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 52866a69-05c1-438b-8f71-d425e7888f18
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.980278 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50756: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296829 ecr 3401655694], length 0
+E..4.B@.@.*T.........P.D.V.^. ......XT.....
+...=..%.
+23:28:38.980296 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655694 ecr 3331296828], length 0
+E..4s.@.@.n............P.7..u.......XT.....
+..%....<
+23:28:38.981375 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50674: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296830 ecr 3401655694], length 0
+E..4.V@.@.F@.........P..u....7......XT.....
+...>..%.
+23:28:38.981402 eth0  In  IP 172.20.0.3.50674 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655695 ecr 3331296830], length 0
+E..4s.@.@.n............P.7..u.......XT.....
+..%....>
+23:28:38.982397 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [S], seq 3995229375, win 64240, options [mss 1460,sackOK,TS val 3401655696 ecr 0,nop,wscale 7], length 0
+E..<7.@.@............T.P."\.........X\.........
+..%.........
+23:28:38.982412 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50772: Flags [S.], seq 132809785, ack 3995229376, win 65160, options [mss 1460,sackOK,TS val 3331296831 ecr 3401655696,nop,wscale 7], length 0
+E..<..@.@............P.T...9."\.....X\.........
+...?..%.....
+23:28:38.982426 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655696 ecr 3331296831], length 0
+E..47.@.@............T.P."\....:....XT.....
+..%....?
+23:28:38.982474 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655696 ecr 3331296831], length 308: HTTP: GET / HTTP/1.1
+E..h7.@.@............T.P."\....:....Y......
+..%....?GET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 1748e225-a1f9-48ed-a6c9-22a4ed839d69
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.982479 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50772: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296831 ecr 3401655696], length 0
+E..4.H@.@..N.........P.T...:."].....XT.....
+...?..%.
+23:28:38.982970 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50668: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296832 ecr 3401655683], length 173: HTTP: HTTP/1.1 200 OK
+E.....@.@............P.....Mgn......Y......
+...@..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.982988 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655697 ecr 3331296832], length 0
+E..4.=@.@.<Y...........Pgn..........XT.....
+..%....@
+23:28:38.983081 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50668: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296832 ecr 3401655697], length 45: HTTP
+E..a..@.@..X.........P......gn......X......
+...@..%.Web Application Running - DDoS Testbed Target
+23:28:38.983094 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655697 ecr 3331296832], length 0
+E..4.>@.@.<X...........Pgn....	'....XT.....
+..%....@
+23:28:38.983516 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655697 ecr 3331296832], length 0
+E..4.?@.@.<W...........Pgn....	'....XT.....
+..%....@
+23:28:38.984717 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50668: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296833 ecr 3401655697], length 0
+E..4..@.@............P....	'gn......XT.....
+...A..%.
+23:28:38.984779 eth0  In  IP 172.20.0.3.50668 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655699 ecr 3331296833], length 0
+E..4.@@.@.<V...........Pgn....	(....XT.....
+..%....A
+23:28:38.985627 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [S], seq 2952233260, win 64240, options [mss 1460,sackOK,TS val 3401655699 ecr 0,nop,wscale 7], length 0
+E..<Qe@.@..).........b.P...,........X\.........
+..%.........
+23:28:38.985642 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50786: Flags [S.], seq 3829181888, ack 2952233261, win 65160, options [mss 1460,sackOK,TS val 3331296834 ecr 3401655699,nop,wscale 7], length 0
+E..<..@.@............P.b.<.....-....X\.........
+...B..%.....
+23:28:38.985656 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655699 ecr 3331296834], length 0
+E..4Qf@.@..0.........b.P...-.<......XT.....
+..%....B
+23:28:38.985697 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655699 ecr 3331296834], length 308: HTTP: GET / HTTP/1.1
+E..hQg@.@............b.P...-.<......Y......
+..%....BGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 0d257410-d0f6-48c0-8f9f-b71ffeacd674
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.985702 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50786: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296834 ecr 3401655699], length 0
+E..4@E@.@..Q.........P.b.<.....a....XT.....
+...B..%.
+23:28:38.987539 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50680: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296836 ecr 3401655685], length 173: HTTP: HTTP/1.1 200 OK
+E...&^@.@............P.........x....Y......
+...D..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.987582 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655701 ecr 3331296836], length 0
+E..4..@.@.L............P...x...c....XT.....
+..%....D
+23:28:38.987689 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50680: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296836 ecr 3401655701], length 45: HTTP
+E..a&_@.@..
+.........P.....c...x....X......
+...D..%.Web Application Running - DDoS Testbed Target
+23:28:38.987701 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655701 ecr 3331296836], length 0
+E..4..@.@.L............P...x........XT.....
+..%....D
+23:28:38.988380 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655702 ecr 3331296836], length 0
+E..4..@.@.L............P...x........XT.....
+..%....D
+23:28:38.988537 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50680: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296837 ecr 3401655702], length 0
+E..4&`@.@..6.........P.........y....XT.....
+...E..%.
+23:28:38.988557 eth0  In  IP 172.20.0.3.50680 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655702 ecr 3331296837], length 0
+E..4..@.@.L............P...y........XT.....
+..%....E
+23:28:38.990069 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50654: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296839 ecr 3401655683], length 173: HTTP: HTTP/1.1 200 OK
+E...A.@.@..J.........P..J>...	Sr....Y......
+...G..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.990100 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655704 ecr 3331296839], length 0
+E..4..@.@.Y............P.	SrJ>......XT.....
+..%....G
+23:28:38.990131 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50654: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296839 ecr 3401655704], length 45: HTTP
+E..aA.@.@............P..J>...	Sr....X......
+...G..%.Web Application Running - DDoS Testbed Target
+23:28:38.990140 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655704 ecr 3331296839], length 0
+E..4..@.@.Y............P.	SrJ>......XT.....
+..%....G
+23:28:38.990926 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655705 ecr 3331296839], length 0
+E..4..@.@.Y............P.	SrJ>......XT.....
+..%....G
+23:28:38.991003 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [S], seq 1498140767, win 64240, options [mss 1460,sackOK,TS val 3401655705 ecr 0,nop,wscale 7], length 0
+E..<_.@.@............h.PYK._........X\.........
+..%.........
+23:28:38.991017 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50792: Flags [S.], seq 3106712761, ack 1498140768, win 65160, options [mss 1460,sackOK,TS val 3331296840 ecr 3401655705,nop,wscale 7], length 0
+E..<..@.@............P.h.,..YK.`....X\.........
+...H..%.....
+23:28:38.991030 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655705 ecr 3331296840], length 0
+E..4_.@.@............h.PYK.`.,......XT.....
+..%....H
+23:28:38.991118 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655705 ecr 3331296840], length 308: HTTP: GET / HTTP/1.1
+E..h_.@.@............h.PYK.`.,......Y......
+..%....HGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 300c15fb-7768-4d73-9baf-045f188a05d8
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.991123 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50792: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296840 ecr 3401655705], length 0
+E..4(.@.@............P.h.,..YK......XT.....
+...H..%.
+23:28:38.991532 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50654: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296840 ecr 3401655705], length 0
+E..4A.@.@............P..J>...	Ss....XT.....
+...H..%.
+23:28:38.991551 eth0  In  IP 172.20.0.3.50654 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655705 ecr 3331296840], length 0
+E..4..@.@.Y............P.	SsJ>......XT.....
+..%....H
+23:28:38.993110 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50700: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296842 ecr 3401655684], length 173: HTTP: HTTP/1.1 200 OK
+E....6@.@............P...ri$..(.....Y......
+...J..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.993135 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655707 ecr 3331296842], length 0
+E..4D.@.@..............P..(..ri.....XT.....
+..%....J
+23:28:38.993177 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50700: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296842 ecr 3401655707], length 45: HTTP
+E..a.7@.@..2.........P...ri...(.....X......
+...J..%.Web Application Running - DDoS Testbed Target
+23:28:38.993188 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655707 ecr 3331296842], length 0
+E..4D.@.@..............P..(..ri.....XT.....
+..%....J
+23:28:38.993623 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655707 ecr 3331296842], length 0
+E..4D.@.@..............P..(..ri.....XT.....
+..%....J
+23:28:38.993651 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [S], seq 4122258342, win 64240, options [mss 1460,sackOK,TS val 3401655707 ecr 0,nop,wscale 7], length 0
+E..<..@.@............x.P............X\.........
+..%.........
+23:28:38.993665 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50808: Flags [S.], seq 2172864341, ack 4122258343, win 65160, options [mss 1460,sackOK,TS val 3331296842 ecr 3401655707,nop,wscale 7], length 0
+E..<..@.@............P.x..GU........X\.........
+...J..%.....
+23:28:38.993680 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655707 ecr 3331296842], length 0
+E..4..@.@............x.P......GV....XT.....
+..%....J
+23:28:38.993783 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50700: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296843 ecr 3401655707], length 0
+E..4.8@.@..^.........P...ri...(.....XT.....
+...K..%.
+23:28:38.993804 eth0  In  IP 172.20.0.3.50700 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655708 ecr 3331296843], length 0
+E..4D.@.@..............P..(..ri.....XT.....
+..%....K
+23:28:38.995005 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50706: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296844 ecr 3401655683], length 173: HTTP: HTTP/1.1 200 OK
+E....!@.@............P....3.........Y......
+...L..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.995037 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655709 ecr 3331296844], length 0
+E..4;.@.@..............P......4s....XT.....
+..%....L
+23:28:38.995074 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50706: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296844 ecr 3401655709], length 45: HTTP
+E..a."@.@..F.........P....4s........X......
+...L..%.Web Application Running - DDoS Testbed Target
+23:28:38.995084 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655709 ecr 3331296844], length 0
+E..4;.@.@..............P......4.....XT.....
+..%....L
+23:28:38.995207 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655709 ecr 3331296842], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@............x.P......GV....Y......
+..%....JGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 97f35c6d-ac86-42de-8f5a-ad210826b2b9
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.995215 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50808: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296844 ecr 3401655709], length 0
+E..4o.@.@.sz.........P.x..GV........XT.....
+...L..%.
+23:28:38.995887 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655710 ecr 3331296844], length 0
+E..4;.@.@..............P......4.....XT.....
+..%....L
+23:28:38.996346 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50706: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296845 ecr 3401655710], length 0
+E..4.#@.@..r.........P....4.........XT.....
+...M..%.
+23:28:38.996373 eth0  In  IP 172.20.0.3.50706 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655710 ecr 3331296845], length 0
+E..4;.@.@..............P......4.....XT.....
+..%....M
+23:28:38.997793 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [S], seq 1636275021, win 64240, options [mss 1460,sackOK,TS val 3401655712 ecr 0,nop,wscale 7], length 0
+E..<..@.@..y.........z.Pa..M........X\.........
+..%.........
+23:28:38.997810 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50810: Flags [S.], seq 119548367, ack 1636275022, win 65160, options [mss 1460,sackOK,TS val 3331296847 ecr 3401655712,nop,wscale 7], length 0
+E..<..@.@............P.z. ).a..N....X\.........
+...O..%.....
+23:28:38.997824 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655712 ecr 3331296847], length 0
+E..4..@.@............z.Pa..N. ).....XT.....
+..%....O
+23:28:38.997865 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655712 ecr 3331296847], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@..K.........z.Pa..N. ).....Y......
+..%....OGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 702a5ede-9413-4804-8dfd-23095a97db37
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:38.997870 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50810: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296847 ecr 3401655712], length 0
+E..4..@.@............P.z. ).a.......XT.....
+...O..%.
+23:28:38.998340 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50716: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296847 ecr 3401655688], length 173: HTTP: HTTP/1.1 200 OK
+E.....@.@.V..........P..	..P)3g.....Y......
+...O..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:38.998358 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655712 ecr 3331296847], length 0
+E..4.a@.@.`5...........P)3g.	.......XT.....
+..%....O
+23:28:38.998384 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50716: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296847 ecr 3401655712], length 45: HTTP
+E..a..@.@.V..........P..	...)3g.....X......
+...O..%.Web Application Running - DDoS Testbed Target
+23:28:38.998393 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655712 ecr 3331296847], length 0
+E..4.b@.@.`4...........P)3g.	..*....XT.....
+..%....O
+23:28:38.999092 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655713 ecr 3331296847], length 0
+E..4.c@.@.`3...........P)3g.	..*....XT.....
+..%....O
+23:28:38.999603 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [S], seq 2717262654, win 64240, options [mss 1460,sackOK,TS val 3401655713 ecr 0,nop,wscale 7], length 0
+E..<..@.@............~.P..#>........X\.........
+..%.........
+23:28:38.999617 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50814: Flags [S.], seq 1773003622, ack 2717262655, win 65160, options [mss 1460,sackOK,TS val 3331296848 ecr 3401655713,nop,wscale 7], length 0
+E..<..@.@............P.~i..f..#?....X\.........
+...P..%.....
+23:28:38.999630 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655713 ecr 3331296848], length 0
+E..4..@.@............~.P..#?i..g....XT.....
+..%....P
+23:28:39.000003 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50716: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296849 ecr 3401655713], length 0
+E..4..@.@.V..........P..	..*)3g.....XT.....
+...Q..%.
+23:28:39.000026 eth0  In  IP 172.20.0.3.50716 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655714 ecr 3331296849], length 0
+E..4.d@.@.`2...........P)3g.	..+....XT.....
+..%....Q
+23:28:39.000802 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655715 ecr 3331296848], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@............~.P..#?i..g....Y......
+..%....PGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 4fc8970c-53bb-428e-9a10-31ede2d1d05f
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:39.000813 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50814: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296850 ecr 3401655715], length 0
+E..4..@.@.K..........P.~i..g..$s....XT.....
+...R..%.
+23:28:39.001167 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [S], seq 4230483613, win 64240, options [mss 1460,sackOK,TS val 3401655715 ecr 0,nop,wscale 7], length 0
+E..<..@.@.I............P.(..........X\.........
+..%.........
+23:28:39.001184 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50822: Flags [S.], seq 761169257, ack 4230483614, win 65160, options [mss 1460,sackOK,TS val 3331296850 ecr 3401655715,nop,wscale 7], length 0
+E..<..@.@............P..-^.i.(......X\.........
+...R..%.....
+23:28:39.001197 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655715 ecr 3331296850], length 0
+E..4..@.@.I............P.(..-^.j....XT.....
+..%....R
+23:28:39.001231 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655715 ecr 3331296850], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@.H............P.(..-^.j....Y......
+..%....RGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: 3e8bd146-60eb-44f4-88bc-dc6a5225845e
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:39.001237 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50822: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296850 ecr 3401655715], length 0
+E..4.y@.@.P..........P..-^.j.(......XT.....
+...R..%.
+23:28:39.003027 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50732: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296852 ecr 3401655689], length 173: HTTP: HTTP/1.1 200 OK
+E...`c@.@............P.,G.(..2......Y......
+...T..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.003048 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655717 ecr 3331296852], length 0
+E..4.'@.@..o.........,.P.2..G.).....XT.....
+..%....T
+23:28:39.003073 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50732: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296852 ecr 3401655717], length 45: HTTP
+E..a`d@.@............P.,G.)..2......X......
+...T..%.Web Application Running - DDoS Testbed Target
+23:28:39.003080 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655717 ecr 3331296852], length 0
+E..4.(@.@..n.........,.P.2..G.).....XT.....
+..%....T
+23:28:39.003616 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655717 ecr 3331296852], length 0
+E..4.)@.@..m.........,.P.2..G.).....XT.....
+..%....T
+23:28:39.004321 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50732: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296853 ecr 3401655717], length 0
+E..4`e@.@..1.........P.,G.)..2......XT.....
+...U..%.
+23:28:39.004355 eth0  In  IP 172.20.0.3.50732 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655718 ecr 3331296853], length 0
+E..4.*@.@..l.........,.P.2..G.).....XT.....
+..%....U
+23:28:39.004974 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50744: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296854 ecr 3401655689], length 173: HTTP: HTTP/1.1 200 OK
+E.....@.@..Y.........P.8...j..s.....Y......
+...V..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.004997 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655719 ecr 3331296854], length 0
+E..4..@.@.8..........8.P..s.........XT.....
+..%....V
+23:28:39.005265 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50744: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296854 ecr 3401655719], length 45: HTTP
+E..a..@.@............P.8......s.....X......
+...V..%.Web Application Running - DDoS Testbed Target
+23:28:39.005275 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655719 ecr 3331296854], length 0
+E..4..@.@.8..........8.P..s....D....XT.....
+..%....V
+23:28:39.006375 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655720 ecr 3331296854], length 0
+E..4..@.@.8..........8.P..s....D....XT.....
+..%....V
+23:28:39.007140 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50756: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296856 ecr 3401655694], length 173: HTTP: HTTP/1.1 200 OK
+E....C@.@.)..........P.D.V.^. ......Y......
+...X..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.007173 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655721 ecr 3331296856], length 0
+E..4..@.@............D.P. ...V......XT.....
+..%....X
+23:28:39.007204 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50744: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296856 ecr 3401655720], length 0
+E..4..@.@............P.8...D..s.....XT.....
+...X..%.
+23:28:39.007222 eth0  In  IP 172.20.0.3.50744 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655721 ecr 3331296856], length 0
+E..4..@.@.8..........8.P..s....E....XT.....
+..%....X
+23:28:39.007349 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50756: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296856 ecr 3401655721], length 45: HTTP
+E..a.D@.@.*%.........P.D.V... ......X......
+...X..%.Web Application Running - DDoS Testbed Target
+23:28:39.007361 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655721 ecr 3331296856], length 0
+E..4..@.@............D.P. ...V.8....XT.....
+..%....X
+23:28:39.008192 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [S], seq 3879521330, win 64240, options [mss 1460,sackOK,TS val 3401655722 ecr 0,nop,wscale 7], length 0
+E..<A]@.@..1...........P.<.2........X\.........
+..%.........
+23:28:39.008214 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50834: Flags [S.], seq 3869843885, ack 3879521331, win 65160, options [mss 1460,sackOK,TS val 3331296857 ecr 3401655722,nop,wscale 7], length 0
+E..<..@.@............P....!..<.3....X\.........
+...Y..%.....
+23:28:39.008232 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655722 ecr 3331296857], length 0
+E..4A^@.@..8...........P.<.3..!.....XT.....
+..%....Y
+23:28:39.008697 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50772: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296857 ecr 3401655696], length 173: HTTP: HTTP/1.1 200 OK
+E....I@.@............P.T...:."].....Y......
+...Y..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.008722 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655722 ecr 3331296857], length 0
+E..47.@.@............T.P."].........XT.....
+..%....Y
+23:28:39.008791 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655723 ecr 3331296856], length 0
+E..4..@.@............D.P. ...V.8....XT.....
+..%....X
+23:28:39.008864 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655723 ecr 3331296857], length 308: HTTP: GET / HTTP/1.1
+E..hA_@.@..............P.<.3..!.....Y......
+..%....YGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: e99b18b6-8049-467b-9817-795aed22868b
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:39.008872 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50834: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296858 ecr 3401655723], length 0
+E..4..@.@............P....!..<.g....XT.....
+...Z..%.
+23:28:39.008897 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [S], seq 935941661, win 64240, options [mss 1460,sackOK,TS val 3401655723 ecr 0,nop,wscale 7], length 0
+E..<..@.@.,............P7.V.........X\.........
+..%.........
+23:28:39.008912 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50844: Flags [S.], seq 2561739543, ack 935941662, win 65160, options [mss 1460,sackOK,TS val 3331296858 ecr 3401655723,nop,wscale 7], length 0
+E..<..@.@............P......7.V.....X\.........
+...Z..%.....
+23:28:39.008926 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3401655723 ecr 3331296858], length 0
+E..4..@.@.,............P7.V.........XT.....
+..%....Z
+23:28:39.009291 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50772: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296858 ecr 3401655722], length 45: HTTP
+E..a.J@.@............P.T....."].....X......
+...Z..%.Web Application Running - DDoS Testbed Target
+23:28:39.009305 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655723 ecr 3331296858], length 0
+E..47.@.@............T.P."].........XT.....
+..%....Z
+23:28:39.009463 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50756: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296858 ecr 3401655723], length 0
+E..4.E@.@.*Q.........P.D.V.8. ......XT.....
+...Z..%.
+23:28:39.009487 eth0  In  IP 172.20.0.3.50756 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655723 ecr 3331296858], length 0
+E..4..@.@............D.P. ...V.9....XT.....
+..%....Z
+23:28:39.009687 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655723 ecr 3331296858], length 0
+E..47.@.@............T.P."].........XT.....
+..%....Z
+23:28:39.009956 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [P.], seq 1:309, ack 1, win 502, options [nop,nop,TS val 3401655724 ecr 3331296858], length 308: HTTP: GET / HTTP/1.1
+E..h..@.@.+............P7.V.........Y......
+..%....ZGET / HTTP/1.1
+Host: victim_web_exp010
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+X-Experiment-Run-ID: exp010_attack_provenance_20261003T232735Z
+X-Request-ID: c26be01f-3eda-4795-bd4b-7652c499217b
+X-Workload-Type: controlled_high_rate_http
+
+
+23:28:39.009963 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50844: Flags [.], ack 309, win 507, options [nop,nop,TS val 3331296859 ecr 3401655724], length 0
+E..4.i@.@..-.........P......7.WR....XT.....
+...[..%.
+23:28:39.011271 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50772: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296860 ecr 3401655723], length 0
+E..4.K@.@..K.........P.T....."].....XT.....
+...\..%.
+23:28:39.011300 eth0  In  IP 172.20.0.3.50772 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655725 ecr 3331296860], length 0
+E..47.@.@............T.P."].........XT.....
+..%....\
+23:28:39.012114 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50786: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296861 ecr 3401655699], length 173: HTTP: HTTP/1.1 200 OK
+E...@F@.@............P.b.<.....a....Y......
+...]..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.012139 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655726 ecr 3331296861], length 0
+E..4Qh@.@............b.P...a.<.n....XT.....
+..%....]
+23:28:39.012194 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50786: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296861 ecr 3401655726], length 45: HTTP
+E..a@G@.@..".........P.b.<.n...a....X......
+...]..%.Web Application Running - DDoS Testbed Target
+23:28:39.012205 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655726 ecr 3331296861], length 0
+E..4Qi@.@..-.........b.P...a.<......XT.....
+..%....]
+23:28:39.012825 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655727 ecr 3331296861], length 0
+E..4Qj@.@..,.........b.P...a.<......XT.....
+..%....]
+23:28:39.012943 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50786: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296862 ecr 3401655727], length 0
+E..4@H@.@..N.........P.b.<.....b....XT.....
+...^..%.
+23:28:39.012960 eth0  In  IP 172.20.0.3.50786 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655727 ecr 3331296862], length 0
+E..4Qk@.@..+.........b.P...b.<......XT.....
+..%....^
+23:28:39.014448 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50792: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296863 ecr 3401655705], length 173: HTTP: HTTP/1.1 200 OK
+E...(.@.@............P.h.,..YK......Y......
+..._..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.014471 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655728 ecr 3331296863], length 0
+E..4_.@.@............h.PYK...,.g....XT.....
+..%...._
+23:28:39.014533 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50792: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296863 ecr 3401655728], length 45: HTTP
+E..a(.@.@..k.........P.h.,.gYK......X......
+..._..%.Web Application Running - DDoS Testbed Target
+23:28:39.014546 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655728 ecr 3331296863], length 0
+E..4_.@.@............h.PYK...,......XT.....
+..%...._
+23:28:39.014903 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655729 ecr 3331296863], length 0
+E..4_.@.@............h.PYK...,......XT.....
+..%...._
+23:28:39.015008 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50792: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296864 ecr 3401655729], length 0
+E..4(.@.@............P.h.,..YK......XT.....
+...`..%.
+23:28:39.015024 eth0  In  IP 172.20.0.3.50792 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655729 ecr 3331296864], length 0
+E..4_.@.@............h.PYK...,......XT.....
+..%....`
+23:28:39.016851 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50808: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296866 ecr 3401655709], length 173: HTTP: HTTP/1.1 200 OK
+E...o.@.@.r..........P.x..GV........Y......
+...b..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.016879 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655731 ecr 3331296866], length 0
+E..4..@.@............x.P......H.....XT.....
+..%....b
+23:28:39.016939 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50808: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296866 ecr 3401655731], length 45: HTTP
+E..ao.@.@.sK.........P.x..H.........X......
+...b..%.Web Application Running - DDoS Testbed Target
+23:28:39.016952 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655731 ecr 3331296866], length 0
+E..4..@.@............x.P......H0....XT.....
+..%....b
+23:28:39.017369 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655731 ecr 3331296866], length 0
+E..4..@.@............x.P......H0....XT.....
+..%....b
+23:28:39.017485 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50808: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296866 ecr 3401655731], length 0
+E..4o.@.@.sw.........P.x..H0........XT.....
+...b..%.
+23:28:39.017502 eth0  In  IP 172.20.0.3.50808 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655731 ecr 3331296866], length 0
+E..4..@.@............x.P......H1....XT.....
+..%....b
+23:28:39.019778 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50810: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296869 ecr 3401655712], length 173: HTTP: HTTP/1.1 200 OK
+E.....@.@............P.z. ).a.......Y......
+...e..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.019811 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655734 ecr 3331296869], length 0
+E..4..@.@..~.........z.Pa.... *}....XT.....
+..%....e
+23:28:39.019846 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50810: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296869 ecr 3401655734], length 45: HTTP
+E..a..@.@..f.........P.z. *}a.......X......
+...e..%.Web Application Running - DDoS Testbed Target
+23:28:39.019855 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655734 ecr 3331296869], length 0
+E..4..@.@..}.........z.Pa.... *.....XT.....
+..%....e
+23:28:39.020368 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655734 ecr 3331296869], length 0
+E..4..@.@..|.........z.Pa.... *.....XT.....
+..%....e
+23:28:39.020523 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50810: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296869 ecr 3401655734], length 0
+E..4..@.@............P.z. *.a.......XT.....
+...e..%.
+23:28:39.020542 eth0  In  IP 172.20.0.3.50810 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655734 ecr 3331296869], length 0
+E..4..@.@..{.........z.Pa.... *.....XT.....
+..%....e
+23:28:39.021979 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50814: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296871 ecr 3401655715], length 173: HTTP: HTTP/1.1 200 OK
+E.....@.@.KC.........P.~i..g..$s....Y......
+...g..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.022005 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655736 ecr 3331296871], length 0
+E..4..@.@............~.P..$si.......XT.....
+..%....g
+23:28:39.022041 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50814: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296871 ecr 3401655736], length 45: HTTP
+E..a..@.@.K..........P.~i.....$s....X......
+...g..%.Web Application Running - DDoS Testbed Target
+23:28:39.022049 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655736 ecr 3331296871], length 0
+E..4..@.@............~.P..$si..A....XT.....
+..%....g
+23:28:39.022533 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655736 ecr 3331296871], length 0
+E..4..@.@............~.P..$si..A....XT.....
+..%....g
+23:28:39.022669 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50814: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296871 ecr 3401655736], length 0
+E..4..@.@.K..........P.~i..A..$t....XT.....
+...g..%.
+23:28:39.022685 eth0  In  IP 172.20.0.3.50814 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655736 ecr 3331296871], length 0
+E..4..@.@............~.P..$ti..B....XT.....
+..%....g
+23:28:39.023884 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50822: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296873 ecr 3401655715], length 173: HTTP: HTTP/1.1 200 OK
+E....z@.@.Oo.........P..-^.j.(......Y......
+...i..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.023913 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655738 ecr 3331296873], length 0
+E..4..@.@.I............P.(..-^......XT.....
+..%....i
+23:28:39.023970 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50822: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296873 ecr 3401655738], length 45: HTTP
+E..a.{@.@.O..........P..-^...(......X......
+...i..%.Web Application Running - DDoS Testbed Target
+23:28:39.023983 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655738 ecr 3331296873], length 0
+E..4..@.@.I............P.(..-^.D....XT.....
+..%....i
+23:28:39.024516 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655738 ecr 3331296873], length 0
+E..4..@.@.I............P.(..-^.D....XT.....
+..%....i
+23:28:39.024642 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50822: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296873 ecr 3401655738], length 0
+E..4.|@.@.P..........P..-^.D.(......XT.....
+...i..%.
+23:28:39.024666 eth0  In  IP 172.20.0.3.50822 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655738 ecr 3331296873], length 0
+E..4..@.@.I............P.(..-^.E....XT.....
+..%....i
+23:28:39.025566 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50834: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296874 ecr 3401655723], length 173: HTTP: HTTP/1.1 200 OK
+E.....@.@............P....!..<.g....Y......
+...j..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.025595 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655739 ecr 3331296874], length 0
+E..4A`@.@..6...........P.<.g.."[....XT.....
+..%....j
+23:28:39.025678 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50834: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296874 ecr 3401655739], length 45: HTTP
+E..a..@.@..`.........P...."[.<.g....X......
+...j..%.Web Application Running - DDoS Testbed Target
+23:28:39.025690 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655739 ecr 3331296874], length 0
+E..4Aa@.@..5...........P.<.g..".....XT.....
+..%....j
+23:28:39.026208 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655740 ecr 3331296874], length 0
+E..4Ab@.@..4...........P.<.g..".....XT.....
+..%....j
+23:28:39.026366 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50834: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296875 ecr 3401655740], length 0
+E..4.	@.@............P...."..<.h....XT.....
+...k..%.
+23:28:39.026389 eth0  In  IP 172.20.0.3.50834 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655740 ecr 3331296875], length 0
+E..4Ac@.@..3...........P.<.h..".....XT.....
+..%....k
+23:28:39.027298 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50844: Flags [P.], seq 1:174, ack 309, win 507, options [nop,nop,TS val 3331296876 ecr 3401655724], length 173: HTTP: HTTP/1.1 200 OK
+E....j@.@............P......7.WR....Y......
+...l..%.HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.9.25
+Date: Sat, 03 Oct 2026 23:28:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 45
+Connection: close
+
+
+23:28:39.027327 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [.], ack 174, win 501, options [nop,nop,TS val 3401655741 ecr 3331296876], length 0
+E..4..@.@.,............P7.WR........XT.....
+..%....l
+23:28:39.027354 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50844: Flags [P.], seq 174:219, ack 309, win 507, options [nop,nop,TS val 3331296876 ecr 3401655741], length 45: HTTP
+E..a.k@.@............P......7.WR....X......
+...l..%.Web Application Running - DDoS Testbed Target
+23:28:39.027363 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [.], ack 219, win 501, options [nop,nop,TS val 3401655741 ecr 3331296876], length 0
+E..4..@.@.,............P7.WR........XT.....
+..%....l
+23:28:39.027900 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [F.], seq 309, ack 219, win 501, options [nop,nop,TS val 3401655742 ecr 3331296876], length 0
+E..4..@.@.,............P7.WR........XT.....
+..%....l
+23:28:39.028064 eth0  Out IP 172.20.0.2.80 > 172.20.0.3.50844: Flags [F.], seq 219, ack 310, win 507, options [nop,nop,TS val 3331296877 ecr 3401655742], length 0
+E..4.l@.@..*.........P......7.WS....XT.....
+...m..%.
+23:28:39.028089 eth0  In  IP 172.20.0.3.50844 > 172.20.0.2.80: Flags [.], ack 220, win 501, options [nop,nop,TS val 3401655742 ecr 3331296877], length 0
+E..4..@.@.,............P7.WS........XT.....
+..%....m

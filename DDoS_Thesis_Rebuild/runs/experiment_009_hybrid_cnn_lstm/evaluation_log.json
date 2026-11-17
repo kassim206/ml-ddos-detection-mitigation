@@ -1,0 +1,38 @@
+{
+  "experiment_id": "009",
+  "evaluation_only": true,
+  "training_performed": false,
+  "model_path": "runs/experiment_009_hybrid_cnn_lstm/best_model.keras",
+  "model_sha256": "3d94be389d5302bb50647fdae7c88bb5da6fcb3c0ce1fc9626c3f9d4cb77c8d1",
+  "selected_checkpoint_epoch": 4,
+  "selected_checkpoint_monitor": "val_loss",
+  "completed_training_epochs": 7,
+  "partial_epoch_excluded": 8,
+  "feature_count": 39,
+  "input_shape": [
+    39,
+    1
+  ],
+  "labels": [
+    "Benign",
+    "DDoS",
+    "Recon",
+    "Web"
+  ],
+  "validation_rows": 1236682,
+  "test_rows": 1773902,
+  "batch_size": 1024,
+  "synthetic_results": false,
+  "mock_results": false,
+  "prediction_generation": "direct_best_checkpoint_inference",
+  "started_utc": "2026-10-03T00:06:55.704504+00:00",
+  "completed_utc": "2026-10-03T00:09:50.228768+00:00",
+  "environment": {
+    "python": "3.11.9 (main, Oct  2 2026, 02:53:54) [GCC 14.2.0]",
+    "platform": "Linux-6.12.90+deb13-amd64-x86_64-with-glibc2.41",
+    "tensorflow": "2.15.0",
+    "numpy": "1.26.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1"
+  }
+}

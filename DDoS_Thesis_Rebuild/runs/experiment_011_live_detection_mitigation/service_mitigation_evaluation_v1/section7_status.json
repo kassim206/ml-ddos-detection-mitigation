@@ -1,0 +1,52 @@
+{
+  "attack_with_mitigation_condition": {
+    "http_200": 381,
+    "http_429": 2619,
+    "request_attempts": 3000,
+    "runs": 3,
+    "transport_successes": 3000
+  },
+  "attack_without_mitigation_condition": {
+    "http_200": 3000,
+    "http_429": 0,
+    "request_attempts": 3000,
+    "runs": 3,
+    "transport_successes": 3000
+  },
+  "benign_condition": {
+    "http_200": 3000,
+    "http_429": 0,
+    "request_attempts": 3000,
+    "runs": 3,
+    "transport_successes": 3000
+  },
+  "documented_limitation": {
+    "metric": "wall_clock_seconds",
+    "reason": "Exact client-process wall-clock duration was not independently preserved as a repository artifact. Archived per-request timestamps support request-span duration, which is reported separately and is not relabeled as process wall-clock time.",
+    "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS"
+  },
+  "evaluation_version": 1,
+  "evaluator_sha256": "49cad971eb7ec40dd8280fc45539d974385f17ef9b06f95adeb58a04dc5ae2eb",
+  "experiment": "Exp011",
+  "experimental_unit": "run",
+  "mitigation_evidence": {
+    "all_three_runs_satisfy_frozen_required_evidence": true,
+    "decision_to_enforcement_seconds_max": 0.003529,
+    "decision_to_enforcement_seconds_mean": 0.002484,
+    "decision_to_enforcement_seconds_median": 0.002215,
+    "decision_to_enforcement_seconds_min": 0.001708,
+    "post_enforcement_failures": 0,
+    "post_enforcement_http_429": 2619,
+    "post_enforcement_http_429_fraction": 1.0,
+    "post_enforcement_targeted_requests": 2619,
+    "successful_activation_events": 3
+  },
+  "per_run_csv_sha256": "327f8bced0a0dea6af10fd6fefff74d02afd3636382884fae1c96c93f20a48fe",
+  "replication_qualification": "Individual requests are observations nested within runs and are not independent experimental replicates.",
+  "result_runs": 9,
+  "result_sha256": "a6c2c64af4380f819b13812fb240d875409ec87f8413241a78e876fe0f184d81",
+  "scope_qualification": "Mitigation is application-level HTTP 429 enforcement under the predefined controlled Exp011 laboratory workload. It is not firewall blocking, packet dropping, iptables enforcement, or evidence of production-scale DDoS mitigation.",
+  "section": 7,
+  "section_name": "Mitigation and Service-Impact Evaluation",
+  "status": "PASS WITH DOCUMENTED LIMITATION"
+}

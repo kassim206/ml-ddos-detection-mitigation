@@ -1,0 +1,2 @@
+ Container capture_exp010 Stopping 
+ Container capture_exp010 Stopped 

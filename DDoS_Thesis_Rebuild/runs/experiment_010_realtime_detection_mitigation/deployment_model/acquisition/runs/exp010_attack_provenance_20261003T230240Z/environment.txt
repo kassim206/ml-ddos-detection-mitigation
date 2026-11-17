@@ -1,0 +1,6 @@
+]633;E;echo "run_id=$RUN_ID";ad23952d-b06b-4089-bb6a-4c6f3887d07b]633;Crun_id=exp010_attack_provenance_20261003T230240Z
+started_utc=2026-10-03T23:02:54+00:00
+hostname=mx
+kernel=Linux 6.12.90+deb13-amd64 x86_64 GNU/Linux
+docker=Docker version 29.8.2, build 7fc2dff
+compose=Docker Compose version v5.6.0

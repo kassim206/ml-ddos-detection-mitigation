@@ -1,0 +1,1 @@
+window_index,packet_count,duration_seconds,header_length_mean,ttl_mean,fin_fraction,syn_fraction,rst_fraction,psh_fraction,ack_fraction,packet_length_sum,packet_length_min,packet_length_max,packet_length_mean,packet_length_std,packet_length_variance,iat_mean,iat_min,iat_max,iat_std,packet_rate

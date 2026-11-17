@@ -1,0 +1,68 @@
+{
+  "mean_per_run_balanced_accuracy": 1.0,
+  "mean_per_run_macro_f1": 0.5,
+  "model": "hybrid_cnn_lstm",
+  "per_run_metrics": {
+    "A05": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 120,
+      "predicted_benign_count": 0,
+      "support": 120,
+      "true_class": 1
+    },
+    "A06": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 120,
+      "predicted_benign_count": 0,
+      "support": 120,
+      "true_class": 1
+    },
+    "B05": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 0,
+      "predicted_benign_count": 120,
+      "support": 120,
+      "true_class": 0
+    },
+    "B06": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.5,
+      "predicted_attack_count": 0,
+      "predicted_benign_count": 120,
+      "support": 120,
+      "true_class": 0
+    }
+  },
+  "pooled_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        240,
+        0
+      ],
+      [
+        0,
+        240
+      ]
+    ],
+    "f1_attack": 1.0,
+    "f1_benign": 1.0,
+    "macro_f1": 1.0,
+    "precision_attack": 1.0,
+    "precision_benign": 1.0,
+    "recall_attack": 1.0,
+    "recall_benign": 1.0,
+    "support": 480
+  },
+  "threshold": 0.5,
+  "threshold_distance_from_0_5": 0.0,
+  "window_size_packets": 100
+}

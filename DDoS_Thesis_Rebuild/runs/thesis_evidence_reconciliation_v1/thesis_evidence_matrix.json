@@ -1,0 +1,769 @@
+{
+  "artifact": "authoritative_thesis_evidence_matrix",
+  "construction": "Numerical outcomes are extracted from authoritative experiment artifacts. Interpretive boundaries are audit classifications and do not replace underlying experimental evidence.",
+  "cross_experiment_invariants": {
+    "dataset_file_count_consistent": true,
+    "dataset_total_consistent": true,
+    "exp001_deterministic": true,
+    "exp002_feature_count_39": true,
+    "exp002_rows_preserved": true,
+    "exp002_train_only_scaler": true,
+    "exp003_same_test_rows": true,
+    "exp004_is_cnn_dense": true,
+    "exp004_validation_only_source": true,
+    "exp005_alignment_verified": true,
+    "exp006_full_test": true,
+    "exp006_three_repeats": true,
+    "exp007_not_hardcoded": true,
+    "exp008_offline": true,
+    "exp009_feature_count_39": true,
+    "exp009_test_rows_consistent": true,
+    "exp010_dataset_b": true,
+    "exp010_test_evaluated_once": true,
+    "exp010_test_was_untouched_at_selection": true,
+    "exp011_experimental_unit_run": true,
+    "exp011_forensic_gate": true,
+    "exp011_reconciliation": true,
+    "exp011_wall_clock_not_supported": true
+  },
+  "experiment_range": "Exp001-Exp011",
+  "experiments": [
+    {
+      "evidence": {
+        "dataset": "CICIoT2023_Selected",
+        "deterministic": true,
+        "random_seed": 20261002,
+        "row_level_partitioned_file_count": 6,
+        "source_files": 46,
+        "split_method": "deterministic_file_aware_row_level_split",
+        "test_rows": 1773902,
+        "total_rows": 10713192,
+        "train_rows": 7702608,
+        "validation_rows": 1236682,
+        "whole_file_count": 40
+      },
+      "experiment": "Exp001",
+      "permitted_interpretation": "Selected CICIoT2023 feature-CSV subset split deterministically with whole-file allocation preferred and row-level partitioning where required.",
+      "prohibited_claims": [
+        "Full CICIoT2023 was used",
+        "The split was purely file-level",
+        "The split guarantees temporal independence",
+        "The .pcap.csv inputs are raw PCAP captures"
+      ],
+      "required_qualification": "This is a selected subset rather than the full CICIoT2023 corpus; the split is not a temporal split and is not purely file-level.",
+      "role": "Dataset A characterization and deterministic splitting",
+      "sources": [
+        {
+          "path": "runs/experiment_001_dataset_char/experiment_summary.json",
+          "sha256": "d6b8cb37ca28dc3533f52e13083e626971047238ba00628868b6294c26f68518"
+        },
+        {
+          "path": "runs/experiment_001_dataset_char/dataset_manifest.json",
+          "sha256": "89baedbb0c9582cf97990593193edf21c1ae79c1961a0b9f8700ed1eccfd34e9"
+        },
+        {
+          "path": "runs/experiment_001_dataset_char/split_manifest.json",
+          "sha256": "8147e04df6d6b86914fe32dff74a6252a1924b7a3a6f8b215c8f98064c5c2b61"
+        }
+      ],
+      "status": "PASS WITH QUALIFICATION"
+    },
+    {
+      "evidence": {
+        "feature_count": 39,
+        "nan_handling": "NaN and infinite feature values replaced with 0 before scaling",
+        "row_count_verified": true,
+        "scaler_fit_source": "training_split_only",
+        "scaling_method": "StandardScaler partial_fit",
+        "test_rows": 1773902,
+        "train_rows": 7702608,
+        "validation_rows": 1236682
+      },
+      "experiment": "Exp002",
+      "permitted_interpretation": "Thirty-nine features were standardized using a StandardScaler fitted only on the training split, with non-finite feature values replaced by zero before scaling.",
+      "prohibited_claims": [
+        "Forty-four input features were used",
+        "The scaler was fitted using validation or test data"
+      ],
+      "required_qualification": "The preprocessing contract contains 39 features, not 44.",
+      "role": "Dataset A preprocessing",
+      "sources": [
+        {
+          "path": "runs/experiment_002_preprocessing/config.json",
+          "sha256": "c2618f051b4d26647648f6fecceef25b2543ae57194fc55e5cea2aae090113e5"
+        },
+        {
+          "path": "runs/experiment_002_preprocessing/preprocessing_log.json",
+          "sha256": "db1953c06ea9ffb045354730d931437dd029ea099ad4165aeaa82c8672b5fa93"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "RandomForest": {
+          "accuracy": 0.9950369298867694,
+          "macro_f1": 0.6823717529303521,
+          "macro_precision": 0.8840855841398598,
+          "macro_recall": 0.6371391253241276
+        },
+        "XGBoost": {
+          "accuracy": 0.9950059247917867,
+          "macro_f1": 0.6692133178016996,
+          "macro_precision": 0.9634883940997846,
+          "macro_recall": 0.6248751779194295
+        }
+      },
+      "experiment": "Exp003",
+      "permitted_interpretation": "Both classical baselines achieved high overall accuracy on Dataset A, while substantially lower macro recall and macro-F1 show weaker class-balanced performance.",
+      "prohibited_claims": [
+        "Approximately 99.5 percent accuracy implies uniformly strong performance across all classes"
+      ],
+      "required_qualification": "Accuracy must be reported with macro metrics because the test distribution is strongly imbalanced.",
+      "role": "Dataset A Random Forest and XGBoost baselines",
+      "sources": [
+        {
+          "path": "runs/experiment_003_baselines/metrics_rf.json",
+          "sha256": "a909ebe1fd0760aff4023e0c4149417212c626bd04001b0c6cfe61c3efaabbc8"
+        },
+        {
+          "path": "runs/experiment_003_baselines/metrics_xgb.json",
+          "sha256": "362cc5d7bca2d6bac5bfac5013595bb5629abe2d02e3d43c2795884fbad8c887"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "accuracy": 0.5291497733451284,
+        "macro_f1": 0.1872778035736437,
+        "model_name": "CNN_Dense",
+        "model_retrained": false,
+        "validation_rows": 1236682,
+        "weighted_f1": 0.6627403480601666
+      },
+      "experiment": "Exp004",
+      "permitted_interpretation": "Best-checkpoint CNN-Dense validation diagnostic.",
+      "prohibited_claims": [
+        "Exp004 is a CNN-LSTM model",
+        "Exp004 reports held-out test performance"
+      ],
+      "required_qualification": "This is validation-only evidence from an interrupted historical experiment and is not a test-set CNN-LSTM result.",
+      "role": "CNN-Dense diagnostic validation",
+      "sources": [
+        {
+          "path": "runs/experiment_004_cnn_dense/diagnostics_best_checkpoint/validation_metrics_best_checkpoint.json",
+          "sha256": "10497f3a69184c5aff3a42a15739fe99bbc8908bb1016338aeb498783ab22673"
+        }
+      ],
+      "status": "PASS WITH LIMITATION"
+    },
+    {
+      "evidence": {
+        "Benign_Final": {
+          "category": "Benign",
+          "category_recall": 0.0,
+          "mean_confidence": 0.698446582248078,
+          "support": 181840
+        },
+        "DDoS-HTTP_Flood": {
+          "category": "DDoS",
+          "category_recall": null,
+          "mean_confidence": null,
+          "support": 0
+        },
+        "DDoS-SYN_Flood": {
+          "category": "DDoS",
+          "category_recall": 0.9991514671618804,
+          "mean_confidence": 0.9975166067526593,
+          "support": 987587
+        },
+        "DDoS-SlowLoris": {
+          "category": "DDoS",
+          "category_recall": null,
+          "mean_confidence": null,
+          "support": 0
+        },
+        "DDoS-UDP_Flood": {
+          "category": "DDoS",
+          "category_recall": 0.9993280676004717,
+          "mean_confidence": 0.9908747700183911,
+          "support": 589345
+        },
+        "Recon-PortScan": {
+          "category": "Recon",
+          "category_recall": 0.8566605504587156,
+          "mean_confidence": 0.632945401758229,
+          "support": 13625
+        },
+        "SqlInjection": {
+          "category": "Web",
+          "category_recall": null,
+          "mean_confidence": null,
+          "support": 0
+        },
+        "XSS": {
+          "category": "Web",
+          "category_recall": 0.28106312292358804,
+          "mean_confidence": 0.5979278292964859,
+          "support": 1505
+        }
+      },
+      "experiment": "Exp005",
+      "permitted_interpretation": "The classifier predicts four broad categories: Benign, DDoS, Recon, and Web. Per-attack results measure broad-category recall stratified by the original CICIoT2023 attack family. They are not eight-class attack-family predictions. Attack families with zero test support are reported with null recall and confidence rather than zero recall.",
+      "prohibited_claims": [
+        "These are eight-class attack-family predictions",
+        "Zero-support attack families achieved zero percent recall"
+      ],
+      "required_qualification": "Zero-support attack families are not evaluated and retain null metrics.",
+      "role": "Original attack-family stratification of Exp009 broad-category predictions",
+      "sources": [
+        {
+          "path": "runs/experiment_005_per_attack/attack_family_metrics.json",
+          "sha256": "e24273149b93606f5bdf557658a0cbf5540df432138cecfbe5db24f0d9d8260a"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "CNN-Dense": {
+          "mean_amortized_ms_per_sample": 0.01838329065585359,
+          "mean_total_seconds": 32.610156061,
+          "repeats": 3,
+          "rows_per_repeat": 1773902,
+          "std_total_seconds": 0.4198639610305206,
+          "throughput_samples_per_second": 54397.2251062451
+        },
+        "Hybrid-CNN-LSTM": {
+          "mean_amortized_ms_per_sample": 0.05848575323157647,
+          "mean_total_seconds": 103.74799462899996,
+          "repeats": 3,
+          "rows_per_repeat": 1773902,
+          "std_total_seconds": 4.039605050501134,
+          "throughput_samples_per_second": 17098.18109105073
+        },
+        "RandomForest": {
+          "mean_amortized_ms_per_sample": 0.007616419529000654,
+          "mean_total_seconds": 13.510781835333319,
+          "repeats": 3,
+          "rows_per_repeat": 1773902,
+          "std_total_seconds": 0.09601693461357397,
+          "throughput_samples_per_second": 131295.28857914807
+        },
+        "XGBoost": {
+          "mean_amortized_ms_per_sample": 0.00800019853783731,
+          "mean_total_seconds": 14.19156818666668,
+          "repeats": 3,
+          "rows_per_repeat": 1773902,
+          "std_total_seconds": 0.21758073860602564,
+          "throughput_samples_per_second": 124996.89792327698
+        }
+      },
+      "experiment": "Exp006",
+      "permitted_interpretation": "Three-repeat complete-test-split chunked batched CPU inference benchmark.",
+      "prohibited_claims": [
+        "The amortized values are independent HTTP request latency",
+        "The benchmark measured GPU inference latency",
+        "The benchmark measured end-to-end live detection latency"
+      ],
+      "required_qualification": "Amortized inference time per observation derived from the elapsed time required to process the complete test split. It is not independent single-request latency.",
+      "role": "Dataset A CPU batch-inference runtime benchmark",
+      "sources": [
+        {
+          "path": "runs/experiment_006_runtime/config.json",
+          "sha256": "3050a917bfbe5f9c0d30a5f2f8fde4d3de2bf1cc7ddae02e7ec365a5aab090be"
+        },
+        {
+          "path": "runs/experiment_006_runtime/resource_usage.csv",
+          "sha256": "bb8f4157762ca32093dca0827e6e6b9d8f9e2d02d8ab7218ede1fddf469067bb"
+        }
+      ],
+      "status": "PASS WITH METHODOLOGICAL QUALIFICATION"
+    },
+    {
+      "evidence": {
+        "mean_response_time_ms": 34.31578464999984,
+        "p95_response_time_ms": 57.91303499972855,
+        "requests_attempted": 1000,
+        "throughput_requests_per_second": 288.88299082907054,
+        "total_elapsed_seconds": 3.4616091349998896,
+        "transport_successful_requests": 1000
+      },
+      "experiment": "Exp007",
+      "permitted_interpretation": "Measured local HTTP workload baseline of 1000 requests.",
+      "prohibited_claims": [
+        "Exp007 demonstrates DDoS detection",
+        "Exp007 demonstrates mitigation"
+      ],
+      "required_qualification": "This is a service/load baseline and does not itself include ML detection, DDoS generation, or mitigation.",
+      "role": "Controlled local HTTP service baseline",
+      "sources": [
+        {
+          "path": "runs/experiment_007_web_testbed/summary.json",
+          "sha256": "f274bd63871d0fabaa2c3cbb7c2802ce495368dc70b77e725b589caf9b193a26"
+        }
+      ],
+      "status": "PASS WITH SCOPE LIMITATION"
+    },
+    {
+      "evidence": {
+        "DDoS_block_rate": 0.9988236651929189,
+        "Recon_block_rate": 0.03126605504587156,
+        "Web_block_rate": 0.03986710963455149,
+        "benign_block_rate": 0.1429443466783986,
+        "malicious_block_rate": 0.9896367101281232,
+        "prediction_source_sha256": "d8422a95daceb3431f7442f7a9eeab267982e5a1bdc9f6c52105d88b369b8a24",
+        "threshold": 0.85,
+        "total_observations": 1773902
+      },
+      "experiment": "Exp008",
+      "permitted_interpretation": "Offline mitigation-policy evaluation using genuine held-out Exp009 predictions",
+      "prohibited_claims": [
+        "Exp008 performed live feature extraction",
+        "Exp008 performed live model inference",
+        "Exp008 enforced iptables rules",
+        "Exp008 demonstrates end-to-end live mitigation"
+      ],
+      "required_qualification": "Policy decisions were evaluated offline from frozen Exp009 predictions; no live enforcement occurred.",
+      "role": "Offline model-driven mitigation-policy analysis",
+      "sources": [
+        {
+          "path": "runs/experiment_008_mitigation/experiment_summary.json",
+          "sha256": "fc8c62efe8a745206b8c51821539a467ce44ea9c66a7a2586654483b69cc6c48"
+        },
+        {
+          "path": "runs/experiment_008_mitigation/mitigation_metrics.json",
+          "sha256": "4d99e0564b7a7cd897e0ca77ab481506fee99412dbc64b2dd582d84e3d48cd91"
+        }
+      ],
+      "status": "PASS WITH SCOPE LIMITATION"
+    },
+    {
+      "evidence": {
+        "accuracy": 0.8950849595975426,
+        "completed_training_epochs": 7,
+        "feature_count": 39,
+        "macro_f1": 0.28981087421652457,
+        "macro_precision": 0.27146185127349587,
+        "macro_recall": 0.5342352853062311,
+        "selected_checkpoint_epoch": 4,
+        "test_rows": 1773902,
+        "weighted_f1": 0.8895868268730568
+      },
+      "experiment": "Exp009",
+      "permitted_interpretation": "Held-out Dataset A evaluation of the preserved best hybrid CNN-LSTM checkpoint.",
+      "prohibited_claims": [
+        "The hybrid achieved approximately 99 percent held-out accuracy",
+        "The hybrid was uniformly strong across classes",
+        "The LSTM consumed genuine temporal traffic sequences"
+      ],
+      "required_qualification": "The training run was interrupted and the architecture applies convolution/LSTM operations over the feature axis rather than genuine temporal packet sequences.",
+      "role": "Historical Dataset A hybrid CNN-LSTM held-out evaluation",
+      "sources": [
+        {
+          "path": "runs/experiment_009_hybrid_cnn_lstm/evaluation_log.json",
+          "sha256": "29734ac5de45d7fa8773838871efd42463adb59f4d7bb8057cad928426c8772f"
+        },
+        {
+          "path": "runs/experiment_009_hybrid_cnn_lstm/test_metrics.json",
+          "sha256": "5d8242127cf69f4d25b7ed836f5cefae8acbba7d46ca6db0463b1e29fc23fd00"
+        }
+      ],
+      "status": "PASS WITH TRAINING-HISTORY LIMITATION"
+    },
+    {
+      "evidence": {
+        "interpretation_scope": "controlled laboratory HTTP request-intensity/flood discrimination",
+        "pooled_metrics": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              240,
+              0
+            ],
+            [
+              0,
+              240
+            ]
+          ],
+          "f1_attack": 1.0,
+          "f1_benign": 1.0,
+          "macro_f1": 1.0,
+          "precision_attack": 1.0,
+          "precision_benign": 1.0,
+          "recall_attack": 1.0,
+          "recall_benign": 1.0,
+          "support": 480
+        },
+        "selected_model": "logistic_regression",
+        "threshold": 0.5,
+        "total_test_windows": 480,
+        "window_size_packets": 100
+      },
+      "experiment": "Exp010",
+      "permitted_interpretation": "Held-out controlled-laboratory discrimination between the predefined benign and high-rate HTTP conditions using the frozen deployment-compatible model.",
+      "prohibited_claims": [
+        "Exp010 proves perfect general DDoS detection",
+        "Dataset B is equivalent to CICIoT2023 Dataset A",
+        "The 480 windows are independent experimental replicates"
+      ],
+      "required_qualification": "Dataset B is a separate controlled-lab dataset and must not be presented as semantically equivalent to Dataset A or as broad DDoS generalization.",
+      "role": "Deployment-compatible Dataset B model development and held-out controlled-lab test",
+      "sources": [
+        {
+          "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/final_test_evaluation_v1/final_test_results.json",
+          "sha256": "d4ddc9814ba66279014752cf332020de4e739932682932b1c90693a29fc1485c"
+        },
+        {
+          "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/final_test_evaluation_v1/selected_system.json",
+          "sha256": "907f2288a579ed849b9186bb9258b692868621ff1bb62c17a3c45ab367020eee"
+        }
+      ],
+      "status": "PASS WITH CONTROLLED-LAB SCOPE"
+    },
+    {
+      "evidence": {
+        "experimental_unit": "run",
+        "mitigation_summary": {
+          "all_runs_satisfy_frozen_required_evidence": true,
+          "decision_to_enforcement_seconds": {
+            "count": 3,
+            "max": 0.003529,
+            "mean": 0.002484,
+            "median": 0.002215,
+            "min": 0.001708
+          },
+          "post_enforcement_failures": 0,
+          "post_enforcement_http_429": 2619,
+          "post_enforcement_http_429_fraction": 1.0,
+          "post_enforcement_targeted_requests": 2619,
+          "runs": [
+            "M01",
+            "M02",
+            "M03"
+          ],
+          "successful_activation_events": 3
+        },
+        "pooled_detection": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              360,
+              0
+            ],
+            [
+              0,
+              720
+            ]
+          ],
+          "f1": 1.0,
+          "macro_f1": 1.0,
+          "n_windows": 1080,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "service_by_condition": {
+          "attack_detection_with_mitigation": {
+            "client_http_status_counts": {
+              "200": 381,
+              "429": 2619
+            },
+            "failed_or_timed_out_requests": 0,
+            "latency_mean_ms_per_run": {
+              "count": 3,
+              "max": 46.13427448712173,
+              "mean": 43.822626272033325,
+              "median": 42.883419384048466,
+              "min": 42.45018494492979
+            },
+            "latency_median_ms_per_run": {
+              "count": 3,
+              "max": 42.19657899739104,
+              "mean": 38.759505330745014,
+              "median": 37.108453498149174,
+              "min": 36.973483496694826
+            },
+            "latency_p95_ms_per_run": {
+              "count": 3,
+              "max": 80.65639305277726,
+              "mean": 79.39383326835619,
+              "median": 79.65199770369509,
+              "min": 77.8731090485962
+            },
+            "n_runs": 3,
+            "request_attempts": 3000,
+            "request_span_seconds_per_run": {
+              "count": 3,
+              "max": 4.686274,
+              "mean": 4.450671333333333,
+              "median": 4.361206,
+              "min": 4.304534
+            },
+            "request_span_throughput_per_run": {
+              "count": 3,
+              "max": 232.3131841913666,
+              "mean": 224.99890094108568,
+              "median": 229.29437407909646,
+              "min": 213.38914455279397
+            },
+            "runs": [
+              "M01",
+              "M02",
+              "M03"
+            ],
+            "successful_transport_requests": 3000,
+            "victim_http_status_counts": {
+              "200": 381,
+              "429": 2619
+            }
+          },
+          "attack_detection_without_mitigation": {
+            "client_http_status_counts": {
+              "200": 3000
+            },
+            "failed_or_timed_out_requests": 0,
+            "latency_mean_ms_per_run": {
+              "count": 3,
+              "max": 47.17255098599344,
+              "mean": 45.20643396299298,
+              "median": 44.43128527795852,
+              "min": 44.01546562502699
+            },
+            "latency_median_ms_per_run": {
+              "count": 3,
+              "max": 41.57248699993943,
+              "mean": 39.31721600019955,
+              "median": 39.93777650066477,
+              "min": 36.441384499994456
+            },
+            "latency_p95_ms_per_run": {
+              "count": 3,
+              "max": 90.03928185011317,
+              "mean": 85.1428188006442,
+              "median": 89.45822330133524,
+              "min": 75.93095125048421
+            },
+            "n_runs": 3,
+            "request_attempts": 3000,
+            "request_span_seconds_per_run": {
+              "count": 3,
+              "max": 4.806885,
+              "mean": 4.604142333333334,
+              "median": 4.509054,
+              "min": 4.496488
+            },
+            "request_span_throughput_per_run": {
+              "count": 3,
+              "max": 222.3957897808245,
+              "mean": 217.40224396638087,
+              "median": 221.77600889233085,
+              "min": 208.0349332259873
+            },
+            "runs": [
+              "A01",
+              "A02",
+              "A03"
+            ],
+            "successful_transport_requests": 3000,
+            "victim_http_status_counts": {
+              "200": 3000
+            }
+          },
+          "benign_with_detection_and_mitigation": {
+            "client_http_status_counts": {
+              "200": 3000
+            },
+            "failed_or_timed_out_requests": 0,
+            "latency_mean_ms_per_run": {
+              "count": 3,
+              "max": 12.402024040024116,
+              "mean": 11.340299021677007,
+              "median": 11.584224899997935,
+              "min": 10.034648125008971
+            },
+            "latency_median_ms_per_run": {
+              "count": 3,
+              "max": 11.805340498540318,
+              "mean": 11.061394499847665,
+              "median": 10.991848501362256,
+              "min": 10.386994499640423
+            },
+            "latency_p95_ms_per_run": {
+              "count": 3,
+              "max": 20.456330148590496,
+              "mean": 17.617069349883725,
+              "median": 19.067302149233,
+              "min": 13.32757575182768
+            },
+            "n_runs": 3,
+            "request_attempts": 3000,
+            "request_span_seconds_per_run": {
+              "count": 3,
+              "max": 112.889562,
+              "mean": 111.78400833333333,
+              "median": 112.038519,
+              "min": 110.423944
+            },
+            "request_span_throughput_per_run": {
+              "count": 3,
+              "max": 9.05600691096489,
+              "mean": 8.946574527570464,
+              "median": 8.925501773189273,
+              "min": 8.858214898557229
+            },
+            "runs": [
+              "B01",
+              "B02",
+              "B03"
+            ],
+            "successful_transport_requests": 3000,
+            "victim_http_status_counts": {
+              "200": 3000
+            }
+          }
+        },
+        "service_metric_qualification": {
+          "archived_request_span_seconds": "Derived as last archived client request finish timestamp minus first archived client request start timestamp.",
+          "request_latency": "Derived from archived client elapsed_ms values.",
+          "request_span_throughput": "Derived as request attempts divided by archived request span. It is not relabeled as process wall-clock throughput.",
+          "wall_clock_seconds": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS"
+        },
+        "timing_by_condition": {
+          "attack_detection_with_mitigation": {
+            "decision_to_enforcement_seconds": {
+              "count": 3,
+              "max": 0.003529,
+              "mean": 0.002484,
+              "median": 0.002215,
+              "min": 0.001708
+            },
+            "feature_to_inference_seconds": {
+              "count": 360,
+              "max": 0.060062,
+              "mean": 0.001966508333333333,
+              "median": 0.0012745,
+              "min": 0.000676
+            },
+            "inference_seconds": {
+              "count": 360,
+              "max": 0.060017,
+              "mean": 0.001921725,
+              "median": 0.0012325,
+              "min": 0.000653
+            },
+            "window_observation_seconds": {
+              "count": 360,
+              "max": 0.109461,
+              "mean": 0.036670855555555555,
+              "median": 0.0329285,
+              "min": 0.020241
+            }
+          },
+          "attack_detection_without_mitigation": {
+            "decision_to_enforcement_seconds": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null
+            },
+            "feature_to_inference_seconds": {
+              "count": 360,
+              "max": 0.049071,
+              "mean": 0.001955461111111111,
+              "median": 0.00131,
+              "min": 0.000686
+            },
+            "inference_seconds": {
+              "count": 360,
+              "max": 0.049029,
+              "mean": 0.0019070166666666666,
+              "median": 0.001268,
+              "min": 0.000664
+            },
+            "window_observation_seconds": {
+              "count": 360,
+              "max": 0.111339,
+              "mean": 0.03793612777777778,
+              "median": 0.033626500000000004,
+              "min": 0.020998
+            }
+          },
+          "benign_with_detection_and_mitigation": {
+            "decision_to_enforcement_seconds": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null
+            },
+            "feature_to_inference_seconds": {
+              "count": 360,
+              "max": 0.069935,
+              "mean": 0.0026294194444444444,
+              "median": 0.0021465,
+              "min": 0.000626
+            },
+            "inference_seconds": {
+              "count": 360,
+              "max": 0.069796,
+              "mean": 0.0025606444444444443,
+              "median": 0.0020829999999999998,
+              "min": 0.000604
+            },
+            "window_observation_seconds": {
+              "count": 360,
+              "max": 0.973236,
+              "mean": 0.8976080138888889,
+              "median": 0.89494,
+              "min": 0.843537
+            }
+          }
+        }
+      },
+      "experiment": "Exp011",
+      "permitted_interpretation": "Exp011 provides reproducible controlled-laboratory evidence of online packet-derived detection using the frozen Exp010 deployment-compatible classifier and actual model-triggered application-level mitigation. Claims beyond the audited controlled-laboratory scope remain unsupported.",
+      "prohibited_claims": [
+        "Exp011 demonstrates production-scale DDoS mitigation",
+        "Exp011 used firewall or iptables enforcement",
+        "Exp011 performed source-IP blocking",
+        "The 1080 windows are independent experimental replicates",
+        "Decision-to-enforcement time is end-to-end HTTP request latency",
+        "Exact client-process wall-clock duration is recoverable from archived artifacts"
+      ],
+      "required_qualification": "The experimental unit is the run; windows and requests are nested. Mitigation is application-level HTTP 429 enforcement in a controlled laboratory.",
+      "role": "End-to-end online detection and actual application-level mitigation",
+      "sources": [
+        {
+          "path": "runs/experiment_011_live_detection_mitigation/evaluation_v1/detection_runtime_results.json",
+          "sha256": "e9e9c7264a9061ebd855d56afb6528f3cb79e4863f317ee756321dda51f5118b"
+        },
+        {
+          "path": "runs/experiment_011_live_detection_mitigation/service_mitigation_evaluation_v1/mitigation_service_results.json",
+          "sha256": "a6c2c64af4380f819b13812fb240d875409ec87f8413241a78e876fe0f184d81"
+        },
+        {
+          "path": "runs/experiment_011_live_detection_mitigation/forensic_closure_v1/section8_status.json",
+          "sha256": "06a24aa40ae7b0cbe83343c5f3cb33c5fd066ad88e3c70d63869587786a9c838"
+        }
+      ],
+      "status": "PASS WITH DOCUMENTED LIMITATIONS"
+    }
+  ],
+  "global_thesis_rules": [
+    "Dataset A and Dataset B must remain explicitly separate.",
+    "Accuracy must not be used alone where macro metrics materially alter interpretation.",
+    "Validation-only results must not be described as held-out test results.",
+    "Offline mitigation-policy evaluation must not be described as live enforcement.",
+    "CPU batch amortized inference timing must not be described as HTTP request latency.",
+    "Feature-axis CNN-LSTM processing must not be described as genuine temporal sequence modeling.",
+    "Controlled-laboratory perfect results must not be generalized to production or arbitrary DDoS attacks.",
+    "Windows and requests nested within runs must not be treated as independent experimental replicates.",
+    "Zero-support classes or attack families must be reported as not evaluated rather than zero performance.",
+    "All final thesis numbers must trace to an artifact listed in this matrix."
+  ],
+  "version": 1
+}

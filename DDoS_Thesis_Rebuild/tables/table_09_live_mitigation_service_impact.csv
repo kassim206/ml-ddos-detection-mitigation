@@ -1,0 +1,4 @@
+condition,runs,request_attempts,successful_transport_requests,failed_or_timed_out_requests,http_200,http_429,mean_request_span_seconds,mean_request_span_throughput,mean_request_latency_ms,post_enforcement_targeted_requests,post_enforcement_http_429,post_enforcement_failures,decision_to_enforcement_mean_seconds
+attack_detection_with_mitigation,3,3000,3000,0,381,2619,4.450671333333333,224.99890094108568,43.822626272033325,2619,2619,0,0.002484
+attack_detection_without_mitigation,3,3000,3000,0,3000,0,4.604142333333334,217.40224396638087,45.20643396299298,,,,
+benign_with_detection_and_mitigation,3,3000,3000,0,3000,0,111.78400833333333,8.946574527570464,11.340299021677007,,,,

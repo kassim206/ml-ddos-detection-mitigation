@@ -1,0 +1,2 @@
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+dhcpcd              34480               34455               0                   01:50               ?                   00:00:00            tcpdump -i any -U -s 0 -w /capture/traffic.pcap tcp port 80

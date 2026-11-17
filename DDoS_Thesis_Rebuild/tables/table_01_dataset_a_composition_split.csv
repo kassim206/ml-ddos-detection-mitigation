@@ -1,0 +1,9 @@
+item,value
+Source feature CSV files,46
+Total rows,10713192
+Training rows,7702608
+Validation rows,1236682
+Test rows,1773902
+Feature count,39
+Whole-file allocations,40
+Row-level partitioned files,6

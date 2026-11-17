@@ -1,0 +1,83 @@
+{
+  "status": "VALID_DATASET_B_RAW_RUN_FROZEN",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B04",
+  "physical_run_id": "exp010_dataset_b_B04_benign_20261004T115252Z",
+  "class": "Benign",
+  "partition": "train",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "traffic_workload_executed": true,
+  "feature_extraction_permitted": true,
+  "training_use_permitted": true,
+  "workload": {
+    "request_count": 1000,
+    "method": "GET",
+    "concurrency": 1,
+    "delay_seconds": 0.1,
+    "workload_type": "benign_controlled_http"
+  },
+  "validation": {
+    "client_rows": 1000,
+    "victim_rows": 1000,
+    "unique_client_request_ids": 1000,
+    "unique_victim_request_ids": 1000,
+    "request_id_set_equality": true,
+    "all_transport_success": true,
+    "all_http_200": true,
+    "victim_csv_header_count": 1,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0,
+    "reconciliation_status": "PASS"
+  },
+  "integrity": {
+    "initial_run_status_preserved": true,
+    "initial_run_status_sha256": "206cefeae6132fc1c591578fd26110126582bde60d214e31a734d4496e313cfb",
+    "raw_evidence_frozen_before_feature_extraction": true,
+    "workload_executed_once": true
+  },
+  "artifacts": {
+    "initial_run_status": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/run_status.json",
+      "sha256": "206cefeae6132fc1c591578fd26110126582bde60d214e31a734d4496e313cfb",
+      "bytes": 374
+    },
+    "client_ground_truth": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/raw/client_ground_truth.csv",
+      "sha256": "028086b0ae9d978f4c5b720e982236bc3a736cf8a1f85f47fdede3622f0d39f1",
+      "bytes": 231610
+    },
+    "victim_access_log": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/raw/victim_access_log.csv",
+      "sha256": "541ae5581d47c0a077a6ab21d562970067f8b30eff559be3636e023e6e118800",
+      "bytes": 88048
+    },
+    "traffic_pcap": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/raw/traffic.pcap",
+      "sha256": "9a8ff7e0c8eee2a12911bbc4fcd36b1601ad82fd9af670cd55f6fc39b9b6b650",
+      "bytes": 1447024
+    },
+    "client_execution_stdout": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/client_execution_stdout.txt",
+      "sha256": "361991a73bbb085614dc8dc5ce93e666c1c897ca518f42eecd248f9aef6f5c05",
+      "bytes": 293
+    },
+    "client_exit_code": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/client_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "capture_final_stdout": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/capture_final_stdout.txt",
+      "sha256": "7810eff9338ccfb598c9922475972e0d13665182def6087909bad70a04cba957",
+      "bytes": 421
+    },
+    "reconciliation": {
+      "path": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B04_benign_20261004T115252Z/reconciliation.json",
+      "sha256": "f346e292e0e41d73318e1c5aa79f2a68573c08d1eae5d9b9ba7af15f78650da5",
+      "bytes": 536
+    }
+  }
+}

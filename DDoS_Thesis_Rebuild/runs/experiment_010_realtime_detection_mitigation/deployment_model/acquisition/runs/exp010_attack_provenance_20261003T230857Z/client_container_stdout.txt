@@ -1,0 +1,6 @@
+ Container exp010_testbed-attack_client_exp010-run-37df787b5fea Creating 
+ Container exp010_testbed-attack_client_exp010-run-37df787b5fea Created 
+Completed 100 controlled high-rate HTTP attempts.
+Transport successes: 100/100
+Client wall-clock seconds: 0.259958
+Ground truth: /app/logs/client_ground_truth.csv

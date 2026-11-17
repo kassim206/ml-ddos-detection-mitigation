@@ -1,0 +1,52 @@
+{
+  "dataset": "Dataset B controlled-laboratory deployment domain",
+  "experiment": "Exp011",
+  "interpretation_scope": "controlled laboratory HTTP request-intensity/flood discrimination and mitigation",
+  "pre_result_requirements": [
+    "protocol frozen",
+    "live feature implementation frozen",
+    "offline versus live feature equivalence validated on preserved non-result-bearing fixture data",
+    "frozen Exp010 model and scaler hashes verified",
+    "mitigation implementation frozen",
+    "logging implementation frozen",
+    "run plan frozen",
+    "valid-run criteria frozen",
+    "metric definitions frozen"
+  ],
+  "protocol_version": 1,
+  "research_question": "Can the frozen Exp010 deployment system perform genuine online detection of the predefined controlled high-rate HTTP workload and trigger real mitigation while preserving service for the predefined benign HTTP workload?",
+  "sections": [
+    "protocol_and_integrity_freeze",
+    "live_feature_pipeline",
+    "frozen_model_inference",
+    "real_mitigation",
+    "controlled_live_workloads",
+    "detection_runtime_evaluation",
+    "mitigation_service_evaluation",
+    "forensic_closure_and_independent_audit"
+  ],
+  "selected_system": {
+    "feature_count": 20,
+    "model": "logistic_regression",
+    "model_reselection_permitted": false,
+    "scaler": "frozen Exp010 StandardScaler",
+    "scaler_refit_permitted": false,
+    "source": "Exp010 selected_system_freeze",
+    "threshold": 0.5,
+    "threshold_tuning_permitted": false,
+    "training_permitted": false,
+    "window_overlap": false,
+    "window_size_packets": 100,
+    "window_stride_packets": 100
+  },
+  "status": "FROZEN",
+  "title": "Controlled-Laboratory Live Detection and Mitigation Evaluation",
+  "unsupported_claims": [
+    "arbitrary DDoS detection",
+    "production readiness",
+    "Internet-scale capacity",
+    "CICIoT2023 semantic equivalence",
+    "unseen attack-family generalization",
+    "generic multi-protocol DDoS mitigation"
+  ]
+}

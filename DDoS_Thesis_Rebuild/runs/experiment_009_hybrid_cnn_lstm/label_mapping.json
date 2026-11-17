@@ -1,0 +1,14 @@
+{
+  "index_to_label": {
+    "0": "Benign",
+    "1": "DDoS",
+    "2": "Recon",
+    "3": "Web"
+  },
+  "label_to_index": {
+    "Benign": 0,
+    "DDoS": 1,
+    "Recon": 2,
+    "Web": 3
+  }
+}

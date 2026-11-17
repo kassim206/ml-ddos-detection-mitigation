@@ -1,0 +1,50 @@
+{
+    "Benign_Final": {
+        "train": 789581,
+        "val": 126770,
+        "test": 181840,
+        "total": 1098191
+    },
+    "DDoS-HTTP_Flood": {
+        "train": 28790,
+        "val": 0,
+        "test": 0,
+        "total": 28790
+    },
+    "DDoS-SYN_Flood": {
+        "train": 2280302,
+        "val": 791290,
+        "test": 987587,
+        "total": 4059179
+    },
+    "DDoS-SlowLoris": {
+        "train": 2942,
+        "val": 20484,
+        "test": 0,
+        "total": 23426
+    },
+    "DDoS-UDP_Flood": {
+        "train": 4535296,
+        "val": 287590,
+        "test": 589345,
+        "total": 5412231
+    },
+    "Recon-PortScan": {
+        "train": 59161,
+        "val": 9498,
+        "test": 13625,
+        "total": 82284
+    },
+    "SqlInjection": {
+        "train": 5245,
+        "val": 0,
+        "test": 0,
+        "total": 5245
+    },
+    "XSS": {
+        "train": 1291,
+        "val": 1050,
+        "test": 1505,
+        "total": 3846
+    }
+}

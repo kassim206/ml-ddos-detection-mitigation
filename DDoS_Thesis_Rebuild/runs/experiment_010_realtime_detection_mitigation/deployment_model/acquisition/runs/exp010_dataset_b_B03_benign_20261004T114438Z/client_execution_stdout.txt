@@ -1,0 +1,4 @@
+ Container exp010_testbed-victim_web_exp010-1 Running 
+ Container exp010_testbed-benign_client_exp010-run-725d6421aa5e Creating 
+ Container exp010_testbed-benign_client_exp010-run-725d6421aa5e Created 
+Completed 1000 controlled benign requests. Ground truth: /app/logs/client_ground_truth.csv

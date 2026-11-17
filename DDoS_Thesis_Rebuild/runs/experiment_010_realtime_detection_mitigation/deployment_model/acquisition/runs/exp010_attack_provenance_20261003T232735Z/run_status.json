@@ -1,0 +1,8 @@
+{
+  "status": "CORRELATION_VALIDATED",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": false,
+  "traffic_workload_executed": true,
+  "feature_extraction_permitted": false,
+  "training_use_permitted": false
+}

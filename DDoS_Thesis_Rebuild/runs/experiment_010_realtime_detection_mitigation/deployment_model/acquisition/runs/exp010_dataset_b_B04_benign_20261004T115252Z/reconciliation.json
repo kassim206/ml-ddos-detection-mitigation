@@ -1,0 +1,19 @@
+{
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B04",
+  "physical_run_id": "exp010_dataset_b_B04_benign_20261004T115252Z",
+  "expected_class": "Benign",
+  "expected_partition": "train",
+  "client_rows": 1000,
+  "victim_rows": 1000,
+  "unique_client_request_ids": 1000,
+  "unique_victim_request_ids": 1000,
+  "request_id_set_equality": true,
+  "victim_csv_header_count": 1,
+  "all_transport_success": true,
+  "all_http_200": true,
+  "pcap_bytes": 1447024,
+  "reconciliation_status": "PASS",
+  "failures": []
+}

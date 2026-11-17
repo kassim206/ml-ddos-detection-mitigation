@@ -1,0 +1,50 @@
+{
+  "A07": {
+    "class": "Attack",
+    "completion_status_sha256": "fc1f06da4a1b478f83886c618435344500172bd56d5a1e9c18e8b22e44feeb51",
+    "feature_csv": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A07_attack_20261004T151312Z/features/window_100.csv",
+    "feature_csv_sha256": "d9a3fd9c3c8ce3ed2c3569e0dd3edc5bb008dce2cc2dd6960498897ddfcd74d6",
+    "feature_metadata_sha256": "1832185e4340a73fb2a709c9b7e8fad646e10f858bec60241ba8521dbe1be703",
+    "physical_run_id": "exp010_dataset_b_A07_attack_20261004T151312Z",
+    "prediction_csv": "A07_predictions.csv",
+    "prediction_csv_sha256": "ef82d6fb21867c475bed052408622f4d593b15b2f3dc405c427477dce24c2f7e",
+    "true_label": 1,
+    "window_size_packets": 100
+  },
+  "A08": {
+    "class": "Attack",
+    "completion_status_sha256": "bf8077d723157c74b1fff0e2684811f1bb3f6c662e695b187d6776ab4289bc7b",
+    "feature_csv": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_A08_attack_20261004T152447Z/features/window_100.csv",
+    "feature_csv_sha256": "a7b39bead339c29c54fc8446593f292d912be85577030da9516fb5863ca17efa",
+    "feature_metadata_sha256": "dffad8c8461e7f8178800ee5ee9fa1f6d04d9159b240a9e139233545951d67bc",
+    "physical_run_id": "exp010_dataset_b_A08_attack_20261004T152447Z",
+    "prediction_csv": "A08_predictions.csv",
+    "prediction_csv_sha256": "2d9f639ba9f01b29f28ab5e7bd2146da5f0c874ab473058708c2a246357cdb40",
+    "true_label": 1,
+    "window_size_packets": 100
+  },
+  "B07": {
+    "class": "Benign",
+    "completion_status_sha256": "c017c0e709de7fdc5e3594c38d7d03c95d5afb3f5f70888af20dd817b072e18b",
+    "feature_csv": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B07_benign_20261004T144330Z/features/window_100.csv",
+    "feature_csv_sha256": "c026c0e685343b9abdc75625773c60edf192c62b7fbab4cba1913e887f52047f",
+    "feature_metadata_sha256": "c4fd5adfc117f483a41dcc0a73eb5bd1cc6a096c54e3b43f47c3eca6fa8bea97",
+    "physical_run_id": "exp010_dataset_b_B07_benign_20261004T144330Z",
+    "prediction_csv": "B07_predictions.csv",
+    "prediction_csv_sha256": "702f2dd44f471c900c62b7f1c80c93246a066fd46a94cf07ff9d9a1d606e44b1",
+    "true_label": 0,
+    "window_size_packets": 100
+  },
+  "B08": {
+    "class": "Benign",
+    "completion_status_sha256": "e8af7f8bcb26b0971fad931adcbba9b0585aa7c63df8bb8a1dedf73b6ad09b6c",
+    "feature_csv": "runs/experiment_010_realtime_detection_mitigation/deployment_model/acquisition/runs/exp010_dataset_b_B08_benign_20261004T150211Z/features/window_100.csv",
+    "feature_csv_sha256": "5b56e3ccd252ccf4dc9f719d04a779231daee19cad0e666162b2b5c2057ff9ec",
+    "feature_metadata_sha256": "a5d1659f079bf91fabd329259fb0d891ac301d4b47dae71bf029e66e663f7351",
+    "physical_run_id": "exp010_dataset_b_B08_benign_20261004T150211Z",
+    "prediction_csv": "B08_predictions.csv",
+    "prediction_csv_sha256": "b217e6417eb75df1058df1ad68bb5bb0ff3782bfc12166641d42f30e17e36839",
+    "true_label": 0,
+    "window_size_packets": 100
+  }
+}

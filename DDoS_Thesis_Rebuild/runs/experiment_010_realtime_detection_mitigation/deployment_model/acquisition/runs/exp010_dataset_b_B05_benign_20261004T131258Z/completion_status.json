@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "B05",
+  "physical_run_id": "exp010_dataset_b_B05_benign_20261004T131258Z",
+  "class": "Benign",
+  "partition": "validation",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "training_use_permitted": false,
+  "validation_use_permitted": true,
+  "raw_evidence_frozen": true,
+  "feature_artifacts_frozen": true,
+  "reconciliation_status": "PASS",
+  "capture": {
+    "eligible_packets": 12000,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0
+  },
+  "features": {
+    "w10_windows": 1200,
+    "w100_windows": 120,
+    "feature_count": 20,
+    "labels_supplied_to_extractor": false,
+    "extractor_sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f"
+  },
+  "execution_notes": [
+    "Genuine controlled benign workload executed once.",
+    "W100 feature extraction command was executed twice after raw freeze.",
+    "The repeated W100 extraction reported the same output CSV SHA-256; final frozen artifact passed provenance and manifest verification.",
+    "No raw acquisition traffic was rerun."
+  ],
+  "integrity": {
+    "raw_manifest_sha256": "0f856a99427c883df5ba1489969602ec608a9aa07991621dce32f793f6fd5909",
+    "raw_master_manifest_sha256": "119e38e062b06c648887365b84c8d621be073b6fe9cb94adcfcde57d2c9d08cc",
+    "raw_freeze_status_sha256": "edd655a04a34d0987732a2c02f22bea18b1e0e97b4c19acc5ef401f795bdf70c",
+    "feature_manifest_sha256": "211ed43d46c2197b3136abfe9bdab63203dd623da6a25cada7ad33d753dc3b4e",
+    "feature_master_manifest_sha256": "fd8230dd19f1e90077362c046f34d11eb992697f17bf2f1491b309cca3c7f672",
+    "reconciliation_sha256": "6d7d93250cdcfad3c356306705b30b6cd25c0c3311d9280a8b6bdbfbf8172767"
+  }
+}

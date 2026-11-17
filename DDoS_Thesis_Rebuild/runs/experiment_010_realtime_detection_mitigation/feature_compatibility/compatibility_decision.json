@@ -1,0 +1,13 @@
+{
+  "phase": "CICIoT2023_to_live_feature_compatibility",
+  "status": "NOT_SUPPORTED_FOR_DIRECT_EXP009_DEPLOYMENT",
+  "exp009_offline_validity": "PASS",
+  "rows_empirically_audited": 10713192,
+  "finding": "The retained CICIoT2023 representation contains strongly scenario-dependent packet-window regimes. Selected benign, reconnaissance, and web-attack sources overwhelmingly use Number=10, while selected DDoS sources overwhelmingly use Number=100.",
+  "publication_consistency": "The CICIoT2023 publication states that extracted feature values were grouped using packet-window sizes of 10 and 100 to mitigate data-size discrepancy between traffic scenarios.",
+  "deployment_limitation": "No authoritative class-independent online rule for selecting the 10-packet versus 100-packet aggregation regime has been established. Therefore an unlabeled live extractor cannot be claimed to reproduce the Exp009 training representation exactly.",
+  "rate_iat_limitation": "Rate and IAT are strongly related empirically but an exact reciprocal identity is not supported across the retained dataset.",
+  "decision": "Do not connect the frozen Exp009 model directly to live traffic under a claim of exact CICIoT2023 semantic equivalence.",
+  "next_step": "Develop a deployment-compatible detector using a single class-independent live feature/window policy, then evaluate that detector in a separate real-time detection and mitigation experiment.",
+  "frozen_experiments": "Exp001 through Exp009 remain unchanged."
+}

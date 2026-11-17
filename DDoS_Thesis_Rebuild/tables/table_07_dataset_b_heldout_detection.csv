@@ -1,0 +1,9 @@
+metric,value
+Selected model,logistic_regression
+Threshold,0.5
+Window size packets,100
+Held-out windows,480
+Accuracy,1.0
+Balanced accuracy,1.0
+Macro-F1,1.0
+Confusion matrix,"[[240, 0], [0, 240]]"

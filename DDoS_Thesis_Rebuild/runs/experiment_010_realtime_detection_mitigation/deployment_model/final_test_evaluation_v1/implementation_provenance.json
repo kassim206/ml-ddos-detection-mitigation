@@ -1,0 +1,13 @@
+{
+  "evaluation_script": "scripts/10_evaluate_final_test.py",
+  "evaluation_script_sha256": "6ff8524291cabb309f599bb17e06b29e5714cd3fbefc0923e100358cdbcdbfe2",
+  "model_reselected_during_final_test": false,
+  "model_retrained_during_final_test": false,
+  "model_sha256": "5d07101d649141869c6da038b5f5c6d0f64a9dcf16b19c0d85ddc32eecb56fc9",
+  "modeling_protocol_sha256": "8d1508d284de5bd100bb01048970796ebe1c807d77b3fff2984927f9259b4736",
+  "scaler_refit_during_final_test": false,
+  "scaler_sha256": "3ae7e8c2e8c669bc5535eec7a9e902ff0ee821fb3debab6189a847e0e7da8fa0",
+  "selected_system_sha256": "907f2288a579ed849b9186bb9258b692868621ff1bb62c17a3c45ab367020eee",
+  "threshold_changed_during_final_test": false,
+  "window_changed_during_final_test": false
+}

@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "A04",
+  "physical_run_id": "exp010_dataset_b_A04_attack_20261004T124807Z",
+  "class": "Attack",
+  "partition": "train",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "traffic_workload_executed": true,
+  "feature_extraction_completed": true,
+  "training_use_permitted": true,
+  "raw_validation": {
+    "reconciliation_status": "PASS",
+    "client_rows": 1000,
+    "victim_rows": 1000,
+    "request_id_set_equality": true,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0
+  },
+  "features": {
+    "candidate_windows_packets": [
+      10,
+      100
+    ],
+    "w10_rows": 1200,
+    "w100_rows": 120,
+    "feature_count": 20,
+    "label_blind_extraction": true,
+    "source_pcap_sha256": "0ad259a7d98da4469e13c542a253ee8c48cd5243d761495a1e741edbd60cb896",
+    "extractor_script_sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f",
+    "dpkt_version": "1.9.8"
+  },
+  "integrity": {
+    "initial_status_preserved": true,
+    "raw_layer_frozen": true,
+    "raw_master_sha256": "374f2f705e43054a40ff2102b588e4ec2065cd756a8cf865fb82aeff648aab09",
+    "feature_layer_frozen": true,
+    "feature_master_sha256": "9a8e48c0899372b14d3dec8b9a6e62b050ce9d26cd54a39f51d68da45fe31613"
+  },
+  "scientific_scope": "Controlled-laboratory high-rate HTTP workload; Attack/train acquisition for Dataset B."
+}

@@ -1,0 +1,14 @@
+﻿# Python / environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large files -> stored on Zenodo/Drive (see README)
+DDoS_Thesis_Rebuild/data/raw/
+DDoS_Thesis_Rebuild/runs/experiment_001_dataset_char/cleane*
+DDoS_Thesis_Rebuild/runs/experiment_002_preprocessing/train*
+DDoS_Thesis_Rebuild/runs/experiment_003_baselines/model_rf.pkl
+DDoS_Thesis_Rebuild/runs/experiment_003_baselines/training_*
+DDoS_Thesis_Rebuild/runs/experiment_008_mitigation/mitigati*

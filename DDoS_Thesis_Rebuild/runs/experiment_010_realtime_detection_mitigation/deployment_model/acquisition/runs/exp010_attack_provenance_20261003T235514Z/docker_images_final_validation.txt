@@ -1,0 +1,12 @@
+]633;E;echo "run_id=$RUN_ID";e8d4147b-a7d2-4bc0-b19c-507bf28c57ae]633;Crun_id=exp010_attack_provenance_20261003T235514Z
+recorded_utc=2026-10-04T00:00:55Z
+
+[victim_web_exp010]
+image_name=exp010_testbed-victim_web_exp010 image_id=sha256:c434d6ff489650442eac324dcac9bdfd84efec0a528de2df31b96fcda411e0fa
+
+[capture_exp010]
+image_name=exp010_testbed-capture_exp010 image_id=sha256:e94ac688a6401dffc8361141fa336b0d2d655c357c568be28bbdfb8a0533a8af
+
+[attack_client_exp010]
+image_name=exp010_testbed-attack_client_exp010
+image_id=sha256:8dadcef65354913446b7e756da87e733bcb3a8c1738ec1ec36b7b14be94300aa

@@ -1,0 +1,10 @@
+{
+  "experiment_id": "experiment_004_cnn_dense",
+  "description": "CNN-Dense neural-network baseline evaluated on the processed selected CICIoT2023 subset.",
+  "model_type": "CNN-Dense",
+  "role": "neural_network_baseline",
+  "input_features": 39,
+  "input_interpretation": "non-temporal feature axis",
+  "contains_lstm_layer": false,
+  "temporal_sequence_model": false
+}

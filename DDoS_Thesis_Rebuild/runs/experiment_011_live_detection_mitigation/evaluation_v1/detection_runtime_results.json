@@ -1,0 +1,782 @@
+{
+  "detection_observation_unit": "complete non-overlapping 100-eligible-packet window",
+  "evaluation_version": 1,
+  "experiment": "Exp011",
+  "experimental_unit": "run",
+  "ground_truth_rule": {
+    "A01-A03": 1,
+    "B01-B03": 0,
+    "M01-M03": 1
+  },
+  "input_manifest_sha256": "790ebd1e1334bbb988f5680fb6decee1b16f8d45605e4153d7815ce753e61049",
+  "integrity": {
+    "A01": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "9c1ad7e8310c1046853f9916c839050e6e17fd8564b8e6e1e6b4a90fbb3b45f4"
+    },
+    "A02": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "750105d2580d8658d705adbbe167befc341c00691c4969639293b40e19a0b627"
+    },
+    "A03": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "ffdf1403d62b24570f5b2150e9d8d36fd66b82176dc209ed3ddc247fc62e62b5"
+    },
+    "B01": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "8565ab085ed104b000f9cbcee7006ce2c987c6d405c91ded6aabd91ab7bc5ee4"
+    },
+    "B02": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "0a7bb6f8ccf567a09d4e36cd9cc6aca6be4dda346ca12845728d85246570a0d7"
+    },
+    "B03": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "1901451e668ff1a1e6301b7bce0ab75facba5155f69342bc719effc5141d3842"
+    },
+    "M01": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "d0792174a8bb66673b75c236d7236203d0835c52398a3aa18b50c2d67d4c4c90"
+    },
+    "M02": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "02735c977252de528ff494b0b173300a4a9b081ad0115aa7dae954e4cb40c8a6"
+    },
+    "M03": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "a20e77213d7c6d8655d8bd7c340994789f1f61d2e1e7662ba37e2a25faa0aa09"
+    }
+  },
+  "per_run": {
+    "A01": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.9992992317799855,
+        "mean": 0.9971904401420909,
+        "median": 0.9980273592209852,
+        "min": 0.9764740830293365
+      },
+      "condition": "attack_detection_without_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "f1": 1.0,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.037356,
+          "mean": 0.0019537916666666666,
+          "median": 0.00135,
+          "min": 0.000704
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.037331,
+          "mean": 0.0019169833333333333,
+          "median": 0.001314,
+          "min": 0.000684
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.111339,
+          "mean": 0.03710075833333333,
+          "median": 0.034093,
+          "min": 0.022991
+        }
+      },
+      "true_label": 1
+    },
+    "A02": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.9995529503342971,
+        "mean": 0.9971461221506845,
+        "median": 0.9983535966781321,
+        "min": 0.9802088203662943
+      },
+      "condition": "attack_detection_without_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "f1": 1.0,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.049071,
+          "mean": 0.001915625,
+          "median": 0.0012799999999999999,
+          "min": 0.000686
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.049029,
+          "mean": 0.0018615083333333334,
+          "median": 0.001235,
+          "min": 0.000664
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.085885,
+          "mean": 0.03708875,
+          "median": 0.030907,
+          "min": 0.020998
+        }
+      },
+      "true_label": 1
+    },
+    "A03": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.9994963322359937,
+        "mean": 0.9966895841517133,
+        "median": 0.9977349408106646,
+        "min": 0.976188173705673
+      },
+      "condition": "attack_detection_without_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "f1": 1.0,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.038796,
+          "mean": 0.0019969666666666665,
+          "median": 0.0013035,
+          "min": 0.000694
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.038742,
+          "mean": 0.0019425583333333334,
+          "median": 0.0012615,
+          "min": 0.00067
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.085596,
+          "mean": 0.039618875,
+          "median": 0.0345115,
+          "min": 0.021544
+        }
+      },
+      "true_label": 1
+    },
+    "B01": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.0031190457278135685,
+        "mean": 0.0012606559913393143,
+        "median": 0.0010891865004378108,
+        "min": 0.0001529576032599866
+      },
+      "condition": "benign_with_detection_and_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "f1": null,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": null,
+        "recall": null
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.069935,
+          "mean": 0.0030101416666666668,
+          "median": 0.002252,
+          "min": 0.000646
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.069796,
+          "mean": 0.0029392333333333335,
+          "median": 0.0021865,
+          "min": 0.000625
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.964509,
+          "mean": 0.9066739083333333,
+          "median": 0.9032995,
+          "min": 0.852568
+        }
+      },
+      "true_label": 0
+    },
+    "B02": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.0034060153314769406,
+        "mean": 0.0014868527827823965,
+        "median": 0.0013932165334867202,
+        "min": 0.00012993158434585514
+      },
+      "condition": "benign_with_detection_and_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "f1": null,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": null,
+        "recall": null
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.031497,
+          "mean": 0.002646766666666667,
+          "median": 0.002206,
+          "min": 0.000626
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.031451,
+          "mean": 0.002569,
+          "median": 0.0021405,
+          "min": 0.000604
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.973236,
+          "mean": 0.899729875,
+          "median": 0.897359,
+          "min": 0.843537
+        }
+      },
+      "true_label": 0
+    },
+    "B03": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.0037632091805787225,
+        "mean": 0.0016051490704496042,
+        "median": 0.0013415228301118384,
+        "min": 0.0004829213672157126
+      },
+      "condition": "benign_with_detection_and_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "f1": null,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": null,
+        "recall": null
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 0,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.028148,
+          "mean": 0.00223135,
+          "median": 0.0019865,
+          "min": 0.000647
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.028099,
+          "mean": 0.0021737,
+          "median": 0.001924,
+          "min": 0.000626
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.927921,
+          "mean": 0.8864202583333334,
+          "median": 0.8899845,
+          "min": 0.844193
+        }
+      },
+      "true_label": 0
+    },
+    "M01": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.9995237943983504,
+        "mean": 0.9972602253426711,
+        "median": 0.998205088080111,
+        "min": 0.973558969501548
+      },
+      "condition": "attack_detection_with_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "f1": 1.0,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 1,
+          "max": 0.003529,
+          "mean": 0.003529,
+          "median": 0.003529,
+          "min": 0.003529
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.033083,
+          "mean": 0.00183715,
+          "median": 0.001239,
+          "min": 0.000677
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.03305,
+          "mean": 0.001788275,
+          "median": 0.0012014999999999999,
+          "min": 0.000653
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.109461,
+          "mean": 0.036030425,
+          "median": 0.031012,
+          "min": 0.021206
+        }
+      },
+      "true_label": 1
+    },
+    "M02": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.999323609175962,
+        "mean": 0.99706219004248,
+        "median": 0.997742927910543,
+        "min": 0.9857524154972745
+      },
+      "condition": "attack_detection_with_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "f1": 1.0,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 1,
+          "max": 0.002215,
+          "mean": 0.002215,
+          "median": 0.002215,
+          "min": 0.002215
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.05233,
+          "mean": 0.00205805,
+          "median": 0.001324,
+          "min": 0.000676
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.052292,
+          "mean": 0.002020633333333333,
+          "median": 0.0012920000000000002,
+          "min": 0.000656
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.091089,
+          "mean": 0.03843061666666667,
+          "median": 0.035489,
+          "min": 0.022232
+        }
+      },
+      "true_label": 1
+    },
+    "M03": {
+      "attack_probability": {
+        "count": 120,
+        "max": 0.9996048708481405,
+        "mean": 0.9973942174462785,
+        "median": 0.9982499574148415,
+        "min": 0.9823540626403089
+      },
+      "condition": "attack_detection_with_mitigation",
+      "detection": {
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "f1": 1.0,
+        "macro_f1": 0.5,
+        "n_windows": 120,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "timing": {
+        "decision_to_enforcement_seconds": {
+          "count": 1,
+          "max": 0.001708,
+          "mean": 0.001708,
+          "median": 0.001708,
+          "min": 0.001708
+        },
+        "feature_to_inference_seconds": {
+          "count": 120,
+          "max": 0.060062,
+          "mean": 0.002004325,
+          "median": 0.001271,
+          "min": 0.000731
+        },
+        "inference_seconds": {
+          "count": 120,
+          "max": 0.060017,
+          "mean": 0.0019562666666666667,
+          "median": 0.001237,
+          "min": 0.000707
+        },
+        "window_observation_seconds": {
+          "count": 120,
+          "max": 0.104341,
+          "mean": 0.035551525,
+          "median": 0.0318245,
+          "min": 0.020241
+        }
+      },
+      "true_label": 1
+    }
+  },
+  "pooled_overall": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        360,
+        0
+      ],
+      [
+        0,
+        720
+      ]
+    ],
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "n_windows": 1080,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "pooled_within_condition": {
+    "attack_detection_with_mitigation": {
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          360
+        ]
+      ],
+      "f1": 1.0,
+      "macro_f1": 0.5,
+      "n_windows": 360,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "attack_detection_without_mitigation": {
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          360
+        ]
+      ],
+      "f1": 1.0,
+      "macro_f1": 0.5,
+      "n_windows": 360,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "benign_with_detection_and_mitigation": {
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "confusion_matrix": [
+        [
+          360,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "f1": null,
+      "macro_f1": 0.5,
+      "n_windows": 360,
+      "precision": null,
+      "recall": null
+    }
+  },
+  "replication_warning": "Packet windows are nested observations within runs and are not independent experimental replicates.",
+  "timing_by_condition": {
+    "attack_detection_with_mitigation": {
+      "decision_to_enforcement_seconds": {
+        "count": 3,
+        "max": 0.003529,
+        "mean": 0.002484,
+        "median": 0.002215,
+        "min": 0.001708
+      },
+      "feature_to_inference_seconds": {
+        "count": 360,
+        "max": 0.060062,
+        "mean": 0.001966508333333333,
+        "median": 0.0012745,
+        "min": 0.000676
+      },
+      "inference_seconds": {
+        "count": 360,
+        "max": 0.060017,
+        "mean": 0.001921725,
+        "median": 0.0012325,
+        "min": 0.000653
+      },
+      "window_observation_seconds": {
+        "count": 360,
+        "max": 0.109461,
+        "mean": 0.036670855555555555,
+        "median": 0.0329285,
+        "min": 0.020241
+      }
+    },
+    "attack_detection_without_mitigation": {
+      "decision_to_enforcement_seconds": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null
+      },
+      "feature_to_inference_seconds": {
+        "count": 360,
+        "max": 0.049071,
+        "mean": 0.001955461111111111,
+        "median": 0.00131,
+        "min": 0.000686
+      },
+      "inference_seconds": {
+        "count": 360,
+        "max": 0.049029,
+        "mean": 0.0019070166666666666,
+        "median": 0.001268,
+        "min": 0.000664
+      },
+      "window_observation_seconds": {
+        "count": 360,
+        "max": 0.111339,
+        "mean": 0.03793612777777778,
+        "median": 0.033626500000000004,
+        "min": 0.020998
+      }
+    },
+    "benign_with_detection_and_mitigation": {
+      "decision_to_enforcement_seconds": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null
+      },
+      "feature_to_inference_seconds": {
+        "count": 360,
+        "max": 0.069935,
+        "mean": 0.0026294194444444444,
+        "median": 0.0021465,
+        "min": 0.000626
+      },
+      "inference_seconds": {
+        "count": 360,
+        "max": 0.069796,
+        "mean": 0.0025606444444444443,
+        "median": 0.0020829999999999998,
+        "min": 0.000604
+      },
+      "window_observation_seconds": {
+        "count": 360,
+        "max": 0.973236,
+        "mean": 0.8976080138888889,
+        "median": 0.89494,
+        "min": 0.843537
+      }
+    }
+  },
+  "timing_scope_warning": "Timing quantities retain the frozen metric definitions and are not end-to-end request latency."
+}

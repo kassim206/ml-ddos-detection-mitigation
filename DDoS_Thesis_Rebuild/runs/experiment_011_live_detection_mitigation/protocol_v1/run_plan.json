@@ -1,0 +1,50 @@
+{
+  "conditions": {
+    "attack_detection_with_mitigation": {
+      "detector_enabled": true,
+      "ground_truth": "attack",
+      "mitigation_enabled": true,
+      "purpose": "live detection, enforcement and service-impact evaluation",
+      "runs": [
+        "E11-M01",
+        "E11-M02",
+        "E11-M03"
+      ]
+    },
+    "attack_detection_without_mitigation": {
+      "detector_enabled": true,
+      "ground_truth": "attack",
+      "mitigation_enabled": false,
+      "purpose": "attack detection and unmitigated service baseline",
+      "runs": [
+        "E11-A01",
+        "E11-A02",
+        "E11-A03"
+      ]
+    },
+    "benign_with_detection_and_mitigation": {
+      "detector_enabled": true,
+      "ground_truth": "benign",
+      "mitigation_enabled": true,
+      "purpose": "false-positive and benign-service evaluation",
+      "runs": [
+        "E11-B01",
+        "E11-B02",
+        "E11-B03"
+      ]
+    }
+  },
+  "execution_policy": {
+    "feature_contract_changes_after_first_result_bearing_run": false,
+    "mitigation_policy_changes_after_first_result_bearing_run": false,
+    "model_changes_after_first_result_bearing_run": false,
+    "scaler_changes_after_first_result_bearing_run": false,
+    "silent_reruns": false,
+    "threshold_changes_after_first_result_bearing_run": false
+  },
+  "experiment": "Exp011",
+  "experimental_unit": "independent controlled-laboratory acquisition run",
+  "protocol_version": 1,
+  "status": "FROZEN",
+  "total_result_bearing_runs": 9
+}

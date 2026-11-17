@@ -1,0 +1,44 @@
+{
+  "status": "VALID_DATASET_B_RAW_RUN_FROZEN",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "A05",
+  "physical_run_id": "exp010_dataset_b_A05_attack_20261004T134903Z",
+  "class": "Attack",
+  "partition": "validation",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "traffic_workload_executed": true,
+  "feature_extraction_permitted": true,
+  "training_use_permitted": false,
+  "workload": {
+    "request_count": 1000,
+    "method": "GET",
+    "concurrency": 10,
+    "timeout_seconds": 5,
+    "workload_type": "controlled_high_rate_http"
+  },
+  "validation": {
+    "client_rows": 1000,
+    "victim_rows": 1000,
+    "unique_client_request_ids": 1000,
+    "unique_victim_request_ids": 1000,
+    "request_id_set_equality": true,
+    "all_transport_success": true,
+    "all_http_200": true,
+    "victim_csv_header_count": 1,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0,
+    "reconciliation_status": "PASS"
+  },
+  "integrity": {
+    "initial_run_status_preserved": true,
+    "initial_run_status_sha256": "137160e73190bbacfe6d3a39fb3a7e2e5aff478cd542dfa440c5b89170ee0769",
+    "raw_evidence_frozen_before_feature_extraction": true,
+    "workload_executed_once": true,
+    "raw_manifest_sha256": "6cc81d8b92a1b100a0ccb6cf8ebf47daf66d012cbfd75b17ebab38a777f87301",
+    "raw_master_manifest_sha256": "cabe9f155c521a79ef56a6b5cb4197601f3ae0e085ab99cab80bd39ec8691be9",
+    "reconciliation_sha256": "699431d6822fbed7e15cf59198e4c70ea3850c064a4889eee66d2b472eded555"
+  }
+}

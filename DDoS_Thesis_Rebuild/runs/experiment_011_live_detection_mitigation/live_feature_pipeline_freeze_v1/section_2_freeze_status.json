@@ -1,0 +1,36 @@
+{
+  "capture_order_validation": {
+    "admitted_packets": 12000,
+    "status": "PASS",
+    "timestamp_order_violations": 0
+  },
+  "equivalence": {
+    "absolute_tolerance": 1e-12,
+    "byte_identical_feature_csv": true,
+    "candidate_csv_sha256": "c026c0e685343b9abdc75625773c60edf192c62b7fbab4cba1913e887f52047f",
+    "deterministic_replay_csv_sha256": "c026c0e685343b9abdc75625773c60edf192c62b7fbab4cba1913e887f52047f",
+    "failure_count": 0,
+    "features_per_window": 20,
+    "historical_reference_csv_sha256": "c026c0e685343b9abdc75625773c60edf192c62b7fbab4cba1913e887f52047f",
+    "max_absolute_difference": 0.0,
+    "max_relative_difference": 0.0,
+    "relative_tolerance": 1e-09,
+    "values_compared": 2400,
+    "window_size_packets": 100,
+    "windows_compared": 120
+  },
+  "exp010_reference_extractor_sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f",
+  "experiment": "Exp011",
+  "fixture": {
+    "historical_w100_sha256": "c026c0e685343b9abdc75625773c60edf192c62b7fbab4cba1913e887f52047f",
+    "logical_run": "B07",
+    "result_bearing_for_exp011": false,
+    "source_pcap_sha256": "526d9af4288ccbacf4cedec8ccc715f6e1fa75b1539161f6b470970f4365ff9a"
+  },
+  "implementation_sha256": "8ee96bfcfc2fe19fd4ddf26e2acaf13cc9ebd3518227b36a72ad428eefc50ad4",
+  "labels_supplied_to_feature_pipeline": false,
+  "result_bearing_exp011_runs_accessed": false,
+  "section": 2,
+  "section_name": "live_feature_pipeline",
+  "status": "PASS_FROZEN"
+}

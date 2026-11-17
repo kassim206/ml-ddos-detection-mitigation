@@ -1,0 +1,12 @@
+{
+  "executed_script_sha256": "93695c1bd1c49e65144f902e56bee4fa495e91dfbbf96ad0685100882253f4a9",
+  "joblib": "1.6.0",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "protocol_sha256": "8d1508d284de5bd100bb01048970796ebe1c807d77b3fff2984927f9259b4736",
+  "python": "3.11.9",
+  "random_seed": 20261004,
+  "sklearn": "1.9.1",
+  "tensorflow": "2.15.0",
+  "tensorflow_gpu_devices": []
+}

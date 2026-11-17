@@ -1,0 +1,118 @@
+{
+  "experiment": "004",
+  "model": "CNN-Dense",
+  "status": "interrupted_best_checkpoint_retained",
+  "dataset_source": {
+    "train": "runs/experiment_002_preprocessing/train_processed.parquet",
+    "validation": "runs/experiment_002_preprocessing/val_processed.parquet",
+    "test": "runs/experiment_002_preprocessing/test_processed.parquet"
+  },
+  "target_column": "Category",
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "feature_count": 39,
+  "classes": [
+    "Benign",
+    "DDoS",
+    "Recon",
+    "Web"
+  ],
+  "row_counts": {
+    "train": 7702608,
+    "validation": 1236682,
+    "test": 1773902
+  },
+  "architecture": {
+    "input_shape": [
+      39,
+      1
+    ],
+    "conv1d_filters": 64,
+    "conv1d_kernel_size": 3,
+    "conv1d_padding": "same",
+    "conv1d_activation": "relu",
+    "flatten": true,
+    "dense_units": 128,
+    "dense_activation": "relu",
+    "dropout": 0.2,
+    "output_units": 4,
+    "output_activation": "softmax"
+  },
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0001,
+    "clipnorm": 1.0
+  },
+  "training": {
+    "batch_size": 64,
+    "maximum_epochs": 20,
+    "early_stopping_patience": 10,
+    "checkpoint_monitor": "val_accuracy",
+    "checkpoint_mode": "max",
+    "restore_best_weights": true,
+    "streaming": true,
+    "dataset_repeat": true,
+    "random_seed": 42
+  },
+  "class_weighting": {
+    "method": "inverse_frequency_capped",
+    "maximum_weight": 5.0,
+    "raw_weights": {
+      "0": 2.438827682023757,
+      "1": 0.2812266971213597,
+      "2": 32.549348388296345,
+      "3": 294.62239902080785
+    },
+    "applied_weights": {
+      "0": 2.438827682023757,
+      "1": 0.2812266971213597,
+      "2": 5.0,
+      "3": 5.0
+    }
+  },
+  "artifact_scope": {
+    "training_completed": false,
+    "best_checkpoint_retained": true,
+    "completed_test_evaluation_retained": false,
+    "validation_diagnostic_retained": true
+  }
+}

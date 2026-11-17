@@ -1,0 +1,705 @@
+{
+  "by_condition": {
+    "attack_detection_with_mitigation": {
+      "client_http_status_counts": {
+        "200": 381,
+        "429": 2619
+      },
+      "failed_or_timed_out_requests": 0,
+      "latency_mean_ms_per_run": {
+        "count": 3,
+        "max": 46.13427448712173,
+        "mean": 43.822626272033325,
+        "median": 42.883419384048466,
+        "min": 42.45018494492979
+      },
+      "latency_median_ms_per_run": {
+        "count": 3,
+        "max": 42.19657899739104,
+        "mean": 38.759505330745014,
+        "median": 37.108453498149174,
+        "min": 36.973483496694826
+      },
+      "latency_p95_ms_per_run": {
+        "count": 3,
+        "max": 80.65639305277726,
+        "mean": 79.39383326835619,
+        "median": 79.65199770369509,
+        "min": 77.8731090485962
+      },
+      "n_runs": 3,
+      "request_attempts": 3000,
+      "request_span_seconds_per_run": {
+        "count": 3,
+        "max": 4.686274,
+        "mean": 4.450671333333333,
+        "median": 4.361206,
+        "min": 4.304534
+      },
+      "request_span_throughput_per_run": {
+        "count": 3,
+        "max": 232.3131841913666,
+        "mean": 224.99890094108568,
+        "median": 229.29437407909646,
+        "min": 213.38914455279397
+      },
+      "runs": [
+        "M01",
+        "M02",
+        "M03"
+      ],
+      "successful_transport_requests": 3000,
+      "victim_http_status_counts": {
+        "200": 381,
+        "429": 2619
+      }
+    },
+    "attack_detection_without_mitigation": {
+      "client_http_status_counts": {
+        "200": 3000
+      },
+      "failed_or_timed_out_requests": 0,
+      "latency_mean_ms_per_run": {
+        "count": 3,
+        "max": 47.17255098599344,
+        "mean": 45.20643396299298,
+        "median": 44.43128527795852,
+        "min": 44.01546562502699
+      },
+      "latency_median_ms_per_run": {
+        "count": 3,
+        "max": 41.57248699993943,
+        "mean": 39.31721600019955,
+        "median": 39.93777650066477,
+        "min": 36.441384499994456
+      },
+      "latency_p95_ms_per_run": {
+        "count": 3,
+        "max": 90.03928185011317,
+        "mean": 85.1428188006442,
+        "median": 89.45822330133524,
+        "min": 75.93095125048421
+      },
+      "n_runs": 3,
+      "request_attempts": 3000,
+      "request_span_seconds_per_run": {
+        "count": 3,
+        "max": 4.806885,
+        "mean": 4.604142333333334,
+        "median": 4.509054,
+        "min": 4.496488
+      },
+      "request_span_throughput_per_run": {
+        "count": 3,
+        "max": 222.3957897808245,
+        "mean": 217.40224396638087,
+        "median": 221.77600889233085,
+        "min": 208.0349332259873
+      },
+      "runs": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "successful_transport_requests": 3000,
+      "victim_http_status_counts": {
+        "200": 3000
+      }
+    },
+    "benign_with_detection_and_mitigation": {
+      "client_http_status_counts": {
+        "200": 3000
+      },
+      "failed_or_timed_out_requests": 0,
+      "latency_mean_ms_per_run": {
+        "count": 3,
+        "max": 12.402024040024116,
+        "mean": 11.340299021677007,
+        "median": 11.584224899997935,
+        "min": 10.034648125008971
+      },
+      "latency_median_ms_per_run": {
+        "count": 3,
+        "max": 11.805340498540318,
+        "mean": 11.061394499847665,
+        "median": 10.991848501362256,
+        "min": 10.386994499640423
+      },
+      "latency_p95_ms_per_run": {
+        "count": 3,
+        "max": 20.456330148590496,
+        "mean": 17.617069349883725,
+        "median": 19.067302149233,
+        "min": 13.32757575182768
+      },
+      "n_runs": 3,
+      "request_attempts": 3000,
+      "request_span_seconds_per_run": {
+        "count": 3,
+        "max": 112.889562,
+        "mean": 111.78400833333333,
+        "median": 112.038519,
+        "min": 110.423944
+      },
+      "request_span_throughput_per_run": {
+        "count": 3,
+        "max": 9.05600691096489,
+        "mean": 8.946574527570464,
+        "median": 8.925501773189273,
+        "min": 8.858214898557229
+      },
+      "runs": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "successful_transport_requests": 3000,
+      "victim_http_status_counts": {
+        "200": 3000
+      }
+    }
+  },
+  "evaluation_version": 1,
+  "experiment": "Exp011",
+  "experimental_unit": "run",
+  "input_manifest_sha256": "790ebd1e1334bbb988f5680fb6decee1b16f8d45605e4153d7815ce753e61049",
+  "integrity": {
+    "A01": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "9c1ad7e8310c1046853f9916c839050e6e17fd8564b8e6e1e6b4a90fbb3b45f4"
+    },
+    "A02": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "750105d2580d8658d705adbbe167befc341c00691c4969639293b40e19a0b627"
+    },
+    "A03": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "ffdf1403d62b24570f5b2150e9d8d36fd66b82176dc209ed3ddc247fc62e62b5"
+    },
+    "B01": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "8565ab085ed104b000f9cbcee7006ce2c987c6d405c91ded6aabd91ab7bc5ee4"
+    },
+    "B02": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "0a7bb6f8ccf567a09d4e36cd9cc6aca6be4dda346ca12845728d85246570a0d7"
+    },
+    "B03": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "1901451e668ff1a1e6301b7bce0ab75facba5155f69342bc719effc5141d3842"
+    },
+    "M01": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "d0792174a8bb66673b75c236d7236203d0835c52398a3aa18b50c2d67d4c4c90"
+    },
+    "M02": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "02735c977252de528ff494b0b173300a4a9b081ad0115aa7dae954e4cb40c8a6"
+    },
+    "M03": {
+      "artifact_manifest_verified": true,
+      "input_manifest_binding_verified": true,
+      "manifest_hash_verified": true,
+      "manifest_sha256": "a20e77213d7c6d8655d8bd7c340994789f1f61d2e1e7662ba37e2a25faa0aa09"
+    }
+  },
+  "mitigation_summary": {
+    "all_runs_satisfy_frozen_required_evidence": true,
+    "decision_to_enforcement_seconds": {
+      "count": 3,
+      "max": 0.003529,
+      "mean": 0.002484,
+      "median": 0.002215,
+      "min": 0.001708
+    },
+    "post_enforcement_failures": 0,
+    "post_enforcement_http_429": 2619,
+    "post_enforcement_http_429_fraction": 1.0,
+    "post_enforcement_targeted_requests": 2619,
+    "runs": [
+      "M01",
+      "M02",
+      "M03"
+    ],
+    "successful_activation_events": 3
+  },
+  "per_run": {
+    "A01": {
+      "archived_request_span_seconds": 4.509054,
+      "archived_request_span_throughput_requests_per_second": 221.77600889233085,
+      "client_http_status_counts": {
+        "200": 1000
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "attack_detection_without_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 0,
+        "activation_probability": null,
+        "activation_window": null,
+        "decision_timestamp": null,
+        "decision_to_enforcement_seconds": null,
+        "enforcement_completion_timestamp": null,
+        "enforcement_outcomes": {
+          "not_requested": 120
+        },
+        "mitigation_action_requests": 0,
+        "model_attack_decisions": 120,
+        "post_enforcement_failures": null,
+        "post_enforcement_http_429": null,
+        "post_enforcement_mitigation_active": null,
+        "requests_at_or_after_enforcement_completion": null,
+        "requests_before_enforcement_completion": null,
+        "required_evidence_satisfied": null
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 173.67258699960075,
+        "mean": 44.43128527795852,
+        "median": 39.93777650066477,
+        "min": 7.55318500159774,
+        "p95": 75.93095125048421
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 1000
+      },
+      "victim_mitigation_state_counts": {
+        "false": 1000
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "A02": {
+      "archived_request_span_seconds": 4.496488,
+      "archived_request_span_throughput_requests_per_second": 222.3957897808245,
+      "client_http_status_counts": {
+        "200": 1000
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "attack_detection_without_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 0,
+        "activation_probability": null,
+        "activation_window": null,
+        "decision_timestamp": null,
+        "decision_to_enforcement_seconds": null,
+        "enforcement_completion_timestamp": null,
+        "enforcement_outcomes": {
+          "not_requested": 120
+        },
+        "mitigation_action_requests": 0,
+        "model_attack_decisions": 120,
+        "post_enforcement_failures": null,
+        "post_enforcement_http_429": null,
+        "post_enforcement_mitigation_active": null,
+        "requests_at_or_after_enforcement_completion": null,
+        "requests_before_enforcement_completion": null,
+        "required_evidence_satisfied": null
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 129.6592229991802,
+        "mean": 44.01546562502699,
+        "median": 36.441384499994456,
+        "min": 8.86002799961716,
+        "p95": 90.03928185011317
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 1000
+      },
+      "victim_mitigation_state_counts": {
+        "false": 1000
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "A03": {
+      "archived_request_span_seconds": 4.806885,
+      "archived_request_span_throughput_requests_per_second": 208.0349332259873,
+      "client_http_status_counts": {
+        "200": 1000
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "attack_detection_without_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 0,
+        "activation_probability": null,
+        "activation_window": null,
+        "decision_timestamp": null,
+        "decision_to_enforcement_seconds": null,
+        "enforcement_completion_timestamp": null,
+        "enforcement_outcomes": {
+          "not_requested": 120
+        },
+        "mitigation_action_requests": 0,
+        "model_attack_decisions": 120,
+        "post_enforcement_failures": null,
+        "post_enforcement_http_429": null,
+        "post_enforcement_mitigation_active": null,
+        "requests_at_or_after_enforcement_completion": null,
+        "requests_before_enforcement_completion": null,
+        "required_evidence_satisfied": null
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 145.71805899686296,
+        "mean": 47.17255098599344,
+        "median": 41.57248699993943,
+        "min": 7.7621909986191895,
+        "p95": 89.45822330133524
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 1000
+      },
+      "victim_mitigation_state_counts": {
+        "false": 1000
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "B01": {
+      "archived_request_span_seconds": 112.889562,
+      "archived_request_span_throughput_requests_per_second": 8.858214898557229,
+      "client_http_status_counts": {
+        "200": 1000
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "benign_with_detection_and_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 0,
+        "activation_probability": null,
+        "activation_window": null,
+        "decision_timestamp": null,
+        "decision_to_enforcement_seconds": null,
+        "enforcement_completion_timestamp": null,
+        "enforcement_outcomes": {
+          "not_requested": 120
+        },
+        "mitigation_action_requests": 0,
+        "model_attack_decisions": 0,
+        "post_enforcement_failures": null,
+        "post_enforcement_http_429": null,
+        "post_enforcement_mitigation_active": null,
+        "requests_at_or_after_enforcement_completion": null,
+        "requests_before_enforcement_completion": null,
+        "required_evidence_satisfied": null
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 49.19640400112257,
+        "mean": 12.402024040024116,
+        "median": 11.805340498540318,
+        "min": 3.968666002037935,
+        "p95": 20.456330148590496
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 1000
+      },
+      "victim_mitigation_state_counts": {
+        "false": 1000
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "B02": {
+      "archived_request_span_seconds": 112.038519,
+      "archived_request_span_throughput_requests_per_second": 8.925501773189273,
+      "client_http_status_counts": {
+        "200": 1000
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "benign_with_detection_and_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 0,
+        "activation_probability": null,
+        "activation_window": null,
+        "decision_timestamp": null,
+        "decision_to_enforcement_seconds": null,
+        "enforcement_completion_timestamp": null,
+        "enforcement_outcomes": {
+          "not_requested": 120
+        },
+        "mitigation_action_requests": 0,
+        "model_attack_decisions": 0,
+        "post_enforcement_failures": null,
+        "post_enforcement_http_429": null,
+        "post_enforcement_mitigation_active": null,
+        "requests_at_or_after_enforcement_completion": null,
+        "requests_before_enforcement_completion": null,
+        "required_evidence_satisfied": null
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 33.94701800061739,
+        "mean": 11.584224899997935,
+        "median": 10.991848501362256,
+        "min": 4.089375001058215,
+        "p95": 19.067302149233
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 1000
+      },
+      "victim_mitigation_state_counts": {
+        "false": 1000
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "B03": {
+      "archived_request_span_seconds": 110.423944,
+      "archived_request_span_throughput_requests_per_second": 9.05600691096489,
+      "client_http_status_counts": {
+        "200": 1000
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "benign_with_detection_and_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 0,
+        "activation_probability": null,
+        "activation_window": null,
+        "decision_timestamp": null,
+        "decision_to_enforcement_seconds": null,
+        "enforcement_completion_timestamp": null,
+        "enforcement_outcomes": {
+          "not_requested": 120
+        },
+        "mitigation_action_requests": 0,
+        "model_attack_decisions": 0,
+        "post_enforcement_failures": null,
+        "post_enforcement_http_429": null,
+        "post_enforcement_mitigation_active": null,
+        "requests_at_or_after_enforcement_completion": null,
+        "requests_before_enforcement_completion": null,
+        "required_evidence_satisfied": null
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 35.38011600176105,
+        "mean": 10.034648125008971,
+        "median": 10.386994499640423,
+        "min": 3.915485998732038,
+        "p95": 13.32757575182768
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 1000
+      },
+      "victim_mitigation_state_counts": {
+        "false": 1000
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "M01": {
+      "archived_request_span_seconds": 4.361206,
+      "archived_request_span_throughput_requests_per_second": 229.29437407909646,
+      "client_http_status_counts": {
+        "200": 108,
+        "429": 892
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "attack_detection_with_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 1,
+        "activation_probability": 0.9987184712747667,
+        "activation_window": 0,
+        "decision_timestamp": "2026-10-04T19:49:23.191772+00:00",
+        "decision_to_enforcement_seconds": 0.003529,
+        "enforcement_completion_timestamp": "2026-10-04T19:49:23.195301+00:00",
+        "enforcement_outcomes": {
+          "activated": 1,
+          "already_active": 119
+        },
+        "mitigation_action_requests": 120,
+        "model_attack_decisions": 120,
+        "post_enforcement_failures": 0,
+        "post_enforcement_http_429": 892,
+        "post_enforcement_mitigation_active": 892,
+        "requests_at_or_after_enforcement_completion": 892,
+        "requests_before_enforcement_completion": 108,
+        "required_evidence_satisfied": true
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 181.49915500180214,
+        "mean": 42.883419384048466,
+        "median": 37.108453498149174,
+        "min": 8.07772599728196,
+        "p95": 80.65639305277726
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 108,
+        "429": 892
+      },
+      "victim_mitigation_state_counts": {
+        "false": 108,
+        "true": 892
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "M02": {
+      "archived_request_span_seconds": 4.686274,
+      "archived_request_span_throughput_requests_per_second": 213.38914455279397,
+      "client_http_status_counts": {
+        "200": 135,
+        "429": 865
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "attack_detection_with_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 1,
+        "activation_probability": 0.99404074902508,
+        "activation_window": 0,
+        "decision_timestamp": "2026-10-04T19:55:04.841178+00:00",
+        "decision_to_enforcement_seconds": 0.002215,
+        "enforcement_completion_timestamp": "2026-10-04T19:55:04.843393+00:00",
+        "enforcement_outcomes": {
+          "activated": 1,
+          "already_active": 119
+        },
+        "mitigation_action_requests": 120,
+        "model_attack_decisions": 120,
+        "post_enforcement_failures": 0,
+        "post_enforcement_http_429": 865,
+        "post_enforcement_mitigation_active": 865,
+        "requests_at_or_after_enforcement_completion": 865,
+        "requests_before_enforcement_completion": 135,
+        "required_evidence_satisfied": true
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 136.3339419986005,
+        "mean": 46.13427448712173,
+        "median": 42.19657899739104,
+        "min": 7.4160869990009815,
+        "p95": 79.65199770369509
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 135,
+        "429": 865
+      },
+      "victim_mitigation_state_counts": {
+        "false": 135,
+        "true": 865
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    },
+    "M03": {
+      "archived_request_span_seconds": 4.304534,
+      "archived_request_span_throughput_requests_per_second": 232.3131841913666,
+      "client_http_status_counts": {
+        "200": 138,
+        "429": 862
+      },
+      "client_victim_status_mismatches": 0,
+      "condition": "attack_detection_with_mitigation",
+      "failed_or_timed_out_requests": 0,
+      "mitigation": {
+        "activation_events": 1,
+        "activation_probability": 0.9974235618110212,
+        "activation_window": 0,
+        "decision_timestamp": "2026-10-04T19:59:07.328568+00:00",
+        "decision_to_enforcement_seconds": 0.001708,
+        "enforcement_completion_timestamp": "2026-10-04T19:59:07.330276+00:00",
+        "enforcement_outcomes": {
+          "activated": 1,
+          "already_active": 119
+        },
+        "mitigation_action_requests": 120,
+        "model_attack_decisions": 120,
+        "post_enforcement_failures": 0,
+        "post_enforcement_http_429": 862,
+        "post_enforcement_mitigation_active": 862,
+        "requests_at_or_after_enforcement_completion": 862,
+        "requests_before_enforcement_completion": 138,
+        "required_evidence_satisfied": true
+      },
+      "request_attempts": 1000,
+      "request_latency_ms": {
+        "count": 1000,
+        "max": 176.1100920048193,
+        "mean": 42.45018494492979,
+        "median": 36.973483496694826,
+        "min": 6.065536996175069,
+        "p95": 77.8731090485962
+      },
+      "successful_transport_requests": 1000,
+      "victim_http_status_counts": {
+        "200": 138,
+        "429": 862
+      },
+      "victim_mitigation_state_counts": {
+        "false": 138,
+        "true": 862
+      },
+      "wall_clock_seconds": {
+        "status": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS",
+        "value": null
+      }
+    }
+  },
+  "replication_warning": "Requests are observations nested within runs and are not independent experimental replicates.",
+  "scope_warning": "Mitigation is application-level HTTP 429 enforcement in the controlled Exp011 laboratory environment.",
+  "service_metric_qualification": {
+    "archived_request_span_seconds": "Derived as last archived client request finish timestamp minus first archived client request start timestamp.",
+    "request_latency": "Derived from archived client elapsed_ms values.",
+    "request_span_throughput": "Derived as request attempts divided by archived request span. It is not relabeled as process wall-clock throughput.",
+    "wall_clock_seconds": "NOT_SUPPORTED_FROM_ARCHIVED_ARTIFACTS"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "Exp010",
+  "component": "Dataset-B pre-acquisition design freeze",
+  "status": "FROZEN_BEFORE_DATASET_B_COLLECTION",
+  "dataset": "Dataset B",
+  "dataset_relationship": "separate_from_CICIoT2023",
+  "ground_truth_source": "controlled_workload_execution",
+  "candidate_window_packet_counts": [10, 100],
+  "window_policy_class_independent": true,
+  "feature_extraction_ground_truth_independent": true,
+  "feature_count": 23,
+  "feature_specification_frozen": true,
+  "acquisition_protocol_frozen": true,
+  "training_data_collected_at_freeze": false,
+  "model_performance_observed_at_freeze": false,
+  "synthetic_data_permitted": false,
+  "fabricated_data_permitted": false
+}

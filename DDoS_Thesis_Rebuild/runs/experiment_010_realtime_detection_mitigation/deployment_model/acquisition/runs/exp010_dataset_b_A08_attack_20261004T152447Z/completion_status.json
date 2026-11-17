@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "experiment": "Exp010",
+  "dataset": "Dataset B",
+  "logical_run_id": "A08",
+  "physical_run_id": "exp010_dataset_b_A08_attack_20261004T152447Z",
+  "class": "Attack",
+  "partition": "test",
+  "valid_dataset_run": true,
+  "include_in_dataset_b": true,
+  "training_use_permitted": false,
+  "validation_use_permitted": false,
+  "test_use_permitted": true,
+  "raw_evidence_frozen": true,
+  "feature_artifacts_frozen": true,
+  "reconciliation_status": "PASS",
+  "capture": {
+    "eligible_packets": 12000,
+    "packets_captured": 12000,
+    "packets_received_by_filter": 12000,
+    "packets_dropped_by_kernel": 0
+  },
+  "features": {
+    "w10_windows": 1200,
+    "w100_windows": 120,
+    "w10_discarded_trailing_packets": 0,
+    "w100_discarded_trailing_packets": 0,
+    "feature_count": 20,
+    "labels_supplied_to_extractor": false,
+    "extractor_sha256": "498b8b53f00f551cbf1521216135a56f60839e65437a9bbd03887b28d0299a2f"
+  },
+  "execution_notes": [
+    "Genuine controlled high-rate HTTP workload executed once.",
+    "1000 attempts completed with 1000 transport successes.",
+    "Observed client wall-clock duration was 3.728769 seconds.",
+    "W10 feature extraction was executed after raw freeze.",
+    "W100 feature extraction was invoked twice; the repeated invocation produced the same reported CSV SHA256.",
+    "No raw acquisition traffic was rerun.",
+    "No selected-model inference or final-test performance evaluation was performed before run closure."
+  ],
+  "integrity": {
+    "raw_manifest_sha256": "0cf4eb952a837d1f0f07c2ab04bf694211e34288a01d769247f3a4b1ca8cecb3",
+    "raw_master_manifest_sha256": "a9a229b92ca115eeec0d122bd757628470d79ddd564eb88c12b5d06b733ee2cf",
+    "raw_freeze_status_sha256": "a2bd3de56e5d07c61554d80e1c2fcf89f369c58b17573bcab41066720c6b2bb8",
+    "feature_manifest_sha256": "967758591168edee359c60812f5312d2ca2901b387d729a75d2120864a86865c",
+    "feature_master_manifest_sha256": "ec9091df10680e8cef6af6b5049a8d7e0b502b4ee514432c2c1ce45de1a35d90",
+    "reconciliation_sha256": "021fe4b5832f28ce1f29d60f898e2d6c0e26091458b0d0fb5cca6283e1d81252"
+  }
+}

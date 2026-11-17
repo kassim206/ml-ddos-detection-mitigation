@@ -1,0 +1,17 @@
+services:
+  victim_web:
+    build:
+      context: ./victim_app
+      dockerfile: Dockerfile
+    container_name: victim_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./logs/victim:/app/logs
+    networks:
+      - testbed_net
+    restart: "no"
+
+networks:
+  testbed_net:
+    driver: bridge
